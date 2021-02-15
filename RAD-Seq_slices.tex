@@ -1,0 +1,176 @@
+\documentclass[11pt, xcolor=dvipsnames]{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{lmodern} %für mathmode wichtig
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usetheme{Madrid}
+\usepackage{textpos}
+\usepackage{tikz}
+\usepackage[section,boxed]{algorithm}
+\usepackage[boxed]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage{url}                                            % %url{}-Kommando
+\usepackage{fancyhdr,float}                                 % %Kopf-/Fußzeilen
+\usepackage[round]{natbib}                                  % %Zitate
+%\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[export]{adjustbox} %Rahmen um Bilder
+%Für Präsentationsmodus
+\usepackage{hyperref}
+\hypersetup{pdfpagemode=FullScreen}
+
+\usepackage{multirow}
+
+
+%Farbe des Beamer-Themes ändern
+\usecolortheme[named=LimeGreen]{structure}
+\makeatletter
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{palette primary}{fg=black,bg=LimeGreen!30!white} 
+\setbeamercolor{palette secondary}{fg=black,bg=LimeGreen!50!white}
+\setbeamercolor{palette tertiary}{fg=black,bg=LimeGreen }
+\makeatother
+
+
+
+%Beschriftung der Fußleiste der Folien anpassen - Section und Subsectiontitel müssen vor jeder Folie (vor \begin{frame}) eingefügt werden
+\makeatletter
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=4.25ex,dp=1ex,center]{author in head/foot}%
+			\vfill
+			\vspace{0.9ex}
+			\usebeamerfont{author in head/foot}\insertsection
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=3.25ex,dp=1ex,center]{title in head/foot}%
+			\vfill
+			\vspace{0.4ex}
+			\usebeamerfont{title in head/foot}\insertsubsection
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\vfill
+			\usebeamerfont{date in head/foot}Analyse von RAD-Seq-Daten\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+		\end{beamercolorbox}}%
+	\vskip0pt%
+}
+\makeatother
+
+\mode<presentation>
+
+\begin{document}
+%Titlefolie	
+	\author{Antonie Vietor}
+	\title[Analyse von RAD-Seq-Daten]{Analyse von RAD-Seq-Daten unter Berücksichtigung von Sequenzierfehlerraten und Heterozygotiewahrscheinlichkeiten}
+	\date{\today}
+	\setbeamercovered{transparent}		
+	%Ausschalten der Navigationssymbole
+	\setbeamertemplate{navigation symbols}{} 	
+
+%Titlefolie	Inhalt
+\begin{frame}[plain]
+	\maketitle
+	%Logo fuer Titelseite mit Positionierung oben links
+	\begin{textblock*}{4.5cm}(0cm,-7.5cm)
+	\includegraphics[width=4.5cm]{tud_logo_rgb}
+	\end{textblock*}
+
+	%Lehrstuhlbezeichnung mit Positionierung unten links
+	\begin{minipage}[b]{0.55\textwidth}
+		\scriptsize
+		Technische Universität Dortmund\\
+		Fakultät für Informatik\\
+		Lehrstuhl 11\\
+		Bioinformatics for High-Throughput Technologies\\
+		http://ls11-www.cs.tu-dortmund.de/
+	\end{minipage}
+	\begin{minipage}[b]{0.44\textwidth}
+		\scriptsize
+		\begin{flushright}
+		In Kooperation mit:\\
+		Universität Duisburg-Essen\\
+		Genome Informatics\\
+		http://genomeinformatics.uni-due.de/
+		\end{flushright}				
+	\end{minipage}
+\end{frame}
+
+%Zentrierung der Titel aller Folien
+\setbeamertemplate{frametitle}[default][center]
+
+%Folie 2
+\section{Biologischer Hintergrund}
+\subsection{}
+\begin{frame}
+	\frametitle{Aufbau und Struktur von DNA und RNA}
+	\begin{block}{Aufbau der DNA}
+		\begin{itemize}
+			\item besteht aus Nukleotiden
+			\item jedes \textbf{Nukleotid} besteht aus einem Zuckermolekül (Desoxyribose), einem Phosphatrest und einer Base
+			\item \textbf{Basen}: A (Adenin), T (Thymin), G (Guanin), C (Cytosin)	
+			\item dient vor allem der \textbf{Informationsspeicherung} (Erbinformation)
+		\end{itemize}
+	\end{block}
+%	\vspace {0.8cm}
+	\begin{block}{Unterschiede im Aufbau der RNA}
+		\begin{itemize}
+			\item \textbf{Nukleotide}: das Zuckermolekül ist Ribose
+			\item \textbf{Basen}: Uracil (U) statt Thymin	
+			\item viele Funktionen, dient unter anderem der \textbf{Informationsübertragung} bei der Proteinbiosyntese		
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\section{title}
+\subsection{title}
+\begin{frame}
+	\begin{block}{Struktur der DNA}
+		\begin{itemize}
+			\item \textbf{Doppelhelixstruktur}
+			\item \textbf{Komplementarität}: A und T sind komplementär zu einander, ebenso G und C
+			\item \textbf{Antiparallelität}: in der Doppelhelix sind die beiden DNA-Stränge gegenläufig zu einander
+		\end{itemize}
+	\end{block}
+	%	\vspace {0.8cm}
+	\begin{block}{Struktur der RNA}
+		\begin{itemize}
+			\item meist \textbf{einzelsträngig}, kurze doppelsträngige Abschnitte können vorkommen	
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\section{title}
+\subsection{title}
+\begin{frame}
+		\begin{block}{Proteinbiosyntese}
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\end{block}
+	%	\vspace {0.8cm}
+	\begin{block}{Genetischer Code}
+		\begin{itemize}
+			\item  
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\section{title}
+\subsection{title}
+\begin{frame}
+	Inhalt...
+\end{frame}
+
+
+
+\end{document}
