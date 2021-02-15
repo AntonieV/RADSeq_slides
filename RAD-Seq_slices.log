@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  15 FEB 2021 23:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  16 FEB 2021 00:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1175,6 +1175,103 @@ Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 106.
 
 ] [5
 
+] [6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+]
+[18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+]
+[33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+]
+[48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
 ]
 \tf@nav=\write6
 \openout6 = `RAD-Seq_slices.nav'.
@@ -1185,18 +1282,25 @@ Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 106.
 \tf@snm=\write8
 \openout8 = `RAD-Seq_slices.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 549.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 549.
  (./RAD-Seq_slices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
-Package rerunfilecheck Info: File `RAD-Seq_slices.out' has not changed.
-(rerunfilecheck)             Checksum: 46D536B49B47D39885CE7A1F68508F64;390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 549.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 549.
+
+
+Package rerunfilecheck Warning: File `RAD-Seq_slices.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RAD-Seq_slices.out':
+(rerunfilecheck)             Before: 46D536B49B47D39885CE7A1F68508F64;390
+(rerunfilecheck)             After:  5AA6EAA26E2DDF039FD00CD3C95277CD;4593.
  ) 
 Here is how much of TeX's memory you used:
- 25216 strings out of 481239
- 482615 string characters out of 5920378
- 756268 words of memory out of 5000000
+ 25404 strings out of 481239
+ 484755 string characters out of 5920378
+ 756266 words of memory out of 5000000
  39865 multiletter control sequences out of 15000+600000
  552002 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1205,10 +1309,10 @@ Here is how much of TeX's memory you used:
 public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmssbx10.pfb>
-Output written on RAD-Seq_slices.pdf (5 pages, 187010 bytes).
+Output written on RAD-Seq_slices.pdf (52 pages, 213657 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 207 named destinations out of 1000 (max. 500000)
  142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
