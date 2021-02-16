@@ -1,6 +1,7 @@
 \babel@toc {ngerman}{}
 \beamer@sectionintoc {1}{Biologischer Hintergrund}{2}{0}{1}
-\beamer@sectionintoc {2}{title}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{title}{3}{0}{2}
-\beamer@sectionintoc {3}{title}{4}{0}{3}
-\beamer@subsectionintoc {3}{1}{title}{4}{0}{3}
+\beamer@sectionintoc {2}{Biologischer Hintergrund}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{title}{4}{0}{2}
+\beamer@sectionintoc {3}{Biologischer Hintergrund}{5}{0}{3}
+\beamer@sectionintoc {4}{Biologischer Hintergrund}{6}{0}{4}
+\beamer@subsectionintoc {4}{1}{title}{6}{0}{4}

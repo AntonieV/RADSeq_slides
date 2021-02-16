@@ -18,25 +18,29 @@
 \usepackage{color}
 \usepackage{url}                                            % %url{}-Kommando
 \usepackage{fancyhdr,float}                                 % %Kopf-/Fußzeilen
-\usepackage[round]{natbib}                                  % %Zitate
+\usepackage[round,square,sort,comma,numbers]{natbib}                                  % %Zitate
 %\usepackage{enumitem}
 \usepackage{setspace}
 \usepackage[export]{adjustbox} %Rahmen um Bilder
 %Für Präsentationsmodus
 \usepackage{hyperref}
-\hypersetup{pdfpagemode=FullScreen}
+%\hypersetup{pdfpagemode=FullScreen}
 
 \usepackage{multirow}
-
+\definecolor{tugreen}{HTML}{7CFF00}
+%
+%\setbeamercolor{block title}{use=structure,fg=black,bg=LimeGreen!50!white}
+\setbeamercolor{block body}{use=structure,fg=black,bg=tugreen!10!white}
+\setbeamercolor{frametitle}{use=structure,fg=black,bg=tugreen!40!white}
 
 %Farbe des Beamer-Themes ändern
 \usecolortheme[named=LimeGreen]{structure}
 \makeatletter
 \setbeamercolor{frametitle}{fg=black}
 \setbeamercolor{title}{fg=black}
-\setbeamercolor{palette primary}{fg=black,bg=LimeGreen!30!white} 
-\setbeamercolor{palette secondary}{fg=black,bg=LimeGreen!50!white}
-\setbeamercolor{palette tertiary}{fg=black,bg=LimeGreen }
+\setbeamercolor{palette primary}{fg=black,bg=tugreen!20!white} 
+\setbeamercolor{palette secondary}{fg=black,bg=tugreen!40!white}
+\setbeamercolor{palette tertiary}{fg=black,bg=LimeGreen}
 \makeatother
 
 
@@ -112,72 +116,119 @@
 \section{Biologischer Hintergrund}
 \subsection{}
 \begin{frame}
-	\frametitle{Aufbau und Struktur von DNA und RNA}
+	\frametitle{Aufbau von DNA und RNA}
+	\vspace {-0.1cm}
 	\begin{block}{Aufbau der DNA}
 		\begin{itemize}
-			\item besteht aus Nukleotiden
+			\item besteht aus Nukleotiden			
 			\item jedes \textbf{Nukleotid} besteht aus einem Zuckermolekül (Desoxyribose), einem Phosphatrest und einer Base
-			\item \textbf{Basen}: A (Adenin), T (Thymin), G (Guanin), C (Cytosin)	
+			\item \textbf{Basen}: A (Adenin), T (Thymin), G (Guanin), C (Cytosin)
+			\item meist \textbf{doppelsträngig}	
 			\item dient vor allem der \textbf{Informationsspeicherung} (Erbinformation)
 		\end{itemize}
 	\end{block}
-%	\vspace {0.8cm}
-	\begin{block}{Unterschiede im Aufbau der RNA}
+	\vspace {-0.1cm}
+	\visible<2->{\begin{block}{Unterschiede im Aufbau der RNA}
 		\begin{itemize}
 			\item \textbf{Nukleotide}: das Zuckermolekül ist Ribose
 			\item \textbf{Basen}: Uracil (U) statt Thymin	
+			\item meist \textbf{einzelsträngig}	
 			\item viele Funktionen, dient unter anderem der \textbf{Informationsübertragung} bei der Proteinbiosyntese		
 		\end{itemize}
-	\end{block}
+	\end{block}}
 \end{frame}
-
-\section{title}
-\subsection{title}
-\begin{frame}
-	\begin{block}{Struktur der DNA}
-		\begin{itemize}
-			\item \textbf{Doppelhelixstruktur}
-			\item \textbf{Komplementarität}: A und T sind komplementär zu einander, ebenso G und C
-			\item \textbf{Antiparallelität}: in der Doppelhelix sind die beiden DNA-Stränge gegenläufig zu einander
-		\end{itemize}
-	\end{block}
-	%	\vspace {0.8cm}
-	\begin{block}{Struktur der RNA}
-		\begin{itemize}
-			\item meist \textbf{einzelsträngig}, kurze doppelsträngige Abschnitte können vorkommen	
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-\section{title}
-\subsection{title}
-\begin{frame}
-		\begin{block}{Proteinbiosyntese}
-		\begin{itemize}
-			\item 
-		\end{itemize}
-	\end{block}
-	%	\vspace {0.8cm}
-	\begin{block}{Genetischer Code}
-		\begin{itemize}
-			\item  
-		\end{itemize}
-	\end{block}
-\end{frame}
-
-
 
 %%Folie 3
-\section{}
+\section{Biologischer Hintergrund}
+\subsection{title}
+\begin{frame}
+	\frametitle{Struktur der DNA}
+%	\vspace {-0.1cm}
+	\begin{block}{}
+		\vspace{0.5cm}
+		\begin{itemize}
+			\item \textbf{Doppelhelixstruktur}
+			\item \textbf{Komplementarität}: selektive Basenpaarung von A und T und ebenso  von G und C
+			\item \textbf{Antiparallelität}: in der Doppelhelix sind die beiden DNA-Stränge gegenläufig zu einander
+			\item \textbf{Gene}: Wechsel von codierenden (Exons) und nicht-codierenden Abschnitten (Introns)
+			\item zwischen den Genen nicht-codierende Bereiche, z.T. mit regulatorischen Funktionen
+			\item ca. 98 \% der DNA sind nicht-codierend
+		\end{itemize}
+		\vspace{0.5cm}
+	\end{block}
+%		\vspace {-0.1cm}
+%	\visible<2->{\begin{block}{Struktur der RNA}
+%		\begin{itemize}
+%			\item meist \textbf{einzelsträngig}, kurze doppelsträngige Abschnitte können vorkommen	
+%		\end{itemize}
+%	\end{block}}
+\end{frame}
+
+
+\section{Biologischer Hintergrund}
 \subsection{}
 \begin{frame}
-	text
+	\frametitle{}
+	\begin{columns}[T]
+		\begin{column}{0.49\textwidth}
+				\begin{block}{Genetischer Code}
+				\begin{itemize}
+					\item Codierung der \textbf{DNA-Sequenz} in eine \textbf{Aminosäuresequenz}, welche die Primärstruktur der Proteine darstellt
+					\item \textbf{Basentripletts} (Codons) codieren für i.d.R. 20 Aminosäuren sowie ein Start- und drei Stop-Codons					
+					\item \textbf{Degeneration}: mehrere Basentripletts können für die gleiche Aminosäure codieren
+				\end{itemize}
+			\end{block}
+		\end{column}
+		\begin{column}{0.49\textwidth}
+			\begin{center}
+				\begin{figure} 
+					\includegraphics[width = 5 cm] {pictures/Aminoacids_table.png}	
+				\end{figure}
+			{\tiny Bildquelle: \cite{genetic_code}}
+			% https://commons.wikimedia.org/wiki/File:Aminoacids_table.svg#/media/File:Aminoacids_table.svg
+			\end{center}
+		\end{column}
+	\end{columns}
 \end{frame}
+
+\section{Biologischer Hintergrund}
+\subsection{title}
+\begin{frame}
+	\frametitle{}
+		\begin{block}{Proteinbiosyntese}
+		\begin{itemize}
+			\item Übersetzung der Basensequenz der DNA in die Aminosäuresequenz der Proteine
+		\end{itemize}
+		\begin{enumerate}[\begingroup\color{black} 1\endgroup]
+		{\setlength{\itemindent}{1.5em}
+%			\vspace{0.1cm}
+			\visible<2->{\item \textbf{Transkription}:
+			\item[] $\Rightarrow$ \textbf{Umschreiben} eines DNA-Abschnitts in RNA
+			\item[] $\Rightarrow$ dadurch werden Arbeitskopien in Form von \textbf{mRNA} 
+			\item[]\hspace{0.4cm} (messenger RNA) hergestellt}
+%			\vspace{0.1cm}
+			\visible<3->{
+				\item \textbf{Translation}:
+					\item[] $\Rightarrow$ \textbf{Übersetzen} der Basensequenz in die Aminosäuresequenz
+					\item[] $\Rightarrow$ dadurch werden Arbeitskopien in Form von \textbf{mRNA} }
+		}
+		\vspace{0.4cm} 
+	\end{enumerate}
+	\end{block}
+	%	\vspace {0.8cm}
+
+\end{frame}
+
+
+
+
+
 
 %%Folie 4
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -185,6 +236,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -192,6 +244,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -199,6 +252,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -207,6 +261,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -215,6 +270,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -223,6 +279,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -231,6 +288,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -239,6 +297,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -247,6 +306,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -255,6 +315,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -263,6 +324,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -271,6 +333,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -279,6 +342,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -287,6 +351,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -295,6 +360,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -303,6 +369,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -311,6 +378,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -319,6 +387,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -327,6 +396,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -335,6 +405,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -343,6 +414,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -351,6 +423,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -359,6 +432,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -367,6 +441,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -375,6 +450,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -383,6 +459,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -391,6 +468,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -399,6 +477,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -407,6 +486,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -415,6 +495,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -423,6 +504,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -431,6 +513,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -439,6 +522,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -447,6 +531,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -455,6 +540,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -463,6 +549,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -471,6 +558,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -479,6 +567,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -487,6 +576,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -495,6 +585,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -503,6 +594,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -511,6 +603,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -519,6 +612,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -527,6 +621,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -535,6 +630,7 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
 \end{frame}
 
@@ -543,7 +639,17 @@
 \section{}
 \subsection{}
 \begin{frame}
+	\frametitle{}
 	text
+\end{frame}
+
+
+%Literaturverzeichnis
+\begin{frame}%[allowframebreaks]
+	\frametitle{Bildquellen}
+	\bibliographystyle{plain}
+	\bibliography{bibliography/RAD-Seq_slices}
+%	\addcontentsline{toc}{section}{\bibname}
 \end{frame}
 
 \end{document}
