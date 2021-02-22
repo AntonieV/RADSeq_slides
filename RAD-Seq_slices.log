@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  19 FEB 2021 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  22 FEB 2021 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,6 +812,103 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen297
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodepartlowerbox=\box79
+\pgfnodeparttwobox=\box80
+\pgfnodepartthreebox=\box81
+\pgfnodepartfourbox=\box82
+\pgfnodeparttwentybox=\box83
+\pgfnodepartnineteenbox=\box84
+\pgfnodeparteighteenbox=\box85
+\pgfnodepartseventeenbox=\box86
+\pgfnodepartsixteenbox=\box87
+\pgfnodepartfifteenbox=\box88
+\pgfnodepartfourteenbox=\box89
+\pgfnodepartthirteenbox=\box90
+\pgfnodeparttwelvebox=\box91
+\pgfnodepartelevenbox=\box92
+\pgfnodeparttenbox=\box93
+\pgfnodepartninebox=\box94
+\pgfnodeparteightbox=\box95
+\pgfnodepartsevenbox=\box96
+\pgfnodepartsixbox=\box97
+\pgfnodepartfivebox=\box98
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
@@ -820,9 +917,9 @@ nment
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count322
 \float@exts=\toks48
-\float@box=\box79
+\float@box=\box99
 \@float@everytoks=\toks49
-\@floatcapt=\box80
+\@floatcapt=\box100
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -855,13 +952,13 @@ Package: caption 2020/01/03 v3.4h Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen297
-\captionmargin@=\dimen298
-\captionwidth=\dimen299
-\caption@tempdima=\dimen300
-\caption@indent=\dimen301
-\caption@parindent=\dimen302
-\caption@hangindent=\dimen303
+\captionmargin=\dimen298
+\captionmargin@=\dimen299
+\captionwidth=\dimen300
+\caption@tempdima=\dimen301
+\caption@indent=\dimen302
+\caption@parindent=\dimen303
+\caption@hangindent=\dimen304
 Package caption Info: beamer document class detected.
 )
 \c@caption@flags=\count331
@@ -876,7 +973,7 @@ Package caption Info: Hyperref support is turned off
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count333
 \sf@farskip=\skip66
-\sf@captopadj=\dimen304
+\sf@captopadj=\dimen305
 \sf@capskip=\skip67
 \sf@nearskip=\skip68
 \c@subfigure=\count334
@@ -933,25 +1030,25 @@ Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
 
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box81
+\collectedbox=\box101
 )
-\tc@llx=\dimen305
-\tc@lly=\dimen306
-\tc@urx=\dimen307
-\tc@ury=\dimen308
+\tc@llx=\dimen306
+\tc@lly=\dimen307
+\tc@urx=\dimen308
+\tc@ury=\dimen309
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen309
-\adjbox@Height=\dimen310
-\adjbox@Depth=\dimen311
-\adjbox@Totalheight=\dimen312
-\adjbox@pwidth=\dimen313
-\adjbox@pheight=\dimen314
-\adjbox@pdepth=\dimen315
-\adjbox@ptotalheight=\dimen316
+\adjbox@Width=\dimen310
+\adjbox@Height=\dimen311
+\adjbox@Depth=\dimen312
+\adjbox@Totalheight=\dimen313
+\adjbox@pwidth=\dimen314
+\adjbox@pheight=\dimen315
+\adjbox@pdepth=\dimen316
+\adjbox@ptotalheight=\dimen317
 
 (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
@@ -959,23 +1056,23 @@ Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box82
+\@vwid@box=\box102
 \sift@deathcycles=\count342
-\@vwid@loff=\dimen317
-\@vwid@roff=\dimen318
+\@vwid@loff=\dimen318
+\@vwid@roff=\dimen319
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip82
 \multirow@cntb=\count343
 \multirow@dima=\skip83
-\bigstrutjot=\dimen319
+\bigstrutjot=\dimen320
 )
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamercolorthemestructure.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count344
-\l__pdf_internal_box=\box83
+\l__pdf_internal_box=\box103
 )
 (./RAD-Seq_slices.aux)
 \openout1 = `RAD-Seq_slices.aux'.
@@ -1038,13 +1135,13 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count345
-\scratchdimen=\dimen320
-\scratchbox=\box84
+\scratchdimen=\dimen321
+\scratchbox=\box104
 \nofMPsegments=\count346
 \nofMParguments=\count347
 \everyMPshowfont=\toks53
 \MPscratchCnt=\count348
-\MPscratchDim=\dimen321
+\MPscratchDim=\dimen322
 \MPnumerator=\count349
 \makeMPintoPDFobject=\count350
 \everyMPtoPDFconversion=\toks54
@@ -1058,7 +1155,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box85
+\AtBeginShipoutBox=\box105
 Package hyperref Info: Link coloring OFF on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1159,7 +1256,7 @@ Package caption Info: End \AtBeginDocument code.
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 77.
 
-<tud_logo_rgb.jpg, id=433, 338.9463pt x 54.6843pt>
+<tud_logo_rgb.jpg, id=457, 338.9463pt x 54.6843pt>
 File: tud_logo_rgb.jpg Graphic file (type jpg)
 <use tud_logo_rgb.jpg>
 Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 110.
@@ -1174,7 +1271,7 @@ Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 110.
 ] [4
 
 ]
-<pictures/Aminoacids_table.png, id=469, 488.00876pt x 482.7934pt>
+<pictures/Aminoacids_table.png, id=493, 488.00876pt x 482.7934pt>
 File: pictures/Aminoacids_table.png Graphic file (type png)
 <use pictures/Aminoacids_table.png>
 Package pdftex.def Info: pictures/Aminoacids_table.png  used on input line 193.
@@ -1183,246 +1280,334 @@ Package pdftex.def Info: pictures/Aminoacids_table.png  used on input line 193.
  [5
 
  <./pictures/Aminoacids_table.png>]
-<pictures/transcription.jpg, id=481, 1493.58pt x 904.37875pt>
+<pictures/transcription.jpg, id=505, 1493.58pt x 904.37875pt>
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
-<pictures/trna.jpeg, id=483, 116.8365pt x 144.54pt>
+<pictures/trna.jpeg, id=507, 116.8365pt x 144.54pt>
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
-<pictures/translation.jpg, id=485, 1238.6275pt x 764.8575pt>
+<pictures/translation.jpg, id=509, 1238.6275pt x 764.8575pt>
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-57.
+51.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-257.
+251.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-257.
+251.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 257.
+(Font)              <10.95> on input line 251.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 257.
+(Font)              <8> on input line 251.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 257.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 257
+(Font)              <6> on input line 251.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 251
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 257
+LaTeX Font Info:    Trying to load font information for U+msb on input line 251
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 257.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 251.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 257.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 251.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 257.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 251.
 
-
-Overfull \vbox (2.75008pt too high) detected at line 257
- []
-
-[6
+ [6
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
- [7
+
+Overfull \vbox (1.82791pt too high) detected at line 251
+ []
+
+[7
 
  <./pictures/transcription.jpg>]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
-
-Overfull \vbox (2.75008pt too high) detected at line 257
- []
-
-[8
+ [8
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
-
-Overfull \vbox (2.75008pt too high) detected at line 257
- []
-
-[9
+ [9
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [10
 
- <./pictures/trna.jpeg>]
+]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 
-Overfull \vbox (2.75008pt too high) detected at line 257
+Overfull \vbox (6.30441pt too high) detected at line 251
  []
 
 [11
 
-]
+ <./pictures/trna.jpeg>]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 257.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 257.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 257.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [12
 
- <./pictures/translation.jpg>]
-<pictures/repl_complex.png, id=559, 1927.2pt x 937.5025pt>
-File: pictures/repl_complex.png Graphic file (type png)
-<use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
-(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+]
+File: pictures/transcription.jpg Graphic file (type jpg)
+<use pictures/transcription.jpg>
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
+(pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
+File: pictures/trna.jpeg Graphic file (type jpg)
+<use pictures/trna.jpeg>
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
+(pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
+File: pictures/translation.jpg Graphic file (type jpg)
+<use pictures/translation.jpg>
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
+(pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [13
 
 ]
+File: pictures/transcription.jpg Graphic file (type jpg)
+<use pictures/transcription.jpg>
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 251.
+(pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
+File: pictures/trna.jpeg Graphic file (type jpg)
+<use pictures/trna.jpeg>
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 251.
+(pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
+File: pictures/translation.jpg Graphic file (type jpg)
+<use pictures/translation.jpg>
+Package pdftex.def Info: pictures/translation.jpg  used on input line 251.
+(pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
+
+Overfull \vbox (178.46837pt too high) detected at line 251
+ []
+
+[14
+
+ <./pictures/translation.jpg>]
+<pictures/repl_complex.png, id=605, 1927.2pt x 937.5025pt>
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
- [14
-
- <./pictures/repl_complex.png>]
-File: pictures/repl_complex.png Graphic file (type png)
-<use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
-(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
-
-[15
+ [15
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [16
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [17
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [18
 
-] [19
+]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [19
 
-] [20
-
-] [21
-
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
-] [29
+ <./pictures/repl_complex.png>]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [20
 
 ]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [21
+
+]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [22
+
+]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [23
+
+]
+File: pictures/repl_complex.png Graphic file (type png)
+<use pictures/repl_complex.png>
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 285.
+(pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
+ [24
+
+]
+<pictures/mutation_macro.jpg, id=689, 1439.3775pt x 601.24625pt>
+File: pictures/mutation_macro.jpg Graphic file (type jpg)
+<use pictures/mutation_macro.jpg>
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
+<pictures/mutation_micro.jpg, id=691, 1442.38875pt x 378.41376pt>
+File: pictures/mutation_micro.jpg Graphic file (type jpg)
+<use pictures/mutation_micro.jpg>
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
+ [25
+
+ <./pictures/mutation_macro.jpg>]
+File: pictures/mutation_macro.jpg Graphic file (type jpg)
+<use pictures/mutation_macro.jpg>
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
+File: pictures/mutation_micro.jpg Graphic file (type jpg)
+<use pictures/mutation_micro.jpg>
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
+
+[26
+
+ <./pictures/mutation_micro.jpg>]
+File: pictures/mutation_macro.jpg Graphic file (type jpg)
+<use pictures/mutation_macro.jpg>
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
+File: pictures/mutation_micro.jpg Graphic file (type jpg)
+<use pictures/mutation_micro.jpg>
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 346.
+(pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
+ [27
+
+]
+Overfull \vbox (3.13074pt too high) detected at line 378
+ []
+
+[28
+
+]
+Overfull \vbox (3.13074pt too high) detected at line 378
+ []
+
+[29
+
+]
+Overfull \vbox (3.13074pt too high) detected at line 378
+ []
+
 [30
 
-] [31
+]
+<pictures/pcr.jpg, id=748, 1607.00375pt x 1063.975pt>
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [31
 
-] [32
+ <./pictures/pcr.jpg>] [32
 
 ] [33
 
@@ -1440,7 +1625,8 @@ Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
 
 ] [40
 
-] [41
+]
+[41
 
 ] [42
 
@@ -1448,8 +1634,7 @@ Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
 
 ] [44
 
-]
-[45
+] [45
 
 ] [46
 
@@ -1471,7 +1656,8 @@ Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
 
 ] [55
 
-] [56
+]
+[56
 
 ] [57
 
@@ -1479,8 +1665,7 @@ Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
 
 ] [59
 
-]
-[60
+] [60
 
 ] [61
 
@@ -1489,6 +1674,27 @@ Package pdftex.def Info: pictures/repl_complex.png  used on input line 302.
 ] [63
 
 ] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+]
+[71
+
+] [72
+
+] [73
+
+] [74
 
 ] (./RAD-Seq_slices.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
@@ -1505,7 +1711,7 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 15.
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [65
+)) [75
 
 ]
 \tf@nav=\write6
@@ -1517,22 +1723,22 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@snm=\write8
 \openout8 = `RAD-Seq_slices.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 790.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 790.
  (./RAD-Seq_slices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 724.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 790.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 790.
 Package rerunfilecheck Info: File `RAD-Seq_slices.out' has not changed.
-(rerunfilecheck)             Checksum: 8B501720B0D1834F35BC7C690A952FA6;5047.
+(rerunfilecheck)             Checksum: 0CFC4B069A0EFCEFBBD9E632466EC886;5092.
  ) 
 Here is how much of TeX's memory you used:
- 26016 strings out of 481239
- 493551 string characters out of 5920378
- 759612 words of memory out of 5000000
- 40399 multiletter control sequences out of 15000+600000
+ 28734 strings out of 481239
+ 571203 string characters out of 5920378
+ 884801 words of memory out of 5000000
+ 43031 multiletter control sequences out of 15000+600000
  566764 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,15n,67p,810b,954s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,20n,83p,810b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -1541,10 +1747,10 @@ mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 s8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on RAD-Seq_slices.pdf (65 pages, 1520716 bytes).
+Output written on RAD-Seq_slices.pdf (75 pages, 2476523 bytes).
 PDF statistics:
- 1051 PDF objects out of 1200 (max. 8388607)
- 924 compressed objects within 10 object streams
- 239 named destinations out of 1000 (max. 500000)
- 927 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1185 PDF objects out of 1200 (max. 8388607)
+ 1011 compressed objects within 11 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 1056 words of extra memory for PDF output out of 10000 (max. 10000000)
 

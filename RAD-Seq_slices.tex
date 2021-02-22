@@ -9,11 +9,11 @@
 \usetheme{Madrid}
 \usepackage{textpos}
 \usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
 \usepackage[section,boxed]{algorithm}
 \usepackage[boxed]{algorithm}
 \usepackage{algpseudocode}
 \usepackage{caption}
-\usepackage{tikz}
 \usepackage{subfig}
 \usepackage{color}
 \usepackage{url}                                            % %url{}-Kommando
@@ -195,7 +195,7 @@
 \section{Biologischer Hintergrund}
 \subsection{Proteinbiosyntese}
 \begin{frame}
-	\frametitle{}
+	\frametitle{Proteinbiosyntese}
 	\vspace{-0.15cm}
 	\begin{onlyenv}<2>
 		\begin{center}
@@ -206,15 +206,15 @@
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-	\begin{onlyenv}<5>
+	\begin{onlyenv}<6>
 		\begin{center}
 			\begin{figure} 
-				\includegraphics[width = 6 cm] {pictures/trna.jpeg}
+				\includegraphics[width = 6 cm] {pictures/trna.jpeg}\\
 				{\tiny Bildquelle: \cite{trna}}
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-	\begin{onlyenv}<7>
+	\begin{onlyenv}<9>
 		\begin{center}
 			\begin{figure} 
 				\includegraphics[width = 12 cm] {pictures/translation.jpg}
@@ -222,38 +222,32 @@
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-	\begin{onlyenv}<1,3-4,6>
-		\begin{block}{Proteinbiosyntese}
+	\begin{onlyenv}<1>
 %		\begin{itemize}
 %			\item Übersetzung der Basensequenz der DNA in die Aminosäuresequenz der Proteine
 %		\end{itemize}
-		\begin{enumerate}[\begingroup\color{black} 1\endgroup]
-		{\setlength{\itemindent}{1.5em}
-%			\vspace{0.1cm}
-			\visible<1->{\item \textbf{Transkription}:
-			\item[] $\Rightarrow$ \textbf{Umschreiben} eines DNA-Abschnitts zu Arbeitskopien in Form\\\hspace{1.1cm}von \textbf{mRNA} (messenger RNA)}
-%			\vspace{0.1cm}
-			\visible<3->{
-				\item \textbf{Translation}:
-					\item[] $\Rightarrow$ \textbf{Übersetzen} der Basensequenz in die Aminosäuresequenz mit\\\hspace{1.1cm}Hilfe von \textbf{tRNA} (transfer RNA)
-					\vspace{-0.05cm}}
-				
+		\begin{block}{Transkription}
+			\textbf{Umschreiben} eines DNA-Abschnitts zu Arbeitskopien in Form von \textbf{mRNA} (messenger RNA)
+		\end{block}	
+	\end{onlyenv}
+	\begin{onlyenv}<3-5,7->
+		\begin{block}{Translation}
+			\begin{itemize}
+				\visible<3->{\item \textbf{Übersetzen} der Basensequenz in die Aminosäuresequenz mit Hilfe von \textbf{tRNA} (transfer RNA)
+				\vspace{-0.05cm}}				
 				\visible<4->{
-					\item[] $\Rightarrow$ die tRNA besitzt eine \textbf{mRNA-Bindungsstelle} bestehend aus\\\hspace{1.1cm}einem Basentriplett
-					\vspace{-0.05cm}}
-				
-				\visible<4->{
-					\item[] $\Rightarrow$ die tRNA trägt zudem die nach dem genetischen Code \\\hspace{1.1cm}\textbf{korrespondierende Aminosäure} (AS) ihrer mRNA-\\\hspace{1.1cm}Bindungsstelle
-					\vspace{-0.05cm}}
-				\visible<6->{
-				   \item[] $\Rightarrow$ von der Startsequenz ausgehend werden die tRNAs mit \\\hspace{1.1cm}komplementärer Bindungsstelle nacheinander an die mRNA \\\hspace{1.1cm}gebunden, dadurch wird ihre AS gelöst und an die AS der \\\hspace{1.1cm}nachfolgenden tRNA gebunden
-				   \vspace{-0.05cm}
-				   \item[] $\Rightarrow$ es entsteht eine \textbf{Aminosäuresequenz}}
-		}
-	\end{enumerate}
-	\end{block}
-\end{onlyenv}
-	%	\vspace {0.8cm}
+				\item Aufbau der tRNA:
+				\item[] $\Rightarrow$ \textbf{mRNA-Bindungsstelle} bestehend aus einem Basentriplett
+				\vspace{-0.05cm}}
+				\visible<5->{
+				\item[] $\Rightarrow$ trägt die \textbf{korrespondierende Aminosäure} (AS), die nach dem genetischen Code der mRNA-Bindungsstelle entspricht
+				\vspace{-0.05cm}}
+				\visible<8->{
+				\item von der Startsequenz ausgehend werden die tRNAs mit komplementärer Bindungsstelle nacheinander an die mRNA gebunden, dadurch wird ihre AS gelöst und an die AS der nachfolgenden tRNA gebunden
+				\vspace{-0.05cm} $\Rightarrow$ es entsteht eine \textbf{Aminosäuresequenz}}
+			\end{itemize}
+		\end{block}
+	\end{onlyenv}
 \end{frame}
 
 %%Folie 4
@@ -261,7 +255,7 @@
 \subsection{DNA-Replikation}
 \begin{frame}
 	\frametitle{DNA-Replikation}
-	\begin{onlyenv}<2>
+	\begin{onlyenv}<5>
 		\begin{center}
 			\begin{figure} 
 				\includegraphics[width = 12 cm] {pictures/repl_complex.png}
@@ -270,41 +264,144 @@
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-	\begin{onlyenv}<1,3-4,6>
+	\begin{onlyenv}<1-4,6-10>
 		\begin{block}{}
-			Natürlicher Vorgang der \textbf{Vervielfältigung} der DNA bei der Zellteilung:
+			Natürlicher Vorgang zur Vervielfältigung der DNA bei der Zellteilung:
 			\begin{enumerate}
 				{\setlength{\itemindent}{1.5em}
 					%			\vspace{0.1cm}
-					\visible<1->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
-					\visible<2->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
-					\visible<3->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
-					\visible<4->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
-					\visible<5->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
-					\visible<6->{\item \textbf{Topoisomerasen}: die DNA wird entwunden
+					\visible<1->{\item Entwindung der DNA (\textbf{Topoisomerasen})}
+					\visible<2->{\item Auftrennung des DNA-Doppelstrangs (\textbf{Helikase})}
+					\visible<3->{\item Synthese der RNA-Primer (\textbf{Primasen})}
+					\visible<4->{\item Kopieren der beiden Elternstränge ausgehend von den\\\hspace{0.5cm} RNA-Primern (\textbf{DNA-Polymerasen})}
+					\visible<7->{\item[] $\Rightarrow$ es entstehen zwei komplementäre Tochterstränge}	
+					\visible<8->{\item[] $\Rightarrow$ kontinuierliche Synthese des Leitstrangs}	
+					\visible<9->{\item[] $\Rightarrow$ diskontinuierliche Synthese des Folgestrangs\\\hspace{1.1cm}(Okazaki-Fragmente)}					
+					\visible<10->{\item Verbindung der Okazaki-Fragmente des  Folgestrangs (\textbf{Ligase})}
 				}
 			\end{enumerate}
 		\end{block}
 	\end{onlyenv}
 \end{frame}
 
+\definecolor{greenbl}{HTML}{00a27a}
+\definecolor{lila}{HTML}{5100d7}
+\definecolor{dunkelrot}{HTML}{fa0004}
+
 %%Folie 5
 \section{Biologischer Hintergrund}
 \subsection{Mutationen und Varianten}
 \begin{frame}
-	\frametitle{Mutationen und Varianten}
-	text
+	\frametitle{Mutationen}
+		\begin{onlyenv}<1>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 10 cm] {pictures/mutation_macro.jpg}\\
+				{\tiny Bildquelle: \citep{mutation}}
+				
+			\end{figure}
+		\end{center}
+		\end{onlyenv}
+		\begin{onlyenv}<2>
+			\begin{center}
+				\begin{figure} 
+					\includegraphics[width = 12 cm] {pictures/mutation_micro.jpg}
+					{\tiny Bildquelle: \citep{mutation}}
+					
+				\end{figure}
+			\end{center}
+		\end{onlyenv}
+		\begin{onlyenv}<3>
+			\begin{center}
+				\begin{minipage}{\linewidth}
+				\centering
+				\resizebox{12cm}{!}{
+					\begin{tikzpicture}
+					[sibling distance=25em,
+					every node/.style = {shape=rectangle, rounded corners,
+						draw, align=center,
+						top color=white, bottom color=green!50},transform shape]
+					\node [top color=white, bottom color=red!50] (p0) {\textbf {Punktmutationen}}
+					child { node [top color=white, bottom color=red!50]  (p1) {Substitution} [sibling distance=6em]
+						child { node [top color=white, bottom color=greenbl!50, below left = 4cm of p1] (p2) {Aminosäure\\unverändert} [sibling distance=6em]
+							child { node [top color=white, bottom color=lila!50, below = 2.2cm of p2] (p3) {silent} [sibling distance=6em]}}
+						child { node [top color=white, bottom color=greenbl!50, right = 7.5cm of p2] (p4) {Aminosäure\\ändert sich} [sibling distance=12em] 
+							child { node [top color=white, bottom color=greenbl!50] (p5) {zu anderer Aminosäure}
+								child{ node [top color=white, bottom color=lila!50] (p6) {missense} } } 
+							child { node [top color=white, bottom color=greenbl!50] (p7) {Stop-Codon entsteht}
+								child { node [top color=white, bottom color=lila!50] (p8) {nonsense} } }
+							child { node [top color=white, bottom color=greenbl!50] (p9) {Stop-Codon entfernt}
+								child { node [top color=white, bottom color=lila!50] (p10) {readthrough} } } } } 
+					child { node [top color=white, bottom color=red!50] (p11) {Insertion oder Deletion}[sibling distance=12em]
+						child { node [top color=white, bottom color=greenbl!50] (p12) {frameshift}
+							 }
+						child { node [top color=white, bottom color=greenbl!50] (p13) {non-frameshift} 
+					  		child { node [top color=white, bottom color=greenbl!50, below = 1.35cm of p13] (p14) {einzelne Aminosäure\\fehlt oder ist dupliziert} } } };
+					\draw (p12.south) edge (p4.north east) ;
+					\end{tikzpicture} 
+				}
+				\end{minipage}
+			\end{center}
+		\end{onlyenv}
 \end{frame}
 
 %%Folie 6
 \section{Biologischer Hintergrund}
-\subsection{PCR und Sequenzierung}
+\subsection{Mutationen und Varianten}
 \begin{frame}
-	\frametitle{PCR und Sequenzierung}
-	text
+	\frametitle{}
+		\vspace {-0.1cm}
+	\begin{block}{Folgen von Mutationen}
+		\begin{itemize}
+			\item Loss-of-function-Mutationen			
+			\item Gain-of-function-Mutationen
+		\end{itemize}
+	\end{block}
+	\vspace {-0.1cm}
+	\visible<2->{\begin{block}{Varianten}
+		\begin{itemize}
+			\item oft Varianten einzelner Basen: SNPs (single nucleotide polymorphism)
+			\item ohne pathologische Auswirkungen
+			\item vermehrtes Auftreten innerhalb einer Spezies		
+		\end{itemize}
+	\end{block}}
+	\vspace {-0.1cm}
+	\visible<3->{\begin{block}{Allele, Locus, Ploidie und Genotyp}
+		\begin{itemize}
+			\item \textbf{Allele}: verschiedene Varianten eines genomischen Ortes (\textbf{Locus})
+			\item \textbf{Ploidie}: Anzahl der Chromosomensätze (\textbf{homologe Chromosomen})		
+			\item \textbf{Genotyp}:
+				\item[] $\Rightarrow$ \textbf{Homozygotie}: an einem Locus liegt auf allen homologen\\\hspace{0.5cm}Chromosomen das gleiche Allel vor
+				\item[] $\Rightarrow$ \textbf{Heterozygotie}: die homologen Chromosomen weisen an einem\\\hspace{0.5cm}Locus unterschiedliche Allele auf
+		\end{itemize}
+	\end{block}}
 \end{frame}
 
 %%Folie 7
+\section{Biologischer Hintergrund}
+\subsection{PCR und Sequenzierung}
+\begin{frame}
+	\frametitle{PCR}
+	\vspace {-0.3cm}
+	\begin{center}
+		\begin{figure} 
+			\includegraphics[width = 11 cm] {pictures/pcr.jpg}
+			{\tiny Bildquelle: \citep{pcr}}			
+		\end{figure}
+	\end{center}
+\end{frame}
+
+
+%%Folie 8
+\section{Biologischer Hintergrund}
+\subsection{PCR und Sequenzierung}
+\begin{frame}
+	\frametitle{Sequenzierung}
+	text
+\end{frame}
+
+
+%%Folie 9
 \section{Biologischer Hintergrund}
 \subsection{RAD-Sequencing}
 \begin{frame}
@@ -313,29 +410,11 @@
 \end{frame}
 
 
-%%Folie 8
+%%Folie 10
 \section{Analyse von RAD-Seq-Daten}
 \subsection{Problemstellung und Lösungsansatz}
 \begin{frame}
 	\frametitle{Problemstellung und Lösungsansatz}
-	text
-\end{frame}
-
-
-%%Folie 9
-\section{Biologischer Hintergrund}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 10
-\section{Biologischer Hintergrund}
-\subsection{}
-\begin{frame}
-	\frametitle{}
 	text
 \end{frame}
 
