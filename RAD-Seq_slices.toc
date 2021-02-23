@@ -14,10 +14,10 @@
 \beamer@sectionintoc {7}{Biologischer Hintergrund}{28}{0}{7}
 \beamer@subsectionintoc {7}{1}{Mutationen und Varianten}{28}{0}{7}
 \beamer@sectionintoc {8}{Biologischer Hintergrund}{31}{0}{8}
-\beamer@subsectionintoc {8}{1}{PCR und Sequenzierung}{31}{0}{8}
-\beamer@sectionintoc {9}{Biologischer Hintergrund}{32}{0}{9}
-\beamer@subsectionintoc {9}{1}{PCR und Sequenzierung}{32}{0}{9}
-\beamer@sectionintoc {10}{Biologischer Hintergrund}{33}{0}{10}
-\beamer@subsectionintoc {10}{1}{RAD-Sequencing}{33}{0}{10}
-\beamer@sectionintoc {11}{Analyse von RAD-Seq-Daten}{34}{0}{11}
-\beamer@subsectionintoc {11}{1}{Problemstellung und L\"osungsansatz}{34}{0}{11}
+\beamer@subsectionintoc {8}{1}{PCR}{31}{0}{8}
+\beamer@sectionintoc {9}{Biologischer Hintergrund}{38}{0}{9}
+\beamer@subsectionintoc {9}{1}{Sequenzierung}{38}{0}{9}
+\beamer@sectionintoc {10}{Biologischer Hintergrund}{39}{0}{10}
+\beamer@subsectionintoc {10}{1}{RAD-Sequencing}{39}{0}{10}
+\beamer@sectionintoc {11}{Analyse von RAD-Seq-Daten}{40}{0}{11}
+\beamer@subsectionintoc {11}{1}{Problemstellung und L\"osungsansatz}{40}{0}{11}

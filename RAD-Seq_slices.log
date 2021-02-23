@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  22 FEB 2021 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  23 FEB 2021 18:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,21 +1603,55 @@ Overfull \vbox (3.13074pt too high) detected at line 378
 <pictures/pcr.jpg, id=748, 1607.00375pt x 1063.975pt>
 File: pictures/pcr.jpg Graphic file (type jpg)
 <use pictures/pcr.jpg>
-Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
 (pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
- [31
+LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
+414.
+ (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
+File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [31
 
- <./pictures/pcr.jpg>] [32
+]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [32
 
-] [33
+]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [33
 
-] [34
+]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [34
 
-] [35
+]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [35
 
-] [36
+ <./pictures/pcr.jpg>]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [36
 
-] [37
+]
+File: pictures/pcr.jpg Graphic file (type jpg)
+<use pictures/pcr.jpg>
+Package pdftex.def Info: pictures/pcr.jpg  used on input line 414.
+(pdftex.def)             Requested size: 312.9803pt x 207.22264pt.
+ [37
 
 ] [38
 
@@ -1625,8 +1659,7 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [40
 
-]
-[41
+] [41
 
 ] [42
 
@@ -1640,7 +1673,8 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [47
 
-] [48
+]
+[48
 
 ] [49
 
@@ -1656,8 +1690,7 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [55
 
-]
-[56
+] [56
 
 ] [57
 
@@ -1671,7 +1704,8 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [62
 
-] [63
+]
+[63
 
 ] [64
 
@@ -1687,8 +1721,7 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [70
 
-]
-[71
+] [71
 
 ] [72
 
@@ -1696,11 +1729,23 @@ Package pdftex.def Info: pictures/pcr.jpg  used on input line 392.
 
 ] [74
 
+] [75
+
+] [76
+
+] [77
+
+]
+[78
+
+] [79
+
+] [80
+
 ] (./RAD-Seq_slices.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
 1.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
@@ -1711,7 +1756,7 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 15.
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [75
+)) [81
 
 ]
 \tf@nav=\write6
@@ -1723,34 +1768,42 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@snm=\write8
 \openout8 = `RAD-Seq_slices.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 790.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 790.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 812.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 812.
  (./RAD-Seq_slices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 790.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 790.
-Package rerunfilecheck Info: File `RAD-Seq_slices.out' has not changed.
-(rerunfilecheck)             Checksum: 0CFC4B069A0EFCEFBBD9E632466EC886;5092.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 812.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 812.
+
+
+Package rerunfilecheck Warning: File `RAD-Seq_slices.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RAD-Seq_slices.out':
+(rerunfilecheck)             Before: 6697A19DFA3B552444544BC29B9D44C7;5074
+(rerunfilecheck)             After:  BC7D7C9E5B6C0AA8BC07F5FE9A06E9EA;5066.
  ) 
 Here is how much of TeX's memory you used:
- 28734 strings out of 481239
- 571203 string characters out of 5920378
- 884801 words of memory out of 5000000
- 43031 multiletter control sequences out of 15000+600000
- 566764 words of font info for 51 fonts, out of 8000000 for 9000
+ 28803 strings out of 481239
+ 572778 string characters out of 5920378
+ 884765 words of memory out of 5000000
+ 43084 multiletter control sequences out of 15000+600000
+ 572569 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,83p,810b,1722s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmsc.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm
-/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-s8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on RAD-Seq_slices.pdf (75 pages, 2476523 bytes).
+dvips/lm/lm-rmsc.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
+/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ma
+thsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pf
+b></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on RAD-Seq_slices.pdf (81 pages, 2504822 bytes).
 PDF statistics:
- 1185 PDF objects out of 1200 (max. 8388607)
- 1011 compressed objects within 11 object streams
- 261 named destinations out of 1000 (max. 500000)
+ 1243 PDF objects out of 1440 (max. 8388607)
+ 1056 compressed objects within 11 object streams
+ 273 named destinations out of 1000 (max. 500000)
  1056 words of extra memory for PDF output out of 10000 (max. 10000000)
 

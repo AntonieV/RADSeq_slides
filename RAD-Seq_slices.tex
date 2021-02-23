@@ -350,7 +350,7 @@
 \subsection{Mutationen und Varianten}
 \begin{frame}
 	\frametitle{}
-		\vspace {-0.1cm}
+	\vspace {-0.1cm}
 	\begin{block}{Folgen von Mutationen}
 		\begin{itemize}
 			\item Loss-of-function-Mutationen			
@@ -379,22 +379,44 @@
 
 %%Folie 7
 \section{Biologischer Hintergrund}
-\subsection{PCR und Sequenzierung}
+\subsection{PCR}
 \begin{frame}
-	\frametitle{PCR}
+	\frametitle{Polymerase-Kettenreaktion (PCR)}
 	\vspace {-0.3cm}
-	\begin{center}
-		\begin{figure} 
-			\includegraphics[width = 11 cm] {pictures/pcr.jpg}
-			{\tiny Bildquelle: \citep{pcr}}			
-		\end{figure}
-	\end{center}
+	\begin{onlyenv}<5>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 11 cm] {pictures/pcr.jpg}
+				{\tiny Bildquelle: \citep{pcr}}			
+			\end{figure}
+		\end{center}
+	\end{onlyenv}
+
+	\begin{onlyenv}<1-4,6-7>
+		\begin{block}{}
+			\begin{itemize}
+				\item Methode zur Vervielfältigung von DNA-Abschnitten			
+				\item mehrere Zyklen der folgenden temperaturabhängigen Schritte:
+				\begin{enumerate}
+					\vspace {0.1cm}
+					\visible<2->{\item \textbf{Denaturierung}: durch Erhitzen wird der DNA-Doppelstrang in zwei Einzelstränge aufgespalten (96°C)}
+					\vspace {0.2cm}
+					\visible<3->{\item \textbf{Annealing}: Primerbindung an den 3'-Enden der zu amplifizierenden Gensequenz beider Einzelstränge (55-65°C)}
+					\vspace {0.2cm}
+					\visible<4->{\item \textbf{Elongation}: DNA-Synthese der komplementären Stränge (72°C)}
+				\end{enumerate}
+				\visible<7->{
+				\item mit jedem Zyklus wird die betreffende Sequenz verdoppelt
+				\item in Abhängigkeit von der Anzahl der durchgeführten Zyklen $c$ exponentieller Anstieg der Kopien $2^c$}
+			\end{itemize}
+		\end{block}
+	\end{onlyenv}
 \end{frame}
 
 
 %%Folie 8
 \section{Biologischer Hintergrund}
-\subsection{PCR und Sequenzierung}
+\subsection{Sequenzierung}
 \begin{frame}
 	\frametitle{Sequenzierung}
 	text
