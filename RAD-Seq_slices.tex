@@ -386,12 +386,43 @@
 	\begin{onlyenv}<5>
 		\begin{center}
 			\begin{figure} 
-				\includegraphics[width = 11 cm] {pictures/pcr.jpg}
+				\includegraphics[width = 10 cm] {pictures/pcr_steps.png}\\
 				{\tiny Bildquelle: \citep{pcr}}			
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-
+	\begin{onlyenv}<8>
+	\begin{center}
+		\begin{figure} 
+			\includegraphics[width = 11 cm] {pictures/pcr_compl_1.png}
+			{\tiny Bildquelle: \citep{pcr}}			
+		\end{figure}
+	\end{center}
+	\end{onlyenv}
+	\begin{onlyenv}<9>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 11 cm] {pictures/pcr_compl_2.png}
+				{\tiny Bildquelle: \citep{pcr}}			
+			\end{figure}
+		\end{center}
+	\end{onlyenv}
+	\begin{onlyenv}<10>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 11 cm] {pictures/pcr_compl_3.png}
+				{\tiny Bildquelle: \citep{pcr}}			
+			\end{figure}
+		\end{center}
+	\end{onlyenv}
+	\begin{onlyenv}<11>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 11 cm] {pictures/pcr_compl_4.png}
+				{\tiny Bildquelle: \citep{pcr}}			
+			\end{figure}
+		\end{center}
+	\end{onlyenv}
 	\begin{onlyenv}<1-4,6-7>
 		\begin{block}{}
 			\begin{itemize}
@@ -403,11 +434,12 @@
 					\vspace {0.2cm}
 					\visible<3->{\item \textbf{Annealing}: Primerbindung an den 3'-Enden der zu amplifizierenden Gensequenz beider Einzelstränge (55-65°C)}
 					\vspace {0.2cm}
-					\visible<4->{\item \textbf{Elongation}: DNA-Synthese der komplementären Stränge (72°C)}
+					\visible<4->{\item \textbf{Elongation}: DNA-Synthese der komplementären Stränge (72°C)
+					\vspace{0.1cm}}
 				\end{enumerate}
 				\visible<7->{
 				\item mit jedem Zyklus wird die betreffende Sequenz verdoppelt
-				\item in Abhängigkeit von der Anzahl der durchgeführten Zyklen $c$ exponentieller Anstieg der Kopien $2^c$}
+				\item in Abhängigkeit von der Anzahl der durchgeführten Zyklen $n$ exponentieller Anstieg der Kopien $2^n$}
 			\end{itemize}
 		\end{block}
 	\end{onlyenv}
@@ -419,33 +451,88 @@
 \subsection{Sequenzierung}
 \begin{frame}
 	\frametitle{Sequenzierung}
-	text
+	\begin{onlyenv}<2>
+		\begin{center}
+			\begin{figure} 
+				\includegraphics[width = 10 cm] {pictures/sanger.png}\\
+				{\tiny Bildquelle: \citep{sanger}}			
+			\end{figure}
+		\end{center}
+	\end{onlyenv}
+	\begin{onlyenv}<1,3-9>
+%		\visible<1->{\begin{block}{} Bestimmung der Basensequenz eines DNA-Strangs\end{block}}
+		\vspace{-0.1cm}
+		\visible<1->{\begin{block}{Sanger-Sequenzierung} Kettenabbruch-Synthese mit vier Probenansätzen denen jeweils eine der vier möglichen Nukleotide in modifizierter Form beigefügt wird\end{block}}
+		\vspace{-0.1cm}
+		\visible<4->{\begin{block}{NGS-Sequenzierung} verbesserte Sequenziertechnologien im Hochdurchsatzverfahren\end{block}}
+		\vspace{-0.1cm}
+		\visible<5->{\begin{block}{RAD-Sequenzierung}
+			\begin{itemize}
+				\item restriction site associated DNA sequencing 
+				\visible<6->{\item \textbf{Anwendung}: Populationsgenetik, Ökologie, Genotypisierung, Evolutionsforschung}
+				\visible<7->{\item Sequenzierung multipler kleiner DNA-Fragmente aus dem gesamten Genom, ohne vollständige genomische Abdeckung}
+				\visible<8->{\item gleichzeitige Analyse mehrerer Individuen in gepoolten Proben}
+				\visible<9->{\item benötigt kein Referenzgenom}
+			\end{itemize}
+		\end{block}}
+	\end{onlyenv}
 \end{frame}
-
 
 %%Folie 9
 \section{Biologischer Hintergrund}
 \subsection{RAD-Sequencing}
 \begin{frame}
-	\frametitle{RAD-Sequencing}
-	text
+	\frametitle{RAD-Verfahren}
+	\begin{onlyenv}<1-7>
+		\begin{block}{Restriktionsenzyme}
+			\begin{itemize}
+				\visible<1->{\item molekulare Scheren, welche die DNA an spezifischen Sequenzen schneiden}
+				\visible<2->{\item Enden können glatt oder versetzt sein}
+			\end{itemize}
+		\end{block}
+	\end{onlyenv}
+ 	\begin{onlyenv}<5-7>
+ 		\begin{block}{Methode}
+ 			\begin{enumerate}
+ 				\visible<5->{\item \textbf{DNA-Verdau} durch Restriktionsenzyme}
+ 				\visible<6->{\item Sequenz der Restriktionsstelle ist bekannt, dies ermöglicht die Bindung der \textbf{Adapter-} und \textbf{Barcodesequenzen}}
+ 				\visible<7->{\item sgdf}
+ 			\end{enumerate}
+ 		\end{block}
+ 	\end{onlyenv}
+% \vspace*{0.8cm}
+ 	\begin{overlayarea}{\textwidth}{\textheight}
+ 	\begin{onlyenv}<3-4,8> 		
+ 		\only<8>{\vspace*{-0.4cm}}
+ 		\begin{center}
+ 			\begin{figure} 
+ 				\only<3-4>{\vspace*{0.2cm}}
+ 				\includegraphics<3>[width = 0.14\textwidth] {pictures/plane.png}	
+ 				\hspace*{0cm}	
+ 				\includegraphics<4>[width = 0.148\textwidth] {pictures/sticky.png}
+ 				\only<3-4>{{\tiny \\Bildquelle: \citep{sanger}}}
+ 				\includegraphics<8>[width = 0.8\textwidth] {pictures/rad-sequencing_white.png}
+ 				\only<8>{\vspace*{0.1cm}}
+ 				\only<8>{{\tiny \\Bildquelle: \citep{radseq} (modifiziert)}}	
+ 	 			\end{figure}
+		 	\end{center}
+		\end{onlyenv}
+	\end{overlayarea}
+%	\begin{onlyenv}<8>
+%		\vspace*{-0.2cm}
+%		\begin{center}
+%			\begin{figure} 	
+% 				\includegraphics<8>[width = 0.6\textwidth] {pictures/rad-sequencing_white.png} 				
+% 			\end{figure}
+% 		\end{center}
+% 	\end{onlyenv}
 \end{frame}
 
-
-%%Folie 10
+%%Folie 11
 \section{Analyse von RAD-Seq-Daten}
 \subsection{Problemstellung und Lösungsansatz}
 \begin{frame}
 	\frametitle{Problemstellung und Lösungsansatz}
-	text
-\end{frame}
-
-
-%%Folie 11
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
 	text
 \end{frame}
 
@@ -802,7 +889,7 @@
 
 
 %Literaturverzeichnis
-\begin{frame}%[allowframebreaks]
+\begin{frame}[allowframebreaks]
 	\frametitle{Bildquellen}
 	\bibliographystyle{unsrtdin}
 	\bibliography{bibliography/RAD-Seq_slices}
