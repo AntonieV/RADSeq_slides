@@ -1,4 +1,5 @@
-\documentclass[11pt, xcolor=dvipsnames]{beamer}
+%\documentclass[handout, 11pt, xcolor=dvipsnames]{beamer} % ohne Animationen
+\documentclass[11pt, xcolor=dvipsnames]{beamer} % mit Animationen
 \usepackage[latin1]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
@@ -133,7 +134,7 @@
 			\item \textbf{Nukleotide}: das Zuckermolekül ist Ribose
 			\item \textbf{Basen}: Uracil (U) statt Thymin	
 			\item meist \textbf{einzelsträngig}	
-			\item viele Funktionen, dient unter anderem der \textbf{Informationsübertragung} bei der Proteinbiosyntese		
+			\item viele Funktionen, dient unter anderem der \textbf{Informationsübertragung} bei der Proteinbiosynthese		
 		\end{itemize}
 	\end{block}}
 \end{frame}
@@ -156,19 +157,13 @@
 		\end{itemize}
 		\vspace{0.5cm}
 	\end{block}
-%		\vspace {-0.1cm}
-%	\visible<2->{\begin{block}{Struktur der RNA}
-%		\begin{itemize}
-%			\item meist \textbf{einzelsträngig}, kurze doppelsträngige Abschnitte können vorkommen	
-%		\end{itemize}
-%	\end{block}}
 \end{frame}
 
 
 \section{Biologischer Hintergrund}
 \subsection{Proteinbiosyntese}
 \begin{frame}
-	\frametitle{Proteinbiosyntese}
+	\frametitle{Proteinbiosynthese}
 	\vspace{-0.5cm}
 	\begin{columns}[T]
 		\begin{column}{0.49\textwidth}
@@ -186,7 +181,6 @@
 					\includegraphics[width = 5 cm] {pictures/Aminoacids_table.png}	
 				\end{figure}
 			{\tiny Bildquelle: \cite{genetic_code}}
-			% https://commons.wikimedia.org/wiki/File:Aminoacids_table.svg#/media/File:Aminoacids_table.svg
 			\end{center}
 		\end{column}
 	\end{columns}
@@ -269,7 +263,6 @@
 			Natürlicher Vorgang zur Vervielfältigung der DNA bei der Zellteilung:
 			\begin{enumerate}
 				{\setlength{\itemindent}{1.5em}
-					%			\vspace{0.1cm}
 					\visible<1->{\item Entwindung der DNA (\textbf{Topoisomerasen})}
 					\visible<2->{\item Auftrennung des DNA-Doppelstrangs (\textbf{Helikase})}
 					\visible<3->{\item Synthese der RNA-Primer (\textbf{Primasen})}
@@ -470,7 +463,7 @@
 			\begin{itemize}
 				\item restriction site associated DNA sequencing 
 				\visible<6->{\item \textbf{Anwendung}: Populationsgenetik, Ökologie, Genotypisierung, Evolutionsforschung}
-				\visible<7->{\item Sequenzierung multipler kleiner DNA-Fragmente aus dem gesamten Genom, ohne vollständige genomische Abdeckung}
+				\visible<7->{\item Sequenzierung multipler kleiner DNA-Fragmente aus dem gesamten Genom}
 				\visible<8->{\item gleichzeitige Analyse mehrerer Individuen in gepoolten Proben}
 				\visible<9->{\item benötigt kein Referenzgenom}
 			\end{itemize}
@@ -483,7 +476,8 @@
 \subsection{RAD-Sequencing}
 \begin{frame}
 	\frametitle{RAD-Verfahren}
-	\begin{onlyenv}<1-7>
+	\begin{onlyenv}<1-8,10-11>
+		\vspace*{-0.2cm}
 		\begin{block}{Restriktionsenzyme}
 			\begin{itemize}
 				\visible<1->{\item molekulare Scheren, welche die DNA an spezifischen Sequenzen schneiden}
@@ -491,19 +485,29 @@
 			\end{itemize}
 		\end{block}
 	\end{onlyenv}
- 	\begin{onlyenv}<5-7>
+ 	\begin{onlyenv}<5-8,10-11>
+ 		\vspace*{-0.1cm}
  		\begin{block}{Methode}
  			\begin{enumerate}
  				\visible<5->{\item \textbf{DNA-Verdau} durch Restriktionsenzyme}
  				\visible<6->{\item Sequenz der Restriktionsstelle ist bekannt, dies ermöglicht die Bindung der \textbf{Adapter-} und \textbf{Barcodesequenzen}}
- 				\visible<7->{\item sgdf}
+ 				\visible<7->{\item \textbf{Größenselektion} der DNA-Fragmente}
+ 				\visible<8->{\item \textbf{Sequenzierung} der gepoolten Proben verschiedener Individuen}
  			\end{enumerate}
  		\end{block}
  	\end{onlyenv}
-% \vspace*{0.8cm}
+  	\begin{onlyenv}<10-11>
+  		\vspace*{-0.1cm}
+	 	\begin{block}{ddRADSeq (double digest RAD sequencing)}
+	 		\begin{itemize}
+	 			\visible<10->{\item Verwendung von zwei verschiedenen Restriktionsenzymen}
+	 			\visible<11->{\item bessere Steuerbarkeit und höhere Genauigkeit}
+	 		\end{itemize}	 		
+	 	\end{block}
+	 \end{onlyenv}
  	\begin{overlayarea}{\textwidth}{\textheight}
- 	\begin{onlyenv}<3-4,8> 		
- 		\only<8>{\vspace*{-0.4cm}}
+ 	\begin{onlyenv}<3-4,9> 		
+% 		\only<9>{\vspace*{-0.1cm}}
  		\begin{center}
  			\begin{figure} 
  				\only<3-4>{\vspace*{0.2cm}}
@@ -511,21 +515,29 @@
  				\hspace*{0cm}	
  				\includegraphics<4>[width = 0.148\textwidth] {pictures/sticky.png}
  				\only<3-4>{{\tiny \\Bildquelle: \citep{sanger}}}
- 				\includegraphics<8>[width = 0.8\textwidth] {pictures/rad-sequencing_white.png}
- 				\only<8>{\vspace*{0.1cm}}
- 				\only<8>{{\tiny \\Bildquelle: \citep{radseq} (modifiziert)}}	
+ 				\includegraphics<9>[width = 0.8\textwidth] {pictures/rad-sequencing_white.png}
+ 				\only<9>{\vspace*{-0.1cm}}
+ 				\only<9>{{\tiny \\Bildquelle: \citep{radseq} (modifiziert)}}	
  	 			\end{figure}
 		 	\end{center}
 		\end{onlyenv}
 	\end{overlayarea}
-%	\begin{onlyenv}<8>
-%		\vspace*{-0.2cm}
-%		\begin{center}
-%			\begin{figure} 	
-% 				\includegraphics<8>[width = 0.6\textwidth] {pictures/rad-sequencing_white.png} 				
-% 			\end{figure}
-% 		\end{center}
-% 	\end{onlyenv}
+\end{frame}
+
+%%Folie 10
+\section{Biologischer Hintergrund}
+\subsection{RAD-Sequencing}
+\begin{frame}
+	\frametitle{RADSeq-Verfahren}
+	\begin{itemize}
+		\visible<1->{\item durch die \textbf{Sequenzspezifität der Restriktionsenzyme} stammen die DNA-Fragmente bei den verschiedenen Individuen meistens vom gleichen genomischen Locus}	
+		\vspace*{0.15cm}	
+		\visible<2->{\item interindividueller Vergleich ist \textbf{ohne Referenzgenom} möglich}
+		\vspace*{0.15cm}	
+		\visible<3->{\item \textbf{gepoolte Proben}: Zeit- und Kostenersparnis, gleiche Versuchsbedingungen für die verschiedenen Individuen}
+		\vspace*{0.15cm}	
+		\visible<4->{\item die DNA-Fragmente stammen aus dem gesamten Genom, aber \textbf{keine vollständige genomische Abdeckung}}
+	\end{itemize}
 \end{frame}
 
 %%Folie 11

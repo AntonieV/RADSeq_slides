@@ -19,5 +19,7 @@
 \beamer@subsectionintoc {9}{1}{Sequenzierung}{42}{0}{9}
 \beamer@sectionintoc {10}{Biologischer Hintergrund}{51}{0}{10}
 \beamer@subsectionintoc {10}{1}{RAD-Sequencing}{51}{0}{10}
-\beamer@sectionintoc {11}{Analyse von RAD-Seq-Daten}{59}{0}{11}
-\beamer@subsectionintoc {11}{1}{Problemstellung und L\"osungsansatz}{59}{0}{11}
+\beamer@sectionintoc {11}{Biologischer Hintergrund}{62}{0}{11}
+\beamer@subsectionintoc {11}{1}{RAD-Sequencing}{62}{0}{11}
+\beamer@sectionintoc {12}{Analyse von RAD-Seq-Daten}{66}{0}{12}
+\beamer@subsectionintoc {12}{1}{Problemstellung und L\"osungsansatz}{66}{0}{12}
