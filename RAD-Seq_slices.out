@@ -22,82 +22,94 @@
 \BOOKMARK [3][]{Outline0.11.1.62}{RAD-Sequencing}{Outline0.11}% 22
 \BOOKMARK [2][]{Outline0.12}{Analyse von RAD-Seq-Daten}{}% 23
 \BOOKMARK [3][]{Outline0.12.1.66}{Problemstellung und L\366sungsansatz}{Outline0.12}% 24
-\BOOKMARK [2][]{Outline0.13}{}{}% 25
-\BOOKMARK [3][]{Outline0.13.1.67}{}{Outline0.13}% 26
-\BOOKMARK [2][]{Outline0.14}{}{}% 27
-\BOOKMARK [3][]{Outline0.14.1.68}{}{Outline0.14}% 28
-\BOOKMARK [2][]{Outline0.15}{}{}% 29
-\BOOKMARK [3][]{Outline0.15.1.69}{}{Outline0.15}% 30
-\BOOKMARK [2][]{Outline0.16}{}{}% 31
-\BOOKMARK [3][]{Outline0.16.1.70}{}{Outline0.16}% 32
-\BOOKMARK [2][]{Outline0.17}{}{}% 33
-\BOOKMARK [3][]{Outline0.17.1.71}{}{Outline0.17}% 34
-\BOOKMARK [2][]{Outline0.18}{}{}% 35
-\BOOKMARK [3][]{Outline0.18.1.72}{}{Outline0.18}% 36
-\BOOKMARK [2][]{Outline0.19}{}{}% 37
-\BOOKMARK [3][]{Outline0.19.1.73}{}{Outline0.19}% 38
-\BOOKMARK [2][]{Outline0.20}{}{}% 39
-\BOOKMARK [3][]{Outline0.20.1.74}{}{Outline0.20}% 40
-\BOOKMARK [2][]{Outline0.21}{}{}% 41
-\BOOKMARK [3][]{Outline0.21.1.75}{}{Outline0.21}% 42
-\BOOKMARK [2][]{Outline0.22}{}{}% 43
-\BOOKMARK [3][]{Outline0.22.1.76}{}{Outline0.22}% 44
-\BOOKMARK [2][]{Outline0.23}{}{}% 45
-\BOOKMARK [3][]{Outline0.23.1.77}{}{Outline0.23}% 46
-\BOOKMARK [2][]{Outline0.24}{}{}% 47
-\BOOKMARK [3][]{Outline0.24.1.78}{}{Outline0.24}% 48
-\BOOKMARK [2][]{Outline0.25}{}{}% 49
-\BOOKMARK [3][]{Outline0.25.1.79}{}{Outline0.25}% 50
-\BOOKMARK [2][]{Outline0.26}{}{}% 51
-\BOOKMARK [3][]{Outline0.26.1.80}{}{Outline0.26}% 52
-\BOOKMARK [2][]{Outline0.27}{}{}% 53
-\BOOKMARK [3][]{Outline0.27.1.81}{}{Outline0.27}% 54
-\BOOKMARK [2][]{Outline0.28}{}{}% 55
-\BOOKMARK [3][]{Outline0.28.1.82}{}{Outline0.28}% 56
-\BOOKMARK [2][]{Outline0.29}{}{}% 57
-\BOOKMARK [3][]{Outline0.29.1.83}{}{Outline0.29}% 58
-\BOOKMARK [2][]{Outline0.30}{}{}% 59
-\BOOKMARK [3][]{Outline0.30.1.84}{}{Outline0.30}% 60
+\BOOKMARK [2][]{Outline0.13}{Model und Implementierung}{}% 25
+\BOOKMARK [3][]{Outline0.13.1.69}{Model}{Outline0.13}% 26
+\BOOKMARK [2][]{Outline0.14}{Model und Implementierung}{}% 27
+\BOOKMARK [3][]{Outline0.14.1.75}{Preprocessing}{Outline0.14}% 28
+\BOOKMARK [2][]{Outline0.15}{Model und Implementierung}{}% 29
+\BOOKMARK [3][]{Outline0.15.1.81}{Graph und Zusammenhangskomponenten}{Outline0.15}% 30
+\BOOKMARK [2][]{Outline0.16}{Model und Implementierung}{}% 31
+\BOOKMARK [3][]{Outline0.16.1.85}{Kandidatenallele und Allele-Fractions}{Outline0.16}% 32
+\BOOKMARK [2][]{Outline0.17}{Model und Implementierung}{}% 33
+\BOOKMARK [3][]{Outline0.17.1.91}{Likelihood der Allele-Fractions}{Outline0.17}% 34
+\BOOKMARK [2][]{Outline0.18}{Model und Implementierung}{}% 35
+\BOOKMARK [3][]{Outline0.18.1.98}{Loci-Kombinationen}{Outline0.18}% 36
+\BOOKMARK [2][]{Outline0.19}{Model und Implementierung}{}% 37
+\BOOKMARK [3][]{Outline0.19.1.102}{Likelihood der Loci-Zuordnung}{Outline0.19}% 38
+\BOOKMARK [2][]{Outline0.20}{Model und Implementierung}{}% 39
+\BOOKMARK [3][]{Outline0.20.1.110}{Ausgabe als VCF-File}{Outline0.20}% 40
+\BOOKMARK [2][]{Outline0.21}{Model und Implementierung}{}% 41
+\BOOKMARK [3][]{Outline0.21.1.117}{}{Outline0.21}% 42
+\BOOKMARK [2][]{Outline0.22}{Model und Implementierung}{}% 43
+\BOOKMARK [3][]{Outline0.22.1.118}{}{Outline0.22}% 44
+\BOOKMARK [2][]{Outline0.23}{Model und Implementierung}{}% 45
+\BOOKMARK [3][]{Outline0.23.1.119}{}{Outline0.23}% 46
+\BOOKMARK [2][]{Outline0.24}{Model und Implementierung}{}% 47
+\BOOKMARK [3][]{Outline0.24.1.120}{}{Outline0.24}% 48
+\BOOKMARK [2][]{Outline0.25}{Model und Implementierung}{}% 49
+\BOOKMARK [3][]{Outline0.25.1.121}{}{Outline0.25}% 50
+\BOOKMARK [2][]{Outline0.26}{Model und Implementierung}{}% 51
+\BOOKMARK [3][]{Outline0.26.1.122}{}{Outline0.26}% 52
+\BOOKMARK [2][]{Outline0.27}{Model und Implementierung}{}% 53
+\BOOKMARK [3][]{Outline0.27.1.123}{}{Outline0.27}% 54
+\BOOKMARK [2][]{Outline0.28}{Model und Implementierung}{}% 55
+\BOOKMARK [3][]{Outline0.28.1.124}{}{Outline0.28}% 56
+\BOOKMARK [2][]{Outline0.29}{Model und Implementierung}{}% 57
+\BOOKMARK [3][]{Outline0.29.1.125}{}{Outline0.29}% 58
+\BOOKMARK [2][]{Outline0.30}{Model und Implementierung}{}% 59
+\BOOKMARK [3][]{Outline0.30.1.126}{}{Outline0.30}% 60
 \BOOKMARK [2][]{Outline0.31}{}{}% 61
-\BOOKMARK [3][]{Outline0.31.1.85}{}{Outline0.31}% 62
+\BOOKMARK [3][]{Outline0.31.1.127}{}{Outline0.31}% 62
 \BOOKMARK [2][]{Outline0.32}{}{}% 63
-\BOOKMARK [3][]{Outline0.32.1.86}{}{Outline0.32}% 64
+\BOOKMARK [3][]{Outline0.32.1.128}{}{Outline0.32}% 64
 \BOOKMARK [2][]{Outline0.33}{}{}% 65
-\BOOKMARK [3][]{Outline0.33.1.87}{}{Outline0.33}% 66
+\BOOKMARK [3][]{Outline0.33.1.129}{}{Outline0.33}% 66
 \BOOKMARK [2][]{Outline0.34}{}{}% 67
-\BOOKMARK [3][]{Outline0.34.1.88}{}{Outline0.34}% 68
+\BOOKMARK [3][]{Outline0.34.1.130}{}{Outline0.34}% 68
 \BOOKMARK [2][]{Outline0.35}{}{}% 69
-\BOOKMARK [3][]{Outline0.35.1.89}{}{Outline0.35}% 70
+\BOOKMARK [3][]{Outline0.35.1.131}{}{Outline0.35}% 70
 \BOOKMARK [2][]{Outline0.36}{}{}% 71
-\BOOKMARK [3][]{Outline0.36.1.90}{}{Outline0.36}% 72
+\BOOKMARK [3][]{Outline0.36.1.132}{}{Outline0.36}% 72
 \BOOKMARK [2][]{Outline0.37}{}{}% 73
-\BOOKMARK [3][]{Outline0.37.1.91}{}{Outline0.37}% 74
+\BOOKMARK [3][]{Outline0.37.1.133}{}{Outline0.37}% 74
 \BOOKMARK [2][]{Outline0.38}{}{}% 75
-\BOOKMARK [3][]{Outline0.38.1.92}{}{Outline0.38}% 76
+\BOOKMARK [3][]{Outline0.38.1.134}{}{Outline0.38}% 76
 \BOOKMARK [2][]{Outline0.39}{}{}% 77
-\BOOKMARK [3][]{Outline0.39.1.93}{}{Outline0.39}% 78
+\BOOKMARK [3][]{Outline0.39.1.135}{}{Outline0.39}% 78
 \BOOKMARK [2][]{Outline0.40}{}{}% 79
-\BOOKMARK [3][]{Outline0.40.1.94}{}{Outline0.40}% 80
+\BOOKMARK [3][]{Outline0.40.1.136}{}{Outline0.40}% 80
 \BOOKMARK [2][]{Outline0.41}{}{}% 81
-\BOOKMARK [3][]{Outline0.41.1.95}{}{Outline0.41}% 82
+\BOOKMARK [3][]{Outline0.41.1.137}{}{Outline0.41}% 82
 \BOOKMARK [2][]{Outline0.42}{}{}% 83
-\BOOKMARK [3][]{Outline0.42.1.96}{}{Outline0.42}% 84
+\BOOKMARK [3][]{Outline0.42.1.138}{}{Outline0.42}% 84
 \BOOKMARK [2][]{Outline0.43}{}{}% 85
-\BOOKMARK [3][]{Outline0.43.1.97}{}{Outline0.43}% 86
+\BOOKMARK [3][]{Outline0.43.1.139}{}{Outline0.43}% 86
 \BOOKMARK [2][]{Outline0.44}{}{}% 87
-\BOOKMARK [3][]{Outline0.44.1.98}{}{Outline0.44}% 88
+\BOOKMARK [3][]{Outline0.44.1.140}{}{Outline0.44}% 88
 \BOOKMARK [2][]{Outline0.45}{}{}% 89
-\BOOKMARK [3][]{Outline0.45.1.99}{}{Outline0.45}% 90
+\BOOKMARK [3][]{Outline0.45.1.141}{}{Outline0.45}% 90
 \BOOKMARK [2][]{Outline0.46}{}{}% 91
-\BOOKMARK [3][]{Outline0.46.1.100}{}{Outline0.46}% 92
+\BOOKMARK [3][]{Outline0.46.1.142}{}{Outline0.46}% 92
 \BOOKMARK [2][]{Outline0.47}{}{}% 93
-\BOOKMARK [3][]{Outline0.47.1.101}{}{Outline0.47}% 94
+\BOOKMARK [3][]{Outline0.47.1.143}{}{Outline0.47}% 94
 \BOOKMARK [2][]{Outline0.48}{}{}% 95
-\BOOKMARK [3][]{Outline0.48.1.102}{}{Outline0.48}% 96
+\BOOKMARK [3][]{Outline0.48.1.144}{}{Outline0.48}% 96
 \BOOKMARK [2][]{Outline0.49}{}{}% 97
-\BOOKMARK [3][]{Outline0.49.1.103}{}{Outline0.49}% 98
+\BOOKMARK [3][]{Outline0.49.1.145}{}{Outline0.49}% 98
 \BOOKMARK [2][]{Outline0.50}{}{}% 99
-\BOOKMARK [3][]{Outline0.50.1.104}{}{Outline0.50}% 100
+\BOOKMARK [3][]{Outline0.50.1.146}{}{Outline0.50}% 100
 \BOOKMARK [2][]{Outline0.51}{}{}% 101
-\BOOKMARK [3][]{Outline0.51.1.105}{}{Outline0.51}% 102
-\BOOKMARK [2][]{Outline0.52}{Literatur}{}% 103
+\BOOKMARK [3][]{Outline0.51.1.147}{}{Outline0.51}% 102
+\BOOKMARK [2][]{Outline0.52}{}{}% 103
+\BOOKMARK [3][]{Outline0.52.1.148}{}{Outline0.52}% 104
+\BOOKMARK [2][]{Outline0.53}{}{}% 105
+\BOOKMARK [3][]{Outline0.53.1.149}{}{Outline0.53}% 106
+\BOOKMARK [2][]{Outline0.54}{}{}% 107
+\BOOKMARK [3][]{Outline0.54.1.150}{}{Outline0.54}% 108
+\BOOKMARK [2][]{Outline0.55}{}{}% 109
+\BOOKMARK [3][]{Outline0.55.1.151}{}{Outline0.55}% 110
+\BOOKMARK [2][]{Outline0.56}{}{}% 111
+\BOOKMARK [3][]{Outline0.56.1.152}{}{Outline0.56}% 112
+\BOOKMARK [2][]{Outline0.57}{}{}% 113
+\BOOKMARK [3][]{Outline0.57.1.153}{}{Outline0.57}% 114
+\BOOKMARK [2][]{Outline0.58}{Literatur}{}% 115

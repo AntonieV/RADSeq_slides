@@ -9,7 +9,13 @@
 \usepackage{graphicx}
 \usetheme{Madrid}
 \usepackage{textpos}
+% Abbildungen
 \usepackage{tikz}
+\usepackage{braids}
+%\usepackage[utf8]{inputenc}
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\usepackage{listings}
 \usetikzlibrary{arrows,shapes,positioning,shadows,trees}
 \usepackage[section,boxed]{algorithm}
 \usepackage[boxed]{algorithm}
@@ -70,6 +76,72 @@
 	\vskip0pt%
 }
 \makeatother
+
+
+
+%+++++++++++++++++++++++++++++
+%+ Tikz properties for pics	 +
+%+++++++++++++++++++++++++++++
+%https://texample.net/tikz/examples/labs-schema/
+\usetikzlibrary{shadows,arrows}
+% Layer des Diagramms
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+% Eigenschaften der Blöcke 
+\tikzstyle{blocktxt}=[draw, text width=6.0em, text centered,
+minimum height=1.5em,drop shadow]
+\tikzstyle{blockitem} = [blocktxt, fill=green!40, text width=8em, minimum width=10em,
+minimum height=3em, rounded corners, drop shadow]
+\tikzstyle{ioitem} = [blocktxt, fill=white, text width=8em, minimum width=10em,
+minimum height=3em, rounded corners, drop shadow]
+\tikzstyle{sectiontxt} = [above, text = black, text width=6em, text centered]
+\tikzstyle{dashedline} = [draw, thick, color=black, -latex', dashed]
+\tikzstyle{line} = [draw, thick, color=red, -latex']
+\tikzstyle{ur}=[draw, text centered, minimum height=0.01em]
+
+% Distanzen
+\newcommand{\blockdist}{1.3}
+\newcommand{\edgedist}{1.5}
+
+\newcommand{\blockitem}[2]{node (p#1) [blockitem]
+	{\textbf{\textit{#2}}}}
+
+\newcommand{\ioitem}[2]{node (p#1) [ioitem]
+	{\textbf{\textit{#2}}}}
+
+% Eigenschaften der DNA-Abbildung
+\newcommand{\bond}[3]{
+	\draw[very thick, #1] (#3, 0) -- (#3, 0.35);
+	\draw[very thick, densely dotted] (#3, 0.35) -- (#3, 0.65);
+	\draw[very thick, #2] (#3, 0.65) -- (#3, 1);
+}
+% Hintergrundfeld
+\newcommand{\background}[5]{%
+	\begin{pgfonlayer}{background}
+		% Hintergrundfeld obere linke Ecke
+		\path (#1.west |- #2.north)+(-3.3,0.3) node (a1) {};
+		% Hintergrundfeld untere rechte Ecke
+		\path (#3.east |- #4.south)+(+0.5,-0.25) node (a2) {};
+		% Hintergrundeigenschaften
+		\path[fill=blue!20,rounded corners, draw=black]
+		(a1) rectangle (a2);
+		\path (a1.east |- a1.south) +(-3.0,-1.0) node (u1)[sectiontxt]
+		{\textbf{\textit{#5}}};
+\end{pgfonlayer}}
+
+\newcommand{\out}[3]{%
+	\path [dashedline] (#1.east) -- node [above]
+	{\scriptsize Output: #2} (#3);}
+
+
+\tikzstyle{funtool}=[blue ,line  width =1pt]
+\tikzstyle{ur}=[draw, text centered, color=blue, minimum height=0.01em]
+\definecolor{light-gray}{gray}{0.93}
+\newcommand{\fun}[3]{%
+	\path [dashedline] (#1.east) -- node [above]
+	{\scriptsize #2} (#3);}
 
 \mode<presentation>
 
@@ -544,31 +616,478 @@
 \section{Analyse von RAD-Seq-Daten}
 \subsection{Problemstellung und Lösungsansatz}
 \begin{frame}
-	\frametitle{Problemstellung und Lösungsansatz}
-	text
+	\frametitle{Problemstellung}
+	\visible<1->{
+	\vspace*{-0.1cm}
+	\textbf{Problem:}
+	\begin{itemize}
+		\item Reads ohne Kenntnis eines Referenzgenoms möglichen Loci zuordnen
+		\item die Loci und ihre Sequenz sind unbekannt
+	\end{itemize}}
+\visible<2->{
+	\textbf{Gegeben:}
+	\begin{itemize}
+		\item Menge von Reads: $ D = (s_{1}, \dots , s_{m}) \in \{A,\,C,\,G,\,T,\}^{k^m}$
+		\item Qualität der Sequenzierung: $ Q = (q_{1}, \dots , q_{m}) \in {[0,\,1]}^{k^m}$
+		\item Sequenzierfehlerraten: $\epsilon=\{\epsilon_{ins},\, \epsilon_{del}\}$
+		\item Heterozygotiewahrscheinlichkeiten: $\eta=\{\eta_{sub},\, \eta_{ins},\, \eta_{del}\}$ 		
+		\item Ploidie: $\phi$
+	\end{itemize}}
+\visible<3->{
+	\textbf{Ziel:}\\
+	\begin{itemize}
+		\item Zuordnung der Reads zu den Loci unter Berücksichtigung von $\epsilon$ und $\eta$
+		\item Ausgabe der Menge der ermittelten Loci mit den Sequenzen der beteiligten Allele
+	\end{itemize}
+	\vspace*{0.1cm}
+	$\Rightarrow$ die Loci können anschließend für Diversitätsanalysen genutzt werden}	
 \end{frame}
-
 
 %%Folie 12
-\section{}
-\subsection{}
+\section{Model und Implementierung}
+\subsection{Model}
 \begin{frame}
-	\frametitle{}
-	text
+	\frametitle{Model}
+	\begin{minipage}[t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=gray!60 for 5 items, border color=black}
+			\only<1>{\smartdiagramset{set color
+					list={red!60,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2>{\smartdiagramset{set color
+					list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+			\only<3>{\smartdiagramset{set color
+					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+			\only<4>{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+			\only<5>{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,red!60}}}
+			\only<6>{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\smartdiagramanimated[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
 \end{frame}
 
-
-%%Folie 13
-\section{}
-\subsection{}
+%%Folie ###1
+%%Preprocessing
+\section{Model und Implementierung}
+\subsection{Preprocessing}
 \begin{frame}
 	\frametitle{}
-	text
+		\begin{minipage}[t][3cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items}
+				\only<1>{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+				\only<2->{\smartdiagramset{set color
+						list={red!60,blue!20,blue!20,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+		\end{minipage}
+
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\only<3-6>{
+			\begin{figure}
+				\begin{center}
+					\begin{tikzpicture}[scale=0.5,transform shape]
+						% https://github.com/PetarV-/TikZ/tree/master/DNA
+						\path \ioitem {1}{Reads\\
+							\begin{tikzpicture}[scale=0.6,transform shape]
+							\bond{red}{blue}{0.1}
+							\bond{red}{blue}{0.25}
+							\bond{red}{blue}{0.4}
+							\bond{blue}{red}{1.1}
+							\bond{blue}{red}{1.25}
+							\bond{blue}{red}{1.4}
+							\bond{red}{blue}{2.1}
+							\bond{red}{blue}{2.25}
+							\bond{red}{blue}{2.4}
+							\bond{blue}{red}{3.1}	
+							\bond{blue}{red}{3.25}
+							\bond{blue}{red}{3.4}
+							\bond{red}{blue}{4.1}
+							\bond{red}{blue}{4.25}
+							\bond{red}{blue}{4.4}
+							\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
+					\end{tikzpicture}
+					};
+					\path (p1.south)+(0.0,-2.0) \blockitem{2}{1. Adapter trimming};
+					\path (p2.south)+(2.5,-1.2) \blockitem{3}{2. Quality \\control};
+					\path (p3.south)+(-2.5,-1.2) \blockitem{5}{3. Sequence alignment};
+					\visible<4-6>{\path (p3.east)+(+4.4, 1.801) node (ur1)[ur] {\color{black}Cutadapt};}
+					\visible<5-6>{\path (p1.east)+(+7.5,-4.42) node (ur2)[ur] {\color{black}FastQ, MultiQC};}
+					\visible<6>{\path (p2.east)+(+7.0,-3.59) node (ur3)[ur] {\color{black}Minimap2};}
+																
+					% Pfeile
+					\path [line] (p1.south) -- node [above, midway] {} (p2);
+					\path [line] (p2.south) -- node [above] {} (p3) ;
+					\path [line] (p3.south) -- node [above] {} (p5) ;
+											
+					\visible<4-6>{\draw [funtool] (p2) -- (ur1);}
+					\visible<5-6>{\draw [funtool] (p3) -- (ur2);}
+					\visible<6>{\draw [funtool] (p5) -- (ur3);}							
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+			}
+		\end{minipage}
 \end{frame}
 
+%%Folie ###2
+%%Konstruktion des Graphen
+\section{Model und Implementierung}
+\subsection{Graph und Zusammenhangskomponenten}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3->{
+			\vspace*{-1.0cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.64,transform shape]
+					% https://github.com/PetarV-/TikZ/tree/master/DNA
+					\path +(3.695,-5.1) \ioitem {1}{Reads\\
+						\begin{tikzpicture}[scale=0.6,transform shape]
+						\bond{red}{blue}{0.1}
+						\bond{red}{blue}{0.25}
+						\bond{red}{blue}{0.4}
+						\bond{blue}{red}{1.1}
+						\bond{blue}{red}{1.25}
+						\bond{blue}{red}{1.4}
+						\bond{red}{blue}{2.1}
+						\bond{red}{blue}{2.25}
+						\bond{red}{blue}{2.4}
+						\bond{blue}{red}{3.1}	
+						\bond{blue}{red}{3.25}
+						\bond{blue}{red}{3.4}
+						\bond{red}{blue}{4.1}
+						\bond{red}{blue}{4.25}
+						\bond{red}{blue}{4.4}
+						\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
+						\end{tikzpicture}
+					};
+					\path (p3.south)+(-3.0,-1.2) \ioitem{5}{3. Sequence alignment};
+					\path (p3.west)+(3.25,-3.66) \blockitem{4}{4. Build graph};
+					\path (p4.south)+(0.0,-1.5) \blockitem{6}{5. Connected components};
+					
+					\visible<4>{\path (p4.east)+(+3.5,0) node (ur2)[ur] {\color{black}graph-tool};}
+					\only<4>{\path (p6.east)+(+3.5,0) node (ur3)[ur] {\color{black}graph-tool};}
+					\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};
+					
+					% Pfeile		
+					\path [line] (p1.south) -- node [above, midway] {} (p4);	
+					\path [line] (p5.south) -- +(0.0,-1.415) -- node [above, midway] {} (p4.west);		
+					\path [line] (p4.south) --node [above] {} (p6);
+					\path [line] (p6.south) -- node [above, midway] {} (p8);
+					
+					\visible<4>{\draw [funtool] (p4) -- (ur2);}
+					\visible<4>{\draw [funtool] (p6) -- (ur3);}
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+	}
+\end{minipage}
+\end{frame}
+
+%%Folie ###3
+%%Kandidatenallele und Allele-Fractions
+\section{Model und Implementierung}
+\subsection{Kandidatenallele und Allele-Fractions}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3->{
+			\vspace*{-1.5cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.45,transform shape]	
+					\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
+					\path (p6.south)+(-5.5,-1.4) \blockitem{7}{7. Allele \\combinations};
+					\path (p6.south)+(0.0,-1.4) \blockitem{8}{6. Candidate \\alleles};			
+					\path (p7.south)+(0.0,-3.75) \blockitem{9}{8. Allele fractions};
+					\path (p8.south)+(0.0,-1.5)	\ioitem{10}{9. Likelihood of alleles given one read};
+					\path (p10.south)+(0.0,-1.5) \ioitem{12}{10. Likelihood of allele fractions given one read};
+					\path (p12.south)+(0.0,-1.5) \ioitem{14}{11. Likelihood of allele fractions given all reads};
+					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};			
+					% Pfeile
+					\path [line] (p6.south) -- node [above] {} (p8);
+					\path [line] (p8.south) -- node [above] {} (p10) ;	
+					\path [line] (p10.south) -- node [above] {} (p12) ;	
+					\path [line] (p12.south) -- node [above] {} (p14) ;		
+					\path [line] (p14.south) -- node [above, midway] {} (p15);
+					\path [line] (p15.south) -- node [above] {} (p16) ;   
+					
+					\visible<4->{\path (p8.east)+(+4.4, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_alleles()|};}
+					\visible<5->{\path (p7.east)+(-1.92,2.2) node (ur2)[ur] {\color{black}\lstinline|get_max_parsimony_n_alleles()|};}
+					\visible<6->{\path (p9.east)+(-8.2,0.0) node (ur3)[ur] {\color{black}\lstinline|get_candidate_vafs()|};}
+					
+					\path [dashedline] (p8.west) -- node [left] {} (p7);
+					\path [dashedline] (p7.south) -- node [above] {} (p9) ;
+					\path [dashedline] (p9.east) -- node [left] {} (p12.west);
+					
+					\visible<4->{\draw [funtool] (p8.east) -- (ur1);}
+					\visible<5->{\draw [funtool] (p7.north) -- (ur2);}
+					\visible<6->{\draw [funtool] (p9.west) -- (ur3);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie ###4
+%%Likelihood der Allele-Fractions
+\section{Model und Implementierung}
+\subsection{Likelihood der Allele-Fractions}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}
+		\vspace*{-1.5cm}	
+		\only<3->{
+		\begin{figure}[h]
+			\begin{center}
+				\begin{tikzpicture}[scale=0.45,transform shape]	
+				\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
+				\path (p6.south)+(-5.5,-1.4) \ioitem{7}{7. Allele \\combinations};
+				\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};			
+				\path (p7.south)+(0.0,-3.75) \ioitem{9}{8. Allele fractions};
+				\path (p8.south)+(0.0,-1.5)	\blockitem{10}{9. Likelihood of alleles given one read};
+				\path (p10.south)+(0.0,-1.5) \blockitem{12}{10. Likelihood of allele fractions given one read};
+				\path (p12.south)+(0.0,-1.5) \blockitem{14}{11. Likelihood of allele fractions given all reads};
+				\path (p14.south)+(0.0,-1.5) \blockitem{15}{12. Maximum likelihood allele fractions};
+				\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
+				\visible<4->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
+				\visible<5->{\path (ur1.east)+(-2.57,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
+				\visible<6->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
+				\visible<7->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
+				
+				% Pfeile
+				\path [line] (p6.south) -- node [above] {} (p8);
+				\path [line] (p8.south) -- node [above] {} (p10) ;	
+				\path [line] (p10.south) -- node [above] {} (p12) ;	
+				\path [line] (p12.south) -- node [above] {} (p14) ;		
+				\path [line] (p14.south) -- node [above, midway] {} (p15);
+				\path [line] (p15.south) -- node [above] {} (p16) ;   
+				
+				\path [dashedline] (p8.west) -- node [left] {} (p7);
+				\path [dashedline] (p7.south) -- node [above] {} (p9) ;
+				\path [dashedline] (p9.east) -- node [left] {} (p12.west);
+				
+				\visible<4->{\draw [funtool] (p10.east) -- (ur1);}
+				\visible<5->{\draw [dashedline] (ur2.south) -- (ur1.north);}
+				\visible<6->{\draw [funtool] (p12.east) -- (ur3);}
+				\visible<7->{\draw [funtool] (p14.east) -- (ur4);}
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie ###5
+%%Loci-Kombinationen
+\section{Model und Implementierung}
+\subsection{Loci-Kombinationen}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3->{
+		\vspace*{-2.0cm}
+		\begin{figure}[h]
+			\begin{center}
+				\begin{tikzpicture}[scale=0.50,transform shape]
+					\path (p9.south)+(0.0,-6.5) \ioitem{11}{14. Indicator constraint};
+					\path (p11.south)+(0.0,-1.5) \blockitem{13}{13. Loci \\combinations};
+					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
+					\path (p16.south)+(0.0,-1.8) \ioitem{17}{16. Likelihood of loci given alleles and fractions}; 
+					\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
+					\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+					\visible<4->{\path (p13.west)+(-4.5, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_loci()|};}
+					% Pfeile
+					\path [line] (p15.south) -- node [above] {} (p16) ;     
+					\path [line] (p16.south) -- node [above] {} (p17) ;
+					\path [line] (p17.south) -- node [above] {} (p18) ;
+					\path [line] (p18.south) -- node [above] {} (p19) ;		
+					
+					\path [dashedline] (p11.east) -- node [left] {} (p16.west);
+					\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
+					
+					\visible<4->{\draw [funtool] (p13.west) -- (ur1.east);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie ###6
+%%Likelihood der Loci-Zuordnung
+\section{Model und Implementierung}
+\subsection{Likelihood der Loci-Zuordnung}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3->{
+		\vspace*{-2.0cm}
+		\begin{figure}[h]
+			\begin{center}
+				\begin{tikzpicture}[scale=0.50,transform shape]
+				\path (p9.south)+(0.0,-6.5) \blockitem{11}{14. Indicator constraint};
+				\path (p11.south)+(0.0,-1.5) \ioitem{13}{13. Loci \\combinations};
+				\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+				\path (p15.south)+(0.0,-2.0) \blockitem{16}{15. Likelihood \\of an allele given another allele};
+				\path (p16.south)+(0.0,-1.8) \blockitem{17}{16. Likelihood of loci given alleles and fractions}; 
+				\path (p17.south)+(0.0,-1.3) \blockitem{18}{17. Maximum likelihood loci};
+				\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+				
+				% Pfeile
+				\path [line] (p15.south) -- node [above] {} (p16) ;     
+				\path [line] (p16.south) -- node [above] {} (p17) ;
+				\path [line] (p17.south) -- node [above] {} (p18) ;
+				\path [line] (p18.south) -- node [above] {} (p19) ;		
+				
+				\path [dashedline] (p11.east) -- node [left] {} (p16.west);
+				\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
+				
+				\visible<4->{\path (p11.north)+(0.0, 2.0) node (ur1)[ur] {\color{black}\lstinline|indicator_constraint()|};}
+				\visible<5->{\path (p11.north)+(-0.0, 3.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
+				\visible<6->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
+				\visible<7->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
+				\visible<8->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
+				
+				\visible<5->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
+				\visible<7->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
+				
+				% Pfeile%
+				\visible<4->{\draw [funtool] (p11.north) -- (ur1.south);}		
+				\visible<6->{\draw [funtool] (p16.east) -- (ur3.west);}	
+				\visible<8->{\draw [funtool] (p17.east) -- (ur5.west);}
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie ###7
+%%Ausgabe als VCF-File
+\section{Model und Implementierung}
+\subsection{Ausgabe als VCF-File}
+\begin{frame}
+	\frametitle{}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,red!60}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3->{
+		\vspace*{-0.5cm}
+		\begin{figure}[h]
+			\begin{center}
+				\begin{tikzpicture}[scale=0.64,transform shape]
+				\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
+				\path (p18.south)+(0.0,-1.7) \blockitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+				\visible<4->{\path (p19.west)+(-4.1, 1.0) node (ur1)[ur] {\color{black}\lstinline|get_sorted_loci_alleles()|};}
+				\visible<5->{\path (p19.west)+(-4.5, 0.0) node (ur2)[ur] {\color{black}\lstinline|get_alleles_matched_to_loci()|};}
+				\visible<6->{\path (p19.west)+(-3.21, -1.0) node (ur3)[ur] {\color{black}\lstinline|get_gt_indices()|};}
+				\visible<7->{\path (p19.west)+(-3.03, -2.0) node (ur4)[ur] {\color{black}\lstinline|get_genotype()|};}
+				
+				% Pfeile
+				\path [line] (p18.south) -- node [above] {} (p19) ;		
+				
+				\visible<4->{\draw [funtool] (p19.west) -- (ur1.east);}
+				\visible<5->{\draw [funtool] (p19.west) -- (ur2.east);}
+				\visible<6->{\draw [funtool] (p19.west) -- (ur3.east);}
+				\visible<7->{\draw [funtool] (p19.west) -- (ur4.east);}
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+		}
+	\end{minipage}
+\end{frame}
 
 %%Folie 14
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -577,7 +1096,7 @@
 
 
 %%Folie 15
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -586,7 +1105,7 @@
 
 
 %%Folie 16
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -595,7 +1114,7 @@
 
 
 %%Folie 17
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -604,7 +1123,7 @@
 
 
 %%Folie 18
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -613,7 +1132,7 @@
 
 
 %%Folie 19
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -622,7 +1141,7 @@
 
 
 %%Folie 20
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -631,7 +1150,7 @@
 
 
 %%Folie 21
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -640,7 +1159,7 @@
 
 
 %%Folie 22
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -649,7 +1168,7 @@
 
 
 %%Folie 23
-\section{}
+\section{Model und Implementierung}
 \subsection{}
 \begin{frame}
 	\frametitle{}
