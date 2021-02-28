@@ -50,7 +50,15 @@
 \setbeamercolor{palette tertiary}{fg=black,bg=LimeGreen}
 \makeatother
 
-
+\newenvironment<>{varblock}[2][.9\textwidth]{%
+	\setlength{\textwidth}{#1}
+	\begin{actionenv}#3%
+		\def\insertblocktitle{#2}%
+		\par%
+		\usebeamertemplate{block begin}}
+	{\par%
+		\usebeamertemplate{block end}%
+	\end{actionenv}}
 
 %Beschriftung der Fußleiste der Folien anpassen - Section und Subsectiontitel müssen vor jeder Folie (vor \begin{frame}) eingefügt werden
 \makeatletter
@@ -663,11 +671,452 @@ minimum height=3em, rounded corners, drop shadow]
 					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
 			\only<5>{\smartdiagramset{set color
 					list={blue!20,blue!20,blue!20,blue!20,red!60}}}
-			\only<6>{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
 			\smartdiagramanimated[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 		}
 	\end{minipage}
+\end{frame}
+
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+	\begin{minipage}[t][2cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=gray!60 for 5 items, border color=black}
+			\only<1>{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+			\only<2->{\smartdiagramset{set color
+					list={red!60,blue!20,blue!20,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}}
+	\only<1->{
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<3>{
+		\begin{itemize}
+			\item Statistiken zur Qualität der Reads
+			\item Individuen werden entsprechend ihres Barcodes separiert
+			\item Entfernen der Barcode- und Adaptersequenzen
+			\item Erzeugen eines Sequenzalignments
+		\end{itemize}
+		}
+	\end{minipage}}
+\end{frame}	
+	
+	
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{		
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\only<2>{
+				\begin{itemize}
+					\item das Problem wird als gerichteter Graph $G=(V, \, E)$ betrachtet
+					\item die Knoten werden durch die Reads repräsentiert
+					\item die Kanten basieren auf dem Sequenzalignment
+					\item das Sequenzalignment wird als approximiertes pairHMM betrachtet
+				\end{itemize}
+			}
+	\end{minipage}}
+\end{frame}		
+	
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{}
+\begin{frame}
+	\frametitle{pairHMM vs. Minimap}
+	tabelle
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{}
+\begin{frame}
+	\frametitle{Likelihoodberechnung beim approximierten pairHMM}
+	Tabelle
+\end{frame}
+
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\only<1->{
+				\begin{itemize}
+					\item das Problem wird als gerichteter Graph $G=(V, \, E)$ betrachtet
+					\item die Knoten werden durch die Reads repräsentiert
+					\item die Kanten basieren auf dem Sequenzalignment
+					\item das Sequenzalignment wird als approximiertes pairHMM betrachtet
+					\visible<2->{\item Kanten entstehen nur zwischen Knoten deren Readsequenzen einander ähneln
+					\item Partitionierung des Graphen in mehrere Zusammenhangskomponenten $\Rightarrow$ das Gesamtproblem wird in mehrere Teilprobleme aufgeteilt}
+				\end{itemize}
+			}
+	\end{minipage}}
+\end{frame}	
+
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+	\begin{minipage}[t][10cm][t]{\textwidth}			
+		\only<2-3>{
+		\begin{itemize}
+			\item Identifizierung der Allele, von denen die übrigen Reads der Zusammenhangskomponenten am wahrscheinlichsten durch Sequenzierfehler entstanden sind
+			\visible<3>{\item Kandidatenallele und Anzahl der tatsächlich zu erwartenden Allele $n_{alleles}$ bestimmen:
+			\begin{equation*}
+					n_{alleles} =
+					\left\{
+					\begin{array}{ll}
+					\phi, & \phi \geq n_{cand} \\
+					n_{cand} + \phi - d, & \phi < n_{cand} \wedge d \neq 0\\
+					n_{cand}, & \phi < n_{cand} \wedge d = 0
+					\end{array}
+					\right.
+			\end{equation*}
+			\hspace*{8.3cm}{\tiny (es gilt $d=n_{cand} \mod \phi$)}
+			}
+		\end{itemize}
+		}
+		\only<4-7>{
+			$\Rightarrow$ aus den Kandidatenallelen \textbf{Kombinationen mit Wiederholung} der Länge $n_{alleles}$ gebildet:
+			\only<5->{	
+				\begin{itemize}
+					\item[] \color{blue}$ ploidy = 2, n_{cand} = 2, n_{alleles} = 2$: \\
+					\item[] \color{black}{[(0, 0), (0, 1), (1, 1)]}\\
+				\end{itemize}													
+			}
+			\only<6->{
+			\vspace*{0.5cm}
+			$\Rightarrow$ aus den Kombinationen werden die Häufigkeitsverteilungen der Kandidatenallele (\textbf{Allele-Fractions}) bestimmt:}
+			\only<7>{	
+				\begin{itemize}
+					\item[] \color{blue}$ ploidy = 2, n_{cand} = 2, n_{alleles} = 2$: \\
+					\item[] \color{black}{[1.0, 0.0]}, {[0.5, 0.5]}, {[0.0, 1.0]} \\
+				\end{itemize}
+			}}				
+		
+		\only<8-9>{				
+			\vspace*{-0.1cm}
+			\textbf{Allelkombinationen:}	
+				\begin{itemize}
+					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
+					\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}
+				\end{itemize}	
+			\only<9>{
+			\vspace*{0.3cm}
+			\textbf{Allele-Fractions:}	
+				\begin{itemize}
+					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
+					\item[] \color{black}{[1.0, 0.0, 0.0]}, {[0.75, 0.25, 0.0]}, {[0.75, 0.0, 0.25]}, {[0.5, 0.5, 0.0]}, {[0.5, 0.25, 0.25]}, {[0.5, 0.0, 0.5]}, {[0.25, 0.75, 0.0]}, {[0.25, 0.5, 0.25]}, {[0.25, 0.25, 0.5]}, {[0.25, 0.0, 0.75]}, {[0.0, 1.0, 0.0]}, {[0.0, 0.75, 0.25]}, {[0.0, 0.5, 0.5]}, {[0.0, 0.25, 0.75]}, {[0.0, 0.0, 1.0]}
+				\end{itemize}
+		}}
+		\only<10->{
+		\setbeamercolor{block title}{bg=teal!60, fg=white}
+		\setbeamercolor{block body}{bg=teal!25, fg=black}
+		}
+		\only<10-11>{
+			Für \textbf{jeden Read} mit der Sequenz $s_{r}$ wird die Wahrscheinlichkeit errechnet, dass er aus einem bestimmten Allel $a_{i}$ allein durch Sequenzierfehler $\epsilon$ hervorgegangen ist:
+			\only<11>{
+			\begin{center}
+				\begin{minipage}{10cm}
+					\begin{varblock}{Allel-Likelihood gegeben ein Read}
+						\centering
+						$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+					\end{varblock}	
+				\end{minipage}
+			\end{center}}
+			}
+		\only<12-13>{
+			Berechnung der Wahrscheinlichkeit, einen bestimmten Read $s_{r}$ anhand einer gegebenen \textbf{Allele-Fraction} $\Theta_{i} = (\theta_{1},\dots,\theta_{n}) \in [0,1]^{n}$ zu beobachten:
+			\only<13>{
+			\begin{center}
+				\begin{minipage}{11cm}
+					\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+						\centering
+						$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+					\end{varblock}						
+				\end{minipage}
+			\end{center}
+			\hspace*{9.7cm}{\tiny (es gilt $n=n_{cand}$)}
+			}
+		}		
+		\only<14-17>{		
+			Bestimmung der resultierende Likelihood einer Allele-Fraction in Zusammenschau mit \textbf{allen Reads} $D = (s_{1}, \dots, s_{m}) \in \{A,C, G, T\}^{k^m}$:
+			\only<15-17>{
+				\begin{center}
+					\begin{minipage}{12cm}
+						\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+							\centering
+							$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+						\end{varblock}
+					\end{minipage}
+				\end{center}
+			\only<16-17>{$\Rightarrow$ $L$ ist eine mögliche Loci-Verteilung, die durch die gegebene Allele-\\\hspace*{0.5cm}Fraction abgebildet wird\\}
+			\only<17>{$\Rightarrow$ die Unsicherheit bei der Zuordnung der Reads wird durch die \\\hspace*{0.5cm}relativen Häufigkeiten in der Allele-Fraction abgebildet und an die\\\hspace*{0.5cm}spätere Loci-Zuordnung  weitergereicht\\}			
+			}
+		}
+		\only<18>{
+			\vspace*{-0.5cm}
+			\begin{center}
+				\begin{minipage}{10cm}
+					\begin{varblock}{Allel-Likelihood gegeben ein Read}
+						\centering
+						$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+					\end{varblock}	
+				\end{minipage}
+			\end{center}
+			
+			\begin{center}
+				\begin{minipage}{11cm}
+					\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+						\centering
+						$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+					\end{varblock}						
+				\end{minipage}
+			\end{center}
+			
+			\begin{center}
+				\begin{minipage}{12cm}
+					\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+						\centering
+						$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D= s_{1}, \dots, s_{m}) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+					\end{varblock}
+				\end{minipage}
+			\end{center}
+		$\Rightarrow$ für die Allele-Fraction mit maximaler Likelihood erfolgt die \\\hspace*{0.5cm}Loci-Zuordnung
+		}
+	\end{minipage}}
+\end{frame}		
+
+%%Folie 12###################
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+\only<1->{
+	\begin{minipage}[t][10cm][t]{\textwidth}			
+		\only<2-4>{
+			\begin{itemize}
+				\item Die Allel-Fraction mit maximaler Likelihood soll möglichen genomischen Loci zugeordnet werden
+				\visible<3-4>{\item in Abhängigkeit von Ploidie und Anzahl der Kandidatenallele können auch mehrere Loci in einer Zusammenhangskomponente vorkommen
+				\visible<4>{\item für alle Allelkombinationen müssen die möglichen Loci-Kombinationen der in ihnen enthaltenen Kandidatenallele gebildet werden}}
+			\end{itemize}
+		}
+
+		\only<5-10>{
+			$\Rightarrow$ Beispiel: \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4 $: \\
+			\only<6>{		
+				\hspace*{0.5cm}\color{black}\textbf{Kombinationen der Allele}:
+				\begin{itemize}
+					\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}\\
+				\end{itemize}												
+			}
+			\only<7>{
+				\hspace*{0.5cm}\color{black}\textbf{Permutationen der Allele}:
+					\begin{itemize}
+						\item[] \color{black}(1, 2, 1, 1), (2, 1, 0, 0), (2, 1, 1, 1), (0, 1, 2, 1), (0, 1, 1, 2), (0, 1, 0, 0), (2, 2, 1, 0), (0, 2, 2, 1), (2, 2, 0, 1), (1, 0, 2, 2), (0, 2, 0, 1), (2, 0, 0, 1), (1, 0, 1, 0), (0, 2, 1, 2), (0, 0, 2, 0), (2, 2, 2, 1), (1, 1, 0, 1), (2, 0, 1, 1), (2, 0, 2, 0), (0, 0, 2, 2), (1, 1, 2, 0), (1, 2, 1, 0), (2, 0, 2, 2), (2, 1, 1, 0), (2, 1, 0, 2), (1, 2, 0, 1), (0, 1, 2, 0), (1, 2, 1, 2), (1, 2, 2, 1), (0, 1, 1, 1), (1, 1, 1, 0), (0, 0, 0, 0), (2, 1, 1, 2), (2, 1, 2, 1), (1, 0, 0, 1), (0, 1, 0, 2), (2, 2, 1, 2), (0, 2, 2, 0), (1, 0, 2, 1), (2, 0, 0, 0), (0, 2, 1, 1), (1, 1, 1, 2), (0, 0, 0, 2), (0, 0, 1, 1), (1, 0, 1, 2), (2, 0, 0, 2), (0, 0, 2, 1), (1, 1, 2, 2), (2, 1, 0, 1), (1, 2, 0, 0), (0, 1, 2, 2), (1, 2, 2, 0), (0, 1, 1, 0), (2, 2, 0, 0), (0, 2, 0, 0), (2, 1, 2, 0),...\\	
+					\end{itemize}	}
+			\only<8>{
+				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+					\begin{itemize}
+						\item[] \color{black}
+						((0, 0), (0, 2)), ((1, 1), (1, 1)), ((0, 2), (0, 2)), ((1, 1), (2, 2)), ((0, 1), (0, 2)), ((1, 1), (1, 2)), ((1, 2), (2, 2)), ((1, 2), (1, 2)), ((0, 0), (1, 1)), ((0, 0), (2, 2)), ((0, 2), (1, 1)), ((0, 1), (1, 1)), ((0, 0), (0, 0)), ((0, 2), (2, 2)), ((0, 0), (1, 2)), ((0, 1), (2, 2)), ((2, 2), (2, 2)), ((0, 0), (0, 1)), ((0, 2), (1, 2)), ((0, 1), (1, 2)), ((0, 1), (0, 1)) \\
+					\end{itemize}}
+			\only<9-10>{		
+				\hspace*{0.5cm}\color{black}\textbf{Kombinationen der Allele}:
+				\begin{itemize}
+					\item[] \color{black}{[..., (0, 1, 1, 2), (0, 1, 0, 0),...]}\\
+				\end{itemize}
+			\hspace*{0.5cm}\color{black}\textbf{Permutationen der Allele}:
+				\begin{itemize}
+					\item[] \color{black}(0, 1, 1, 2), (0, 1, 2, 1), (1, 0, 2, 1), (1, 1, 2, 0), (1, 1, 0, 2), (2, 1, 1, 0),...\\	
+				\end{itemize}	
+			\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+				\begin{itemize}
+					\item[] \color{black}
+					((0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)), ((1, 1), (2, 0)), ((1, 1), (0, 2)), ((2, 1), (1, 0)),... \\
+				\end{itemize}	
+			\only<10>{
+				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+				\begin{itemize}
+					\item[] \color{black}
+					(\color{blue}(0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)),\color{green} ((1, 1), (2, 0)), ((1, 1), (0, 2)), \color{red}((2, 1), (1, 0))\color{black},... \\
+				\end{itemize}	
+			}										
+			}
+		}				
+		
+		\only<11>{				
+			\vspace*{-0.1cm}
+			\textbf{Allelkombinationen:}	
+			\begin{itemize}
+				\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4 $: \\
+				\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}
+			\end{itemize}	
+			\only<9>{
+				\vspace*{0.3cm}
+				\textbf{Allele-Fractions:}	
+				\begin{itemize}
+					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
+					\item[] \color{black}{[1.0, 0.0, 0.0]}, {[0.75, 0.25, 0.0]}, {[0.75, 0.0, 0.25]}, {[0.5, 0.5, 0.0]}, {[0.5, 0.25, 0.25]}, {[0.5, 0.0, 0.5]}, {[0.25, 0.75, 0.0]}, {[0.25, 0.5, 0.25]}, {[0.25, 0.25, 0.5]}, {[0.25, 0.0, 0.75]}, {[0.0, 1.0, 0.0]}, {[0.0, 0.75, 0.25]}, {[0.0, 0.5, 0.5]}, {[0.0, 0.25, 0.75]}, {[0.0, 0.0, 1.0]}
+				\end{itemize}
+		}}
+		\only<10->{
+			\setbeamercolor{block title}{bg=teal!60, fg=white}
+			\setbeamercolor{block body}{bg=teal!25, fg=black}
+		}
+		\only<10-11>{
+			Für \textbf{jeden Read} mit der Sequenz $s_{r}$ wird die Wahrscheinlichkeit errechnet, dass er aus einem bestimmten Allel $a_{i}$ allein durch Sequenzierfehler $\epsilon$ hervorgegangen ist:
+			\only<11>{
+				\begin{center}
+					\begin{minipage}{10cm}
+						\begin{varblock}{Allel-Likelihood gegeben ein Read}
+							\centering
+							$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+						\end{varblock}	
+					\end{minipage}
+			\end{center}}
+		}
+		\only<12-13>{
+			Berechnung der Wahrscheinlichkeit, einen bestimmten Read $s_{r}$ anhand einer gegebenen \textbf{Allele-Fraction} $\Theta_{i} = (\theta_{1},\dots,\theta_{n}) \in [0,1]^{n}$ zu beobachten:
+			\only<13>{
+				\begin{center}
+					\begin{minipage}{11cm}
+						\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+							\centering
+							$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+						\end{varblock}						
+					\end{minipage}
+				\end{center}
+				\hspace*{9.7cm}{\tiny (es gilt $n=n_{cand}$)}
+			}
+		}		
+		\only<14-17>{		
+			Bestimmung der resultierende Likelihood einer Allele-Fraction in Zusammenschau mit \textbf{allen Reads} $D = (s_{1}, \dots, s_{m}) \in \{A,C, G, T\}^{k^m}$:
+			\only<15-17>{
+				\begin{center}
+					\begin{minipage}{12cm}
+						\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+							\centering
+							$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+						\end{varblock}
+					\end{minipage}
+				\end{center}
+				\only<16-17>{$\Rightarrow$ $L$ ist eine mögliche Loci-Verteilung, die durch die gegebene Allele-Fraction abgebildet wird\\
+					\\}
+				\only<17>{$\Rightarrow$ die Unsicherheit bei der Zuordnung der Reads wird durch die relativen Häufigkeiten in der Allele-Fraction abgebildet und an die spätere Loci-Zuordnung  weitergereicht\\}			
+			}
+		}
+		\only<18>{
+			\begin{center}
+				\begin{minipage}{10cm}
+					\begin{varblock}{Allel-Likelihood gegeben ein Read}
+						\centering
+						$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+					\end{varblock}	
+				\end{minipage}
+			\end{center}
+			
+			\begin{center}
+				\begin{minipage}{11cm}
+					\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+						\centering
+						$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+					\end{varblock}						
+				\end{minipage}
+			\end{center}
+			
+			\begin{center}
+				\begin{minipage}{12cm}
+					\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+						\centering
+						$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D= s_{1}, \dots, s_{m}) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+					\end{varblock}
+				\end{minipage}
+			\end{center}
+		}
+\end{minipage}}
+\end{frame}	
+
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model}
+\begin{frame}
+	\frametitle{Model}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,blue!20,red!60}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\only<2>{
+				\begin{itemize}
+					\item vcf
+				\end{itemize}
+			}
+	\end{minipage}}
 \end{frame}
 
 %%Folie ###1
@@ -878,8 +1327,6 @@ minimum height=3em, rounded corners, drop shadow]
 			\smartdiagramset{sequence item height=2.5cm,
 				uniform color list=blue!20 for 5 items}
 			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
 					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
 			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 		}
@@ -887,7 +1334,7 @@ minimum height=3em, rounded corners, drop shadow]
 	
 	\begin{minipage}[t][10cm][t]{\textwidth}
 		\vspace*{-1.5cm}	
-		\only<3->{
+		\only<2->{
 		\begin{figure}[h]
 			\begin{center}
 				\begin{tikzpicture}[scale=0.45,transform shape]	
@@ -900,10 +1347,10 @@ minimum height=3em, rounded corners, drop shadow]
 				\path (p12.south)+(0.0,-1.5) \blockitem{14}{11. Likelihood of allele fractions given all reads};
 				\path (p14.south)+(0.0,-1.5) \blockitem{15}{12. Maximum likelihood allele fractions};
 				\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
-				\visible<4->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
-				\visible<5->{\path (ur1.east)+(-2.57,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
-				\visible<6->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
-				\visible<7->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
+				\visible<3->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
+				\visible<4->{\path (ur1.east)+(-2.57,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
+				\visible<5->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
+				\visible<6->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
 				
 				% Pfeile
 				\path [line] (p6.south) -- node [above] {} (p8);
@@ -917,10 +1364,10 @@ minimum height=3em, rounded corners, drop shadow]
 				\path [dashedline] (p7.south) -- node [above] {} (p9) ;
 				\path [dashedline] (p9.east) -- node [left] {} (p12.west);
 				
-				\visible<4->{\draw [funtool] (p10.east) -- (ur1);}
-				\visible<5->{\draw [dashedline] (ur2.south) -- (ur1.north);}
-				\visible<6->{\draw [funtool] (p12.east) -- (ur3);}
-				\visible<7->{\draw [funtool] (p14.east) -- (ur4);}
+				\visible<3->{\draw [funtool] (p10.east) -- (ur1);}
+				\visible<4->{\draw [dashedline] (ur2.south) -- (ur1.north);}
+				\visible<5->{\draw [funtool] (p12.east) -- (ur3);}
+				\visible<6->{\draw [funtool] (p14.east) -- (ur4);}
 				\end{tikzpicture}
 			\end{center}
 		\end{figure}
@@ -990,15 +1437,13 @@ minimum height=3em, rounded corners, drop shadow]
 			\smartdiagramset{sequence item height=2.5cm,
 				uniform color list=blue!20 for 5 items}
 			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
 					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
 			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 		}
 	\end{minipage}
 	
 	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<3->{
+		\only<2->{
 		\vspace*{-2.0cm}
 		\begin{figure}[h]
 			\begin{center}
@@ -1021,18 +1466,18 @@ minimum height=3em, rounded corners, drop shadow]
 				\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
 				
 				\visible<4->{\path (p11.north)+(0.0, 2.0) node (ur1)[ur] {\color{black}\lstinline|indicator_constraint()|};}
-				\visible<5->{\path (p11.north)+(-0.0, 3.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
-				\visible<6->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
-				\visible<7->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
-				\visible<8->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
+				\visible<3->{\path (p11.north)+(-0.0, 3.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
+				\visible<5->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
+				\visible<6->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
+				\visible<7->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
 				
-				\visible<5->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
-				\visible<7->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
+				\visible<4->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
+				\visible<6->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
 				
 				% Pfeile%
 				\visible<4->{\draw [funtool] (p11.north) -- (ur1.south);}		
-				\visible<6->{\draw [funtool] (p16.east) -- (ur3.west);}	
-				\visible<8->{\draw [funtool] (p17.east) -- (ur5.west);}
+				\visible<5->{\draw [funtool] (p16.east) -- (ur3.west);}	
+				\visible<7->{\draw [funtool] (p17.east) -- (ur5.west);}
 				\end{tikzpicture}
 			\end{center}
 		\end{figure}

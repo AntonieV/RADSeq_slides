@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  27 FEB 2021 02:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  28 FEB 2021 03:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1167,24 +1167,24 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 (./RAD-Seq_slices.aux)
 \openout1 = `RAD-Seq_slices.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
-LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-148.
+156.
  (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1246,7 +1246,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box113
-Package hyperref Info: Link coloring OFF on input line 148.
+Package hyperref Info: Link coloring OFF on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1259,60 +1259,60 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 148.
-LaTeX Info: Redefining \pageref on input line 148.
-LaTeX Info: Redefining \nameref on input line 148.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
 
 (./RAD-Seq_slices.out) (./RAD-Seq_slices.out)
 \@outlinefile=\write5
 \openout5 = `RAD-Seq_slices.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 148.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 148.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 148.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 148.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 156.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 148.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 148.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 148.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/b/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 148.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 148.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 148.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 148.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 148.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 156.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 148.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 148.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 148.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 148.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> OT1/lmr/b/n on input line 148.
+(Font)                  OT1/lmss/b/n --> OT1/lmr/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmss/b/n --> OT1/lmss/b/n on input line 148.
+(Font)                  OT1/lmss/b/n --> OT1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 148.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 148.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/b/it on input line 156.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/b/n on input line 148.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/b/n on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1345,12 +1345,12 @@ Package caption Info: End \AtBeginDocument code.
  (./RAD-Seq_slices.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 150.
+(hyperref)                setting the option has no effect on input line 158.
 
-<tud_logo_rgb.jpg, id=508, 338.9463pt x 54.6843pt>
+<tud_logo_rgb.jpg, id=572, 338.9463pt x 54.6843pt>
 File: tud_logo_rgb.jpg Graphic file (type jpg)
 <use tud_logo_rgb.jpg>
-Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 183.
+Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 191.
 (pdftex.def)             Requested size: 128.0374pt x 20.65674pt.
 [1
 
@@ -1362,92 +1362,92 @@ Package pdftex.def Info: tud_logo_rgb.jpg  used on input line 183.
 ] [4
 
 ]
-<pictures/Aminoacids_table.png, id=544, 488.00876pt x 482.7934pt>
+<pictures/Aminoacids_table.png, id=609, 488.00876pt x 482.7934pt>
 File: pictures/Aminoacids_table.png Graphic file (type png)
 <use pictures/Aminoacids_table.png>
-Package pdftex.def Info: pictures/Aminoacids_table.png  used on input line 259.
+Package pdftex.def Info: pictures/Aminoacids_table.png  used on input line 267.
 
 (pdftex.def)             Requested size: 142.26378pt x 140.74318pt.
  [5
 
  <./pictures/Aminoacids_table.png>]
-<pictures/transcription.jpg, id=556, 1493.58pt x 904.37875pt>
+<pictures/transcription.jpg, id=621, 1493.58pt x 904.37875pt>
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
-<pictures/trna.jpeg, id=558, 116.8365pt x 144.54pt>
+<pictures/trna.jpeg, id=623, 116.8365pt x 144.54pt>
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
-<pictures/translation.jpg, id=560, 1238.6275pt x 764.8575pt>
+<pictures/translation.jpg, id=625, 1238.6275pt x 764.8575pt>
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-17.
+25.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-317.
+325.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-317.
+325.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 317.
+(Font)              <10.95> on input line 325.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 317.
+(Font)              <8> on input line 325.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 317.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 317
+(Font)              <6> on input line 325.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 325
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 317
+LaTeX Font Info:    Trying to load font information for U+msb on input line 325
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 317.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 325.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 317.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 325.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 317.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 325.
 
  [6
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 
-Overfull \vbox (1.82791pt too high) detected at line 317
+Overfull \vbox (1.82791pt too high) detected at line 325
  []
 
 [7
@@ -1455,63 +1455,63 @@ Overfull \vbox (1.82791pt too high) detected at line 317
  <./pictures/transcription.jpg>]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [8
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [9
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [10
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 
-Overfull \vbox (6.30441pt too high) detected at line 317
+Overfull \vbox (6.30441pt too high) detected at line 325
  []
 
 [11
@@ -1519,144 +1519,144 @@ Overfull \vbox (6.30441pt too high) detected at line 317
  <./pictures/trna.jpeg>]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [12
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
  [13
 
 ]
 File: pictures/transcription.jpg Graphic file (type jpg)
 <use pictures/transcription.jpg>
-Package pdftex.def Info: pictures/transcription.jpg  used on input line 317.
+Package pdftex.def Info: pictures/transcription.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 206.73317pt.
 File: pictures/trna.jpeg Graphic file (type jpg)
 <use pictures/trna.jpeg>
-Package pdftex.def Info: pictures/trna.jpeg  used on input line 317.
+Package pdftex.def Info: pictures/trna.jpeg  used on input line 325.
 (pdftex.def)             Requested size: 170.71652pt x 211.20967pt.
 File: pictures/translation.jpg Graphic file (type jpg)
 <use pictures/translation.jpg>
-Package pdftex.def Info: pictures/translation.jpg  used on input line 317.
+Package pdftex.def Info: pictures/translation.jpg  used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 210.83246pt.
 
-Overfull \vbox (178.46837pt too high) detected at line 317
+Overfull \vbox (178.46837pt too high) detected at line 325
  []
 
 [14
 
  <./pictures/translation.jpg>]
-<pictures/repl_complex.png, id=656, 1927.2pt x 937.5025pt>
+<pictures/repl_complex.png, id=720, 1927.2pt x 937.5025pt>
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [15
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [16
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [17
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [18
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [19
 
  <./pictures/repl_complex.png>]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [20
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [21
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [22
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [23
 
 ]
 File: pictures/repl_complex.png Graphic file (type png)
 <use pictures/repl_complex.png>
-Package pdftex.def Info: pictures/repl_complex.png  used on input line 350.
+Package pdftex.def Info: pictures/repl_complex.png  used on input line 358.
 (pdftex.def)             Requested size: 341.43306pt x 166.08241pt.
  [24
 
 ]
-<pictures/mutation_macro.jpg, id=741, 1439.3775pt x 601.24625pt>
+<pictures/mutation_macro.jpg, id=805, 1439.3775pt x 601.24625pt>
 File: pictures/mutation_macro.jpg Graphic file (type jpg)
 <use pictures/mutation_macro.jpg>
-Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
-<pictures/mutation_micro.jpg, id=743, 1442.38875pt x 378.41376pt>
+<pictures/mutation_micro.jpg, id=807, 1442.38875pt x 378.41376pt>
 File: pictures/mutation_micro.jpg Graphic file (type jpg)
 <use pictures/mutation_micro.jpg>
-Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
  [25
 
  <./pictures/mutation_macro.jpg>]
 File: pictures/mutation_macro.jpg Graphic file (type jpg)
 <use pictures/mutation_macro.jpg>
-Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
 File: pictures/mutation_micro.jpg Graphic file (type jpg)
 <use pictures/mutation_micro.jpg>
-Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
 
 [26
@@ -1664,60 +1664,60 @@ Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 411.
  <./pictures/mutation_micro.jpg>]
 File: pictures/mutation_macro.jpg Graphic file (type jpg)
 <use pictures/mutation_macro.jpg>
-Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_macro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 284.52756pt x 118.85262pt.
 File: pictures/mutation_micro.jpg Graphic file (type jpg)
 <use pictures/mutation_micro.jpg>
-Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 411.
+Package pdftex.def Info: pictures/mutation_micro.jpg  used on input line 419.
 (pdftex.def)             Requested size: 341.43306pt x 89.57394pt.
  [27
 
 ]
-Overfull \vbox (3.13074pt too high) detected at line 443
+Overfull \vbox (3.13074pt too high) detected at line 451
  []
 
 [28
 
 ]
-Overfull \vbox (3.13074pt too high) detected at line 443
+Overfull \vbox (3.13074pt too high) detected at line 451
  []
 
 [29
 
 ]
-Overfull \vbox (3.13074pt too high) detected at line 443
+Overfull \vbox (3.13074pt too high) detected at line 451
  []
 
 [30
 
 ]
-<pictures/pcr_steps.png, id=799, 666.49pt x 405.515pt>
+<pictures/pcr_steps.png, id=863, 666.49pt x 405.515pt>
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
-<pictures/pcr_compl_1.png, id=801, 1156.32pt x 495.451pt>
+<pictures/pcr_compl_1.png, id=865, 1156.32pt x 495.451pt>
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
-<pictures/pcr_compl_2.png, id=803, 1156.32pt x 495.451pt>
+<pictures/pcr_compl_2.png, id=867, 1156.32pt x 495.451pt>
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
-<pictures/pcr_compl_3.png, id=805, 1156.32pt x 495.451pt>
+<pictures/pcr_compl_3.png, id=869, 1156.32pt x 495.451pt>
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
-<pictures/pcr_compl_4.png, id=807, 1156.32pt x 495.451pt>
+<pictures/pcr_compl_4.png, id=871, 1156.32pt x 495.451pt>
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-511.
+519.
  (/usr/share/texmf/tex/latex/lm/ts1lmss.fd
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [31
@@ -1725,241 +1725,241 @@ File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [32
 
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [33
 
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [34
 
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [35
 
  <./pictures/pcr_steps.png>]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [36
 
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [37
 
 ]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [38
 
  <./pictures/pcr_compl_1.png>]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [39
 
  <./pictures/pcr_compl_2.png>]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [40
 
  <./pictures/pcr_compl_3.png>]
 File: pictures/pcr_steps.png Graphic file (type png)
 <use pictures/pcr_steps.png>
-Package pdftex.def Info: pictures/pcr_steps.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_steps.png  used on input line 519.
 (pdftex.def)             Requested size: 284.52756pt x 173.11813pt.
 File: pictures/pcr_compl_1.png Graphic file (type png)
 <use pictures/pcr_compl_1.png>
-Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_1.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_2.png Graphic file (type png)
 <use pictures/pcr_compl_2.png>
-Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_2.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_3.png Graphic file (type png)
 <use pictures/pcr_compl_3.png>
-Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_3.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
 File: pictures/pcr_compl_4.png Graphic file (type png)
 <use pictures/pcr_compl_4.png>
-Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 511.
+Package pdftex.def Info: pictures/pcr_compl_4.png  used on input line 519.
 (pdftex.def)             Requested size: 312.9803pt x 134.09863pt.
  [41
 
  <./pictures/pcr_compl_4.png>]
-<pictures/sanger.png, id=948, 469.39365pt x 341.47575pt>
+<pictures/sanger.png, id=1012, 469.39365pt x 341.47575pt>
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [42
@@ -1967,10 +1967,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (6.35454pt too high) detected at line 544
+Overfull \vbox (6.35454pt too high) detected at line 552
  []
 
 [43
@@ -1978,10 +1978,10 @@ Overfull \vbox (6.35454pt too high) detected at line 544
  <./pictures/sanger.png>]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [44
@@ -1989,10 +1989,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [45
@@ -2000,10 +2000,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [46
@@ -2011,10 +2011,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [47
@@ -2022,10 +2022,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [48
@@ -2033,10 +2033,10 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [49
@@ -2044,95 +2044,95 @@ Overfull \vbox (1.21515pt too high) detected at line 544
 ]
 File: pictures/sanger.png Graphic file (type png)
 <use pictures/sanger.png>
-Package pdftex.def Info: pictures/sanger.png  used on input line 544.
+Package pdftex.def Info: pictures/sanger.png  used on input line 552.
 (pdftex.def)             Requested size: 284.52756pt x 206.99207pt.
 
-Overfull \vbox (1.21515pt too high) detected at line 544
+Overfull \vbox (1.21515pt too high) detected at line 552
  []
 
 [50
 
 ]
-Overfull \vbox (98.3486pt too high) detected at line 597
+Overfull \vbox (98.3486pt too high) detected at line 605
  []
 
 [51
 
 ]
-Overfull \vbox (98.3486pt too high) detected at line 597
+Overfull \vbox (98.3486pt too high) detected at line 605
  []
 
 [52
 
 ]
-<pictures/plane.png, id=1039, 124.3044pt x 52.7571pt>
+<pictures/plane.png, id=1104, 124.3044pt x 52.7571pt>
 File: pictures/plane.png Graphic file (type png)
 <use pictures/plane.png>
-Package pdftex.def Info: pictures/plane.png  used on input line 597.
+Package pdftex.def Info: pictures/plane.png  used on input line 605.
 (pdftex.def)             Requested size: 47.92113pt x 20.3385pt.
 
-Overfull \vbox (98.3486pt too high) detected at line 597
+Overfull \vbox (98.3486pt too high) detected at line 605
  []
 
 [53
 
  <./pictures/plane.png>]
-<pictures/sticky.png, id=1049, 131.7723pt x 52.7571pt>
+<pictures/sticky.png, id=1114, 131.7723pt x 52.7571pt>
 File: pictures/sticky.png Graphic file (type png)
 <use pictures/sticky.png>
-Package pdftex.def Info: pictures/sticky.png  used on input line 597.
+Package pdftex.def Info: pictures/sticky.png  used on input line 605.
 (pdftex.def)             Requested size: 50.65799pt x 20.28134pt.
 
-Overfull \vbox (98.3486pt too high) detected at line 597
+Overfull \vbox (98.3486pt too high) detected at line 605
  []
 
 [54
 
  <./pictures/sticky.png>]
-Overfull \vbox (200.92537pt too high) detected at line 597
+Overfull \vbox (200.92537pt too high) detected at line 605
  []
 
 [55
 
 ]
-Overfull \vbox (200.92537pt too high) detected at line 597
+Overfull \vbox (200.92537pt too high) detected at line 605
  []
 
 [56
 
 ]
-Overfull \vbox (200.92537pt too high) detected at line 597
+Overfull \vbox (200.92537pt too high) detected at line 605
  []
 
 [57
 
 ]
-Overfull \vbox (200.92537pt too high) detected at line 597
+Overfull \vbox (200.92537pt too high) detected at line 605
  []
 
 [58
 
 ]
-<pictures/rad-sequencing_white.png, id=1089, 793.96625pt x 566.115pt>
+<pictures/rad-sequencing_white.png, id=1153, 793.96625pt x 566.115pt>
 File: pictures/rad-sequencing_white.png Graphic file (type png)
 <use pictures/rad-sequencing_white.png>
 Package pdftex.def Info: pictures/rad-sequencing_white.png  used on input line 
-597.
+605.
 (pdftex.def)             Requested size: 273.83728pt x 195.25806pt.
 
-Overfull \vbox (31.4094pt too high) detected at line 597
+Overfull \vbox (31.4094pt too high) detected at line 605
  []
 
 [59
 
  <./pictures/rad-sequencing_white.png>]
-Overfull \vbox (258.44328pt too high) detected at line 597
+Overfull \vbox (258.44328pt too high) detected at line 605
  []
 
 [60
 
 ]
-Overfull \vbox (258.44328pt too high) detected at line 597
+Overfull \vbox (258.44328pt too high) detected at line 605
  []
 
 [61
@@ -2161,510 +2161,811 @@ Overfull \vbox (258.44328pt too high) detected at line 597
 
 ] [73
 
-] [74
+]
+Overfull \vbox (118.35579pt too high) detected at line 708
+ []
+
+[74
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 738
+Overfull \vbox (118.35579pt too high) detected at line 708
  []
 
 [75
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 738
+Overfull \vbox (118.35579pt too high) detected at line 708
  []
 
 [76
 
 ]
-LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 738
-.
-
-Overfull \vbox (116.73889pt too high) detected at line 738
+Overfull \vbox (118.35579pt too high) detected at line 738
  []
 
 [77
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 738
+Overfull \vbox (118.35579pt too high) detected at line 738
  []
 
 [78
 
-]
-Overfull \vbox (116.73889pt too high) detected at line 738
- []
+] [79
 
-[79
+] [80
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 738
- []
-
-[80
-
-]
-Overfull \vbox (116.73889pt too high) detected at line 807
+Overfull \vbox (118.35579pt too high) detected at line 786
  []
 
 [81
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 807
+Overfull \vbox (118.35579pt too high) detected at line 786
  []
 
 [82
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 807
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [83
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 807
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 933.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 933.
+
+
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [84
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [85
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [86
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [87
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [88
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [89
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 867
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [90
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [91
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [92
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [93
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [94
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [95
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [96
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 929
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [97
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 979
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [98
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 979
+Underfull \hbox (badness 10000) in paragraph at lines 933--933
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 933
  []
 
 [99
 
 ]
-<pictures/list_icon_2.png, id=1393, 597.73312pt x 845.40843pt>
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 979
+Overfull \vbox (118.35579pt too high) detected at line 933
  []
 
 [100
 
- <./pictures/list_icon_2.png>]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 979.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 979
+]
+Overfull \vbox (118.35579pt too high) detected at line 1094
  []
 
 [101
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.35579pt too high) detected at line 1094
  []
 
 [102
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.35579pt too high) detected at line 1094
  []
 
 [103
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.35579pt too high) detected at line 1094
  []
 
 [104
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 
-Overfull \vbox (116.73889pt too high) detected at line 1041
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [105
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [106
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [107
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [108
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1041.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1041
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [109
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [110
 
 ]
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.35579pt too high) detected at line 1094
  []
 
 [111
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [112
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [113
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [114
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (116.73889pt too high) detected at line 1087
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [115
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1087.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 
-Overfull \vbox (116.73889pt too high) detected at line 1087
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1094
  []
 
 [116
 
-] [117
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 
-] [118
+ []
 
-] [119
 
-] [120
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 
-] [121
+ []
 
-] [122
 
-] [123
+Overfull \vbox (118.69553pt too high) detected at line 1094
+ []
 
-] [124
-
-] [125
-
-] [126
-
-] [127
+[117
 
 ]
+Overfull \vbox (118.69553pt too high) detected at line 1094
+ []
+
+[118
+
+]
+Overfull \vbox (118.35579pt too high) detected at line 1120
+ []
+
+[119
+
+]
+Overfull \vbox (118.35579pt too high) detected at line 1120
+ []
+
+[120
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[121
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[122
+
+]
+LaTeX Font Info:    Font shape `OT1/lmss/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/sl' tried instead on input line 118
+7.
+
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[123
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[124
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[125
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1187
+ []
+
+[126
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1256
+ []
+
+[127
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1256
+ []
+
 [128
 
-] [129
+]
+Overfull \vbox (116.73889pt too high) detected at line 1256
+ []
 
-] [130
-
-] [131
-
-] [132
-
-] [133
-
-] [134
-
-] [135
-
-] [136
-
-] [137
-
-] [138
-
-] [139
+[129
 
 ]
+Overfull \vbox (116.73889pt too high) detected at line 1256
+ []
+
+[130
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[131
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[132
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[133
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[134
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[135
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1316
+ []
+
+[136
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
+
+[137
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
+
+[138
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
+
+[139
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
+
 [140
 
-] [141
+]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
 
-] [142
-
-] [143
-
-] [144
-
-] [145
-
-] [146
-
-] [147
-
-] [148
-
-] [149
-
-] [150
-
-] [151
+[141
 
 ]
+Overfull \vbox (116.73889pt too high) detected at line 1376
+ []
+
+[142
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1426
+ []
+
+[143
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1426
+ []
+
+[144
+
+]
+<pictures/list_icon_2.png, id=1788, 597.73312pt x 845.40843pt>
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1426
+ []
+
+[145
+
+ <./pictures/list_icon_2.png>]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1426.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1426
+ []
+
+[146
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[147
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[148
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[149
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[150
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[151
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
 [152
 
-] [153
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1486.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1486
+ []
+
+[153
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[154
+
+]
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[155
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[156
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[157
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[158
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[159
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1532.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (116.73889pt too high) detected at line 1532
+ []
+
+[160
+
+] [161
+
+] [162
+
+] [163
+
+] [164
+
+] [165
+
+] [166
+
+] [167
+
+] [168
+
+] [169
+
+] [170
+
+] [171
+
+]
+[172
+
+] [173
+
+] [174
+
+] [175
+
+] [176
+
+] [177
+
+] [178
+
+] [179
+
+] [180
+
+] [181
+
+] [182
+
+] [183
+
+]
+[184
+
+] [185
+
+] [186
+
+] [187
+
+] [188
+
+] [189
+
+] [190
+
+] [191
+
+] [192
+
+] [193
+
+] [194
+
+] [195
+
+]
+[196
+
+] [197
 
 ] (./RAD-Seq_slices.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
@@ -2680,9 +2981,9 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
 15.
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [154
+)) [198
 
-] [155
+] [199
 
 
 ]
@@ -2695,38 +2996,41 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@snm=\write8
 \openout8 = `RAD-Seq_slices.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1430.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1430.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1875.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1875.
  (./RAD-Seq_slices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1430.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1430.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1875.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1875.
 
 Package rerunfilecheck Info: File `RAD-Seq_slices.out' has not changed.
-(rerunfilecheck)             Checksum: 6A3A5CBD814C47833B508BD43EB23507;6332.
+(rerunfilecheck)             Checksum: B47D0886791F60E9CB287A4A77D5CE30;7305.
  ) 
 Here is how much of TeX's memory you used:
- 32462 strings out of 481239
- 642599 string characters out of 5920378
- 990970 words of memory out of 5000000
- 46519 multiletter control sequences out of 15000+600000
- 575320 words of font info for 55 fonts, out of 8000000 for 9000
+ 32645 strings out of 481239
+ 644665 string characters out of 5920378
+ 991979 words of memory out of 5000000
+ 46597 multiletter control sequences out of 15000+600000
+ 581867 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,20n,81p,810b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,20n,81p,837b,1891s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rmsc.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--ts1.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/f
-onts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on RAD-Seq_slices.pdf (155 pages, 2712839 bytes).
+-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/f
+onts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmcsc10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on RAD-Seq_slices.pdf (199 pages, 2806788 bytes).
 PDF statistics:
- 1967 PDF objects out of 2073 (max. 8388607)
- 1624 compressed objects within 17 object streams
- 438 named destinations out of 1000 (max. 500000)
- 1215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2378 PDF objects out of 2487 (max. 8388607)
+ 1984 compressed objects within 20 object streams
+ 539 named destinations out of 1000 (max. 500000)
+ 1349 words of extra memory for PDF output out of 10000 (max. 10000000)
 
