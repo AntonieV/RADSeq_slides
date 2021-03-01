@@ -17,87 +17,79 @@
 \BOOKMARK [2][]{Outline0.9}{Biologischer Hintergrund}{}% 17
 \BOOKMARK [3][]{Outline0.9.1.42}{Sequenzierung}{Outline0.9}% 18
 \BOOKMARK [2][]{Outline0.10}{Biologischer Hintergrund}{}% 19
-\BOOKMARK [3][]{Outline0.10.1.51}{RAD-Sequencing}{Outline0.10}% 20
+\BOOKMARK [3][]{Outline0.10.1.47}{RAD-Sequencing}{Outline0.10}% 20
 \BOOKMARK [2][]{Outline0.11}{Biologischer Hintergrund}{}% 21
-\BOOKMARK [3][]{Outline0.11.1.62}{RAD-Sequencing}{Outline0.11}% 22
+\BOOKMARK [3][]{Outline0.11.1.54}{RAD-Sequencing}{Outline0.11}% 22
 \BOOKMARK [2][]{Outline0.12}{Analyse von RAD-Seq-Daten}{}% 23
-\BOOKMARK [3][]{Outline0.12.1.66}{Problemstellung und L\366sungsansatz}{Outline0.12}% 24
+\BOOKMARK [3][]{Outline0.12.1.55}{Problemstellung und L\366sungsansatz}{Outline0.12}% 24
 \BOOKMARK [2][]{Outline0.13}{Model und Implementierung}{}% 25
-\BOOKMARK [3][]{Outline0.13.1.69}{Graph und Zusammenhangskomponenten}{Outline0.13}% 26
-\BOOKMARK [2][]{Outline0.14}{Analyse von RAD-Seq-Daten}{}% 27
-\BOOKMARK [3][]{Outline0.14.1.70}{L\366sungsansatz}{Outline0.14}% 28
+\BOOKMARK [3][]{Outline0.13.1.58}{Model}{Outline0.13}% 26
+\BOOKMARK [2][]{Outline0.14}{Model und Implementierung}{}% 27
+\BOOKMARK [3][]{Outline0.14.1.63}{Model - Preprocessing}{Outline0.14}% 28
 \BOOKMARK [2][]{Outline0.15}{Model und Implementierung}{}% 29
-\BOOKMARK [3][]{Outline0.15.1.71}{}{Outline0.15}% 30
+\BOOKMARK [3][]{Outline0.15.1.66}{Implementierung - Preprocessing}{Outline0.15}% 30
 \BOOKMARK [2][]{Outline0.16}{Model und Implementierung}{}% 31
-\BOOKMARK [3][]{Outline0.16.1.72}{}{Outline0.16}% 32
+\BOOKMARK [3][]{Outline0.16.1.71}{Model - Graphkonstruktion}{Outline0.16}% 32
 \BOOKMARK [2][]{Outline0.17}{Model und Implementierung}{}% 33
-\BOOKMARK [3][]{Outline0.17.1.73}{}{Outline0.17}% 34
+\BOOKMARK [3][]{Outline0.17.1.73}{Approximation des pairHMM}{Outline0.17}% 34
 \BOOKMARK [2][]{Outline0.18}{Model und Implementierung}{}% 35
-\BOOKMARK [3][]{Outline0.18.1.74}{}{Outline0.18}% 36
+\BOOKMARK [3][]{Outline0.18.1.74}{Approximation des pairHMM}{Outline0.18}% 36
 \BOOKMARK [2][]{Outline0.19}{Model und Implementierung}{}% 37
-\BOOKMARK [3][]{Outline0.19.1.75}{}{Outline0.19}% 38
+\BOOKMARK [3][]{Outline0.19.1.75}{Model - Graphkonstruktion}{Outline0.19}% 38
 \BOOKMARK [2][]{Outline0.20}{Model und Implementierung}{}% 39
-\BOOKMARK [3][]{Outline0.20.1.76}{}{Outline0.20}% 40
+\BOOKMARK [3][]{Outline0.20.1.77}{Implementierung - Graphkonstruktion}{Outline0.20}% 40
 \BOOKMARK [2][]{Outline0.21}{Model und Implementierung}{}% 41
-\BOOKMARK [3][]{Outline0.21.1.77}{}{Outline0.21}% 42
+\BOOKMARK [3][]{Outline0.21.1.80}{Laufzeit - Graphkonstruktion}{Outline0.21}% 42
 \BOOKMARK [2][]{Outline0.22}{Model und Implementierung}{}% 43
-\BOOKMARK [3][]{Outline0.22.1.78}{}{Outline0.22}% 44
+\BOOKMARK [3][]{Outline0.22.1.81}{Model - Allele-Fractions}{Outline0.22}% 44
 \BOOKMARK [2][]{Outline0.23}{Model und Implementierung}{}% 45
-\BOOKMARK [3][]{Outline0.23.1.79}{}{Outline0.23}% 46
+\BOOKMARK [3][]{Outline0.23.1.90}{Implementierung - Allele-Fractions}{Outline0.23}% 46
 \BOOKMARK [2][]{Outline0.24}{Model und Implementierung}{}% 47
-\BOOKMARK [3][]{Outline0.24.1.80}{}{Outline0.24}% 48
-\BOOKMARK [2][]{Outline0.25}{}{}% 49
-\BOOKMARK [3][]{Outline0.25.1.81}{}{Outline0.25}% 50
-\BOOKMARK [2][]{Outline0.26}{}{}% 51
-\BOOKMARK [3][]{Outline0.26.1.82}{}{Outline0.26}% 52
-\BOOKMARK [2][]{Outline0.27}{}{}% 53
-\BOOKMARK [3][]{Outline0.27.1.83}{}{Outline0.27}% 54
-\BOOKMARK [2][]{Outline0.28}{}{}% 55
-\BOOKMARK [3][]{Outline0.28.1.84}{}{Outline0.28}% 56
-\BOOKMARK [2][]{Outline0.29}{}{}% 57
-\BOOKMARK [3][]{Outline0.29.1.85}{}{Outline0.29}% 58
-\BOOKMARK [2][]{Outline0.30}{}{}% 59
-\BOOKMARK [3][]{Outline0.30.1.86}{}{Outline0.30}% 60
-\BOOKMARK [2][]{Outline0.31}{}{}% 61
-\BOOKMARK [3][]{Outline0.31.1.87}{}{Outline0.31}% 62
-\BOOKMARK [2][]{Outline0.32}{}{}% 63
-\BOOKMARK [3][]{Outline0.32.1.88}{}{Outline0.32}% 64
-\BOOKMARK [2][]{Outline0.33}{}{}% 65
-\BOOKMARK [3][]{Outline0.33.1.89}{}{Outline0.33}% 66
-\BOOKMARK [2][]{Outline0.34}{}{}% 67
-\BOOKMARK [3][]{Outline0.34.1.90}{}{Outline0.34}% 68
-\BOOKMARK [2][]{Outline0.35}{}{}% 69
-\BOOKMARK [3][]{Outline0.35.1.91}{}{Outline0.35}% 70
-\BOOKMARK [2][]{Outline0.36}{}{}% 71
-\BOOKMARK [3][]{Outline0.36.1.92}{}{Outline0.36}% 72
-\BOOKMARK [2][]{Outline0.37}{}{}% 73
-\BOOKMARK [3][]{Outline0.37.1.93}{}{Outline0.37}% 74
-\BOOKMARK [2][]{Outline0.38}{}{}% 75
-\BOOKMARK [3][]{Outline0.38.1.94}{}{Outline0.38}% 76
-\BOOKMARK [2][]{Outline0.39}{}{}% 77
-\BOOKMARK [3][]{Outline0.39.1.95}{}{Outline0.39}% 78
-\BOOKMARK [2][]{Outline0.40}{}{}% 79
-\BOOKMARK [3][]{Outline0.40.1.96}{}{Outline0.40}% 80
-\BOOKMARK [2][]{Outline0.41}{}{}% 81
-\BOOKMARK [3][]{Outline0.41.1.97}{}{Outline0.41}% 82
-\BOOKMARK [2][]{Outline0.42}{}{}% 83
-\BOOKMARK [3][]{Outline0.42.1.98}{}{Outline0.42}% 84
-\BOOKMARK [2][]{Outline0.43}{}{}% 85
-\BOOKMARK [3][]{Outline0.43.1.99}{}{Outline0.43}% 86
-\BOOKMARK [2][]{Outline0.44}{}{}% 87
-\BOOKMARK [3][]{Outline0.44.1.100}{}{Outline0.44}% 88
-\BOOKMARK [2][]{Outline0.45}{}{}% 89
-\BOOKMARK [3][]{Outline0.45.1.101}{}{Outline0.45}% 90
-\BOOKMARK [2][]{Outline0.46}{}{}% 91
-\BOOKMARK [3][]{Outline0.46.1.102}{}{Outline0.46}% 92
-\BOOKMARK [2][]{Outline0.47}{}{}% 93
-\BOOKMARK [3][]{Outline0.47.1.103}{}{Outline0.47}% 94
-\BOOKMARK [2][]{Outline0.48}{}{}% 95
-\BOOKMARK [3][]{Outline0.48.1.104}{}{Outline0.48}% 96
-\BOOKMARK [2][]{Outline0.49}{}{}% 97
-\BOOKMARK [3][]{Outline0.49.1.105}{}{Outline0.49}% 98
-\BOOKMARK [2][]{Outline0.50}{}{}% 99
-\BOOKMARK [3][]{Outline0.50.1.106}{}{Outline0.50}% 100
-\BOOKMARK [2][]{Outline0.51}{}{}% 101
-\BOOKMARK [3][]{Outline0.51.1.107}{}{Outline0.51}% 102
-\BOOKMARK [2][]{Outline0.52}{Literatur}{}% 103
+\BOOKMARK [3][]{Outline0.24.1.95}{Laufzeit - Allele-Fractions}{Outline0.24}% 48
+\BOOKMARK [2][]{Outline0.25}{Model und Implementierung}{}% 49
+\BOOKMARK [3][]{Outline0.25.1.96}{Model - Likelihood der Allele-Fractions}{Outline0.25}% 50
+\BOOKMARK [2][]{Outline0.26}{Model und Implementierung}{}% 51
+\BOOKMARK [3][]{Outline0.26.1.105}{Implementierung - Allele likelihood}{Outline0.26}% 52
+\BOOKMARK [2][]{Outline0.27}{Model und Implementierung}{}% 53
+\BOOKMARK [3][]{Outline0.27.1.111}{Laufzeit - Likelihood der Allele-Fractions}{Outline0.27}% 54
+\BOOKMARK [2][]{Outline0.28}{Model und Implementierung}{}% 55
+\BOOKMARK [3][]{Outline0.28.1.112}{Model - Loci-Kombinationen}{Outline0.28}% 56
+\BOOKMARK [2][]{Outline0.29}{Model und Implementierung}{}% 57
+\BOOKMARK [3][]{Outline0.29.1.126}{Implementierung - Loci-Kombinationen}{Outline0.29}% 58
+\BOOKMARK [2][]{Outline0.30}{Model und Implementierung}{}% 59
+\BOOKMARK [3][]{Outline0.30.1.129}{Laufzeit - Loci-Kombinationen}{Outline0.30}% 60
+\BOOKMARK [2][]{Outline0.31}{Model und Implementierung}{}% 61
+\BOOKMARK [3][]{Outline0.31.1.130}{Model - Zuordnung der Loci}{Outline0.31}% 62
+\BOOKMARK [2][]{Outline0.32}{Model und Implementierung}{}% 63
+\BOOKMARK [3][]{Outline0.32.1.141}{Implementerierung - Zuordnung der Loci}{Outline0.32}% 64
+\BOOKMARK [2][]{Outline0.33}{Model und Implementierung}{}% 65
+\BOOKMARK [3][]{Outline0.33.1.148}{Laufzeit - Zuordnung der Loci}{Outline0.33}% 66
+\BOOKMARK [2][]{Outline0.34}{Model und Implementierung}{}% 67
+\BOOKMARK [3][]{Outline0.34.1.149}{Laufzeit - Gesamtlaufzeit}{Outline0.34}% 68
+\BOOKMARK [2][]{Outline0.35}{Model und Implementierung}{}% 69
+\BOOKMARK [3][]{Outline0.35.1.150}{Model - VCF-Output}{Outline0.35}% 70
+\BOOKMARK [2][]{Outline0.36}{Model und Implementierung}{}% 71
+\BOOKMARK [3][]{Outline0.36.1.153}{Implementierung - VCF-Output}{Outline0.36}% 72
+\BOOKMARK [2][]{Outline0.37}{Analyse an simulierten Daten}{}% 73
+\BOOKMARK [3][]{Outline0.37.1.159}{}{Outline0.37}% 74
+\BOOKMARK [2][]{Outline0.38}{Analyse an simulierten Daten}{}% 75
+\BOOKMARK [3][]{Outline0.38.1.160}{}{Outline0.38}% 76
+\BOOKMARK [2][]{Outline0.39}{Analyse an simulierten Daten}{}% 77
+\BOOKMARK [3][]{Outline0.39.1.161}{}{Outline0.39}% 78
+\BOOKMARK [2][]{Outline0.40}{Analyse an simulierten Daten}{}% 79
+\BOOKMARK [3][]{Outline0.40.1.162}{}{Outline0.40}% 80
+\BOOKMARK [2][]{Outline0.41}{Analyse an simulierten Daten}{}% 81
+\BOOKMARK [3][]{Outline0.41.1.163}{}{Outline0.41}% 82
+\BOOKMARK [2][]{Outline0.42}{Analyse an simulierten Daten}{}% 83
+\BOOKMARK [3][]{Outline0.42.1.164}{}{Outline0.42}% 84
+\BOOKMARK [2][]{Outline0.43}{Ausblick}{}% 85
+\BOOKMARK [3][]{Outline0.43.1.165}{}{Outline0.43}% 86
+\BOOKMARK [2][]{Outline0.44}{Ausblick}{}% 87
+\BOOKMARK [3][]{Outline0.44.1.166}{}{Outline0.44}% 88
+\BOOKMARK [2][]{Outline0.45}{Ausblick}{}% 89
+\BOOKMARK [3][]{Outline0.45.1.167}{}{Outline0.45}% 90
+\BOOKMARK [2][]{Outline0.46}{Ausblick}{}% 91
+\BOOKMARK [3][]{Outline0.46.1.168}{}{Outline0.46}% 92
+\BOOKMARK [2][]{Outline0.47}{Ausblick}{}% 93
+\BOOKMARK [3][]{Outline0.47.1.169}{}{Outline0.47}% 94
+\BOOKMARK [2][]{Outline0.48}{Literatur}{}% 95

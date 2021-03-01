@@ -3,6 +3,7 @@
 \usepackage[latin1]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
+\usepackage{dsfont}
 \usepackage{lmodern} %für mathmode wichtig
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -11,15 +12,18 @@
 \usepackage{textpos}
 % Abbildungen
 \usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
 \usepackage{braids}
 %\usepackage[utf8]{inputenc}
 \usepackage{smartdiagram}
 \usesmartdiagramlibrary{additions}
+
 \usepackage{listings}
-\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\lstset{basicstyle=\ttfamily, breakatwhitespace=true, breaklines=true}
+
 \usepackage[section,boxed]{algorithm}
-\usepackage[boxed]{algorithm}
 \usepackage{algpseudocode}
+
 \usepackage{caption}
 \usepackage{subfig}
 \usepackage{color}
@@ -35,6 +39,8 @@
 
 \usepackage{multirow}
 \definecolor{tugreen}{HTML}{7CFF00}
+\definecolor{darkgreen}{HTML}{037501}
+\definecolor{lila}{HTML}{C984FE}
 %
 %\setbeamercolor{block title}{use=structure,fg=black,bg=LimeGreen!50!white}
 \setbeamercolor{block body}{use=structure,fg=black,bg=tugreen!10!white}
@@ -85,11 +91,54 @@
 }
 \makeatother
 
+% ++++++++++++++++++++++
+% + Python listenings  +
+% ++++++++++++++++++++++
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+		language=Python,
+		basicstyle=\ttm,
+		morekeywords={self},              % Add keywords here
+		keywordstyle=\ttb\color{deepblue},
+		emph={MyClass,__init__},          % Custom highlighting
+		emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		stringstyle=\color{deepgreen},
+		frame=tb,                         % Any extra options here
+		showstringspaces=false
+}}
 
 
-%+++++++++++++++++++++++++++++
-%+ Tikz properties for pics	 +
-%+++++++++++++++++++++++++++++
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+	\pythonstyle
+	\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+		\pythonstyle
+		\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+% +++++++++++++++++++++++++++++
+% + Tikz properties for pics  +
+% +++++++++++++++++++++++++++++
 %https://texample.net/tikz/examples/labs-schema/
 \usetikzlibrary{shadows,arrows}
 % Layer des Diagramms
@@ -532,7 +581,7 @@ minimum height=3em, rounded corners, drop shadow]
 			\end{figure}
 		\end{center}
 	\end{onlyenv}
-	\begin{onlyenv}<1,3-9>
+	\begin{onlyenv}<1,3-5>
 %		\visible<1->{\begin{block}{} Bestimmung der Basensequenz eines DNA-Strangs\end{block}}
 		\vspace{-0.1cm}
 		\visible<1->{\begin{block}{Sanger-Sequenzierung} Kettenabbruch-Synthese mit vier Probenansätzen denen jeweils eine der vier möglichen Nukleotide in modifizierter Form beigefügt wird\end{block}}
@@ -542,10 +591,10 @@ minimum height=3em, rounded corners, drop shadow]
 		\visible<5->{\begin{block}{RAD-Sequenzierung}
 			\begin{itemize}
 				\item restriction site associated DNA sequencing 
-				\visible<6->{\item \textbf{Anwendung}: Populationsgenetik, Ökologie, Genotypisierung, Evolutionsforschung}
-				\visible<7->{\item Sequenzierung multipler kleiner DNA-Fragmente aus dem gesamten Genom}
-				\visible<8->{\item gleichzeitige Analyse mehrerer Individuen in gepoolten Proben}
-				\visible<9->{\item benötigt kein Referenzgenom}
+				\item \textbf{Anwendung}: Populationsgenetik, Ökologie, Genotypisierung, Evolutionsforschung
+				\item Sequenzierung multipler kleiner DNA-Fragmente aus dem gesamten Genom
+				\item gleichzeitige Analyse mehrerer Individuen in gepoolten Proben
+				\item benötigt kein Referenzgenom
 			\end{itemize}
 		\end{block}}
 	\end{onlyenv}
@@ -556,48 +605,49 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{RAD-Sequencing}
 \begin{frame}
 	\frametitle{RAD-Verfahren}
-	\begin{onlyenv}<1-8,10-11>
+	\begin{onlyenv}<1-4,6-7>
 		\vspace*{-0.2cm}
 		\begin{block}{Restriktionsenzyme}
 			\begin{itemize}
-				\visible<1->{\item molekulare Scheren, welche die DNA an spezifischen Sequenzen schneiden}
-				\visible<2->{\item Enden können glatt oder versetzt sein}
+				\item molekulare Scheren, welche die DNA an spezifischen Sequenzen schneiden
+				\item Enden können glatt oder versetzt sein
 			\end{itemize}
 		\end{block}
 	\end{onlyenv}
- 	\begin{onlyenv}<5-8,10-11>
+ 	\begin{onlyenv}<4,6-7>
  		\vspace*{-0.1cm}
  		\begin{block}{Methode}
  			\begin{enumerate}
- 				\visible<5->{\item \textbf{DNA-Verdau} durch Restriktionsenzyme}
- 				\visible<6->{\item Sequenz der Restriktionsstelle ist bekannt, dies ermöglicht die Bindung der \textbf{Adapter-} und \textbf{Barcodesequenzen}}
- 				\visible<7->{\item \textbf{Größenselektion} der DNA-Fragmente}
- 				\visible<8->{\item \textbf{Sequenzierung} der gepoolten Proben verschiedener Individuen}
+ 				\item \textbf{DNA-Verdau} durch Restriktionsenzyme
+ 				\item Sequenz der Restriktionsstelle ist bekannt, dies ermöglicht die Bindung der \textbf{Adapter-} und \textbf{Barcodesequenzen}
+ 				\item \textbf{Größenselektion} der DNA-Fragmente
+ 				\item \textbf{Sequenzierung} der gepoolten Proben verschiedener Individuen
  			\end{enumerate}
  		\end{block}
  	\end{onlyenv}
-  	\begin{onlyenv}<10-11>
+  	\begin{onlyenv}<7>
   		\vspace*{-0.1cm}
 	 	\begin{block}{ddRADSeq (double digest RAD sequencing)}
 	 		\begin{itemize}
-	 			\visible<10->{\item Verwendung von zwei verschiedenen Restriktionsenzymen}
-	 			\visible<11->{\item bessere Steuerbarkeit und höhere Genauigkeit}
+	 			\item Verwendung von zwei verschiedenen Restriktionsenzymen
+	 			\item bessere Steuerbarkeit und höhere Genauigkeit
 	 		\end{itemize}	 		
 	 	\end{block}
 	 \end{onlyenv}
  	\begin{overlayarea}{\textwidth}{\textheight}
- 	\begin{onlyenv}<3-4,9> 		
+ 	\begin{onlyenv}<2-3,5> 		
 % 		\only<9>{\vspace*{-0.1cm}}
  		\begin{center}
  			\begin{figure} 
- 				\only<3-4>{\vspace*{0.2cm}}
- 				\includegraphics<3>[width = 0.14\textwidth] {pictures/plane.png}	
+ 				\only<2-3>{\vspace*{0.2cm}}
+ 				\includegraphics<2>[width = 0.14\textwidth] {pictures/plane.png} 				
  				\hspace*{0cm}	
- 				\includegraphics<4>[width = 0.148\textwidth] {pictures/sticky.png}
- 				\only<3-4>{{\tiny \\Bildquelle: \citep{sanger}}}
- 				\includegraphics<9>[width = 0.8\textwidth] {pictures/rad-sequencing_white.png}
- 				\only<9>{\vspace*{-0.1cm}}
- 				\only<9>{{\tiny \\Bildquelle: \citep{radseq} (modifiziert)}}	
+ 				\includegraphics<3>[width = 0.14\textwidth] {pictures/sticky.png}
+ 				\only<2>{{\tiny \\Bildquelle: \citep{restr_plane}}}	
+ 				\only<3>{{\tiny \\Bildquelle: \citep{restr_sticky}}}
+ 				\includegraphics<5>[width = 0.8\textwidth] {pictures/rad-sequencing_white.png}
+ 				\only<5>{\vspace*{-0.1cm}}
+ 				\only<5>{{\tiny \\Bildquelle: \citep{radseq} (modifiziert)}}	
  	 			\end{figure}
 		 	\end{center}
 		\end{onlyenv}
@@ -610,13 +660,13 @@ minimum height=3em, rounded corners, drop shadow]
 \begin{frame}
 	\frametitle{RADSeq-Verfahren}
 	\begin{itemize}
-		\visible<1->{\item durch die \textbf{Sequenzspezifität der Restriktionsenzyme} stammen die DNA-Fragmente bei den verschiedenen Individuen meistens vom gleichen genomischen Locus}	
+		\item durch die \textbf{Sequenzspezifität der Restriktionsenzyme} stammen die DNA-Fragmente bei den verschiedenen Individuen meistens vom gleichen genomischen Locus	
 		\vspace*{0.15cm}	
-		\visible<2->{\item interindividueller Vergleich ist \textbf{ohne Referenzgenom} möglich}
+		\item interindividueller Vergleich ist \textbf{ohne Referenzgenom} möglich
 		\vspace*{0.15cm}	
-		\visible<3->{\item \textbf{gepoolte Proben}: Zeit- und Kostenersparnis, gleiche Versuchsbedingungen für die verschiedenen Individuen}
+		\item \textbf{gepoolte Proben}: Zeit- und Kostenersparnis, gleiche Versuchsbedingungen für die verschiedenen Individuen
 		\vspace*{0.15cm}	
-		\visible<4->{\item die DNA-Fragmente stammen aus dem gesamten Genom, aber \textbf{keine vollständige genomische Abdeckung}}
+		\item die DNA-Fragmente stammen aus dem gesamten Genom, aber \textbf{keine vollständige genomische Abdeckung}
 	\end{itemize}
 \end{frame}
 
@@ -678,9 +728,9 @@ minimum height=3em, rounded corners, drop shadow]
 
 %%Folie 12
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - Preprocessing}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Preprocessing}
 	\only<1->{
 	\begin{minipage}[t][2cm][t]{\textwidth}	
 		\centering
@@ -706,13 +756,77 @@ minimum height=3em, rounded corners, drop shadow]
 		}
 	\end{minipage}}
 \end{frame}	
+
+%%Folie ###1
+%%Preprocessing
+\section{Model und Implementierung}
+\subsection{Implementierung - Preprocessing}
+\begin{frame}
+	\frametitle{Implementierung - Preprocessing}
+	\begin{minipage}[t][2cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=gray!60 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={red!60,blue!20,blue!20,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
 	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<2-5>{
+			\begin{figure}
+				\begin{center}
+					\begin{tikzpicture}[scale=0.5,transform shape]
+					% https://github.com/PetarV-/TikZ/tree/master/DNA
+					\path \ioitem {1}{Reads\\
+						\begin{tikzpicture}[scale=0.6,transform shape]
+						\bond{red}{blue}{0.1}
+						\bond{red}{blue}{0.25}
+						\bond{red}{blue}{0.4}
+						\bond{blue}{red}{1.1}
+						\bond{blue}{red}{1.25}
+						\bond{blue}{red}{1.4}
+						\bond{red}{blue}{2.1}
+						\bond{red}{blue}{2.25}
+						\bond{red}{blue}{2.4}
+						\bond{blue}{red}{3.1}	
+						\bond{blue}{red}{3.25}
+						\bond{blue}{red}{3.4}
+						\bond{red}{blue}{4.1}
+						\bond{red}{blue}{4.25}
+						\bond{red}{blue}{4.4}
+						\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
+						\end{tikzpicture}
+					};
+					\path (p1.south)+(0.0,-2.0) \blockitem{2}{1. Adapter trimming};
+					\path (p2.south)+(2.5,-1.2) \blockitem{3}{2. Quality \\control};
+					\path (p3.south)+(-2.5,-1.2) \blockitem{5}{3. Sequence alignment};
+					\visible<3-5>{\path (p3.east)+(+4.4, 1.801) node (ur1)[ur] {\color{black}Cutadapt};}
+					\visible<4-5>{\path (p1.east)+(+7.5,-4.42) node (ur2)[ur] {\color{black}FastQ, MultiQC};}
+					\visible<5>{\path (p2.east)+(+7.0,-3.59) node (ur3)[ur] {\color{black}Minimap2};}
+					
+					% Pfeile
+					\path [line] (p1.south) -- node [above, midway] {} (p2);
+					\path [line] (p2.south) -- node [above] {} (p3) ;
+					\path [line] (p3.south) -- node [above] {} (p5) ;
+					
+					\visible<3-5>{\draw [funtool] (p2) -- (ur1);}
+					\visible<4-5>{\draw [funtool] (p3) -- (ur2);}
+					\visible<5>{\draw [funtool] (p5) -- (ur3);}							
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+	}
+\end{minipage}
+\end{frame}	
 	
 %%Folie 12
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - Graphkonstruktion}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Graphkonstruktion}
 	\only<1->{
 		\begin{minipage}[t][2cm][t]{\textwidth}	
 			\centering
@@ -739,7 +853,7 @@ minimum height=3em, rounded corners, drop shadow]
 	
 %%Folie 14
 \section{Model und Implementierung}
-\subsection{}
+\subsection{Approximation des pairHMM}
 \begin{frame}
 	\frametitle{pairHMM vs. Minimap}
 	tabelle
@@ -747,7 +861,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 %%Folie 14
 \section{Model und Implementierung}
-\subsection{}
+\subsection{Approximation des pairHMM}
 \begin{frame}
 	\frametitle{Likelihoodberechnung beim approximierten pairHMM}
 	Tabelle
@@ -755,9 +869,9 @@ minimum height=3em, rounded corners, drop shadow]
 
 %%Folie 12
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - Graphkonstruktion}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Graphkonstruktion}
 	\only<1->{
 		\begin{minipage}[t][2cm][t]{\textwidth}	
 			\centering
@@ -772,7 +886,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 	\only<1->{
 		\begin{minipage}[t][10cm][t]{\textwidth}	
-			\only<1->{
+			\only<1>{
 				\begin{itemize}
 					\item das Problem wird als gerichteter Graph $G=(V, \, E)$ betrachtet
 					\item die Knoten werden durch die Reads repräsentiert
@@ -782,14 +896,111 @@ minimum height=3em, rounded corners, drop shadow]
 					\item Partitionierung des Graphen in mehrere Zusammenhangskomponenten $\Rightarrow$ das Gesamtproblem wird in mehrere Teilprobleme aufgeteilt}
 				\end{itemize}
 			}
+			\only<2>{
+				\begin{itemize}
+					\item \textbf{Grapheigenschaften}:
+					\begin{itemize}
+						\item Ploidie
+						\item Sequenzierfehlerraten für Insertionen und Deletionen
+						\item Heterozygotiewahrscheinlichkeiten für Substitutionen und Indels
+					\end{itemize}
+					\item \textbf{Knoteneigenschaften}:
+					\begin{itemize}
+						\item ID
+						\item Basensequenz
+						\item Basenqualität
+					\end{itemize}
+					\item \textbf{Kanteneigenschaften}:
+					\begin{itemize}
+						\item CIGAR-Tupel
+						\item Edit-Distanz
+					\end{itemize}
+					
+				\end{itemize}
+			}
 	\end{minipage}}
 \end{frame}	
 
+%%Folie ###2
+%%Konstruktion des Graphen
+\section{Model und Implementierung}
+\subsection{Implementierung - Graphkonstruktion}
+\begin{frame}
+	\frametitle{Implementierung - Graphkonstruktion}
+	\begin{minipage}[t][3cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<2->{
+			\vspace*{-1.0cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.64,transform shape]
+					% https://github.com/PetarV-/TikZ/tree/master/DNA
+					\path +(3.695,-5.1) \ioitem {1}{Reads\\
+						\begin{tikzpicture}[scale=0.6,transform shape]
+						\bond{red}{blue}{0.1}
+						\bond{red}{blue}{0.25}
+						\bond{red}{blue}{0.4}
+						\bond{blue}{red}{1.1}
+						\bond{blue}{red}{1.25}
+						\bond{blue}{red}{1.4}
+						\bond{red}{blue}{2.1}
+						\bond{red}{blue}{2.25}
+						\bond{red}{blue}{2.4}
+						\bond{blue}{red}{3.1}	
+						\bond{blue}{red}{3.25}
+						\bond{blue}{red}{3.4}
+						\bond{red}{blue}{4.1}
+						\bond{red}{blue}{4.25}
+						\bond{red}{blue}{4.4}
+						\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
+						\end{tikzpicture}
+					};
+					\path (p3.south)+(-3.0,-1.2) \ioitem{5}{3. Sequence alignment};
+					\path (p3.west)+(3.25,-3.66) \blockitem{4}{4. Build graph};
+					\path (p4.south)+(0.0,-1.5) \blockitem{6}{5. Connected components};
+					
+					\visible<3>{\path (p4.east)+(+3.5,0) node (ur2)[ur] {\color{black}graph-tool};}
+					\only<3>{\path (p6.east)+(+3.5,0) node (ur3)[ur] {\color{black}graph-tool};}
+					\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};
+					
+					% Pfeile		
+					\path [line] (p1.south) -- node [above, midway] {} (p4);	
+					\path [line] (p5.south) -- +(0.0,-1.415) -- node [above, midway] {} (p4.west);		
+					\path [line] (p4.south) --node [above] {} (p6);
+					\path [line] (p6.south) -- node [above, midway] {} (p8);
+					
+					\visible<3>{\draw [funtool] (p4) -- (ur2);}
+					\visible<3>{\draw [funtool] (p6) -- (ur3);}
+				\end{tikzpicture}
+			\end{center}
+		\end{figure}
+	}
+\end{minipage}
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Graphkonstruktion}
+\begin{frame}
+	\frametitle{Laufzeit - Graphkonstruktion}
+	text
+\end{frame}
+
 %%Folie 12
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - Allele-Fractions}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Allele-Fractions}
 	\only<1->{
 		\begin{minipage}[t][2cm][t]{\textwidth}	
 			\centering
@@ -844,23 +1055,112 @@ minimum height=3em, rounded corners, drop shadow]
 			\textbf{Allelkombinationen:}	
 				\begin{itemize}
 					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
-					\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}
+					{\normalsize \item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), \\\;(0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), \\\;(1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}}
 				\end{itemize}	
 			\only<9>{
 			\vspace*{0.3cm}
 			\textbf{Allele-Fractions:}	
 				\begin{itemize}
 					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
-					\item[] \color{black}{[1.0, 0.0, 0.0]}, {[0.75, 0.25, 0.0]}, {[0.75, 0.0, 0.25]}, {[0.5, 0.5, 0.0]}, {[0.5, 0.25, 0.25]}, {[0.5, 0.0, 0.5]}, {[0.25, 0.75, 0.0]}, {[0.25, 0.5, 0.25]}, {[0.25, 0.25, 0.5]}, {[0.25, 0.0, 0.75]}, {[0.0, 1.0, 0.0]}, {[0.0, 0.75, 0.25]}, {[0.0, 0.5, 0.5]}, {[0.0, 0.25, 0.75]}, {[0.0, 0.0, 1.0]}
+					{\normalsize \item[] \color{black}{[1.0, 0.0, 0.0]}, {[0.75, 0.25, 0.0]}, {[0.75, 0.0, 0.25]}, {[0.5, 0.5, 0.0]}, \\{[0.5, 0.25, 0.25]}, {[0.5, 0.0, 0.5]}, {[0.25, 0.75, 0.0]}, {[0.25, 0.5, 0.25]}, \\{[0.25, 0.25, 0.5]}, {[0.25, 0.0, 0.75]}, {[0.0, 1.0, 0.0]}, {[0.0, 0.75, 0.25]}, \\{[0.0, 0.5, 0.5]}, {[0.0, 0.25, 0.75]}, {[0.0, 0.0, 1.0]}}
 				\end{itemize}
 		}}
-		\only<10->{
+	}
+	\end{minipage}
+\end{frame}
+
+%%Folie ###3
+%%Kandidatenallele und Allele-Fractions
+\section{Model und Implementierung}
+\subsection{Implementierung - Allele-Fractions}
+\begin{frame}
+	\frametitle{Implementierung - Allele-Fractions}
+	\begin{minipage}[t][2.8cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<2->{
+			\vspace*{-1.5cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.42,transform shape]	
+					\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
+					\path (p6.south)+(-5.5,-1.4) \blockitem{7}{7. Allele \\combinations};
+					\path (p6.south)+(0.0,-1.4) \blockitem{8}{6. Candidate \\alleles};			
+					\path (p7.south)+(0.0,-3.75) \blockitem{9}{8. Allele fractions};
+					\path (p8.south)+(0.0,-1.5)	\ioitem{10}{9. Likelihood of alleles given one read};
+					\path (p10.south)+(0.0,-1.5) \ioitem{12}{10. Likelihood of allele fractions given one read};
+					\path (p12.south)+(0.0,-1.5) \ioitem{14}{11. Likelihood of allele fractions given all reads};
+					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-1.5) \ioitem{16}{15. Likelihood \\of an allele given another allele};			
+					% Pfeile
+					\path [line] (p6.south) -- node [above] {} (p8);
+					\path [line] (p8.south) -- node [above] {} (p10) ;	
+					\path [line] (p10.south) -- node [above] {} (p12) ;	
+					\path [line] (p12.south) -- node [above] {} (p14) ;		
+					\path [line] (p14.south) -- node [above, midway] {} (p15);
+					\path [line] (p15.south) -- node [above] {} (p16) ;   
+					
+					\visible<3->{\path (p8.east)+(+4.4, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_alleles()|};}
+					\visible<4->{\path (p7.east)+(-1.92,2.2) node (ur2)[ur] {\color{black}\lstinline|get_max_parsimony_n_alleles()|};}
+					\visible<5->{\path (p9.east)+(-8.2,0.0) node (ur3)[ur] {\color{black}\lstinline|get_candidate_vafs()|};}
+					
+					\path [dashedline] (p8.west) -- node [left] {} (p7);
+					\path [dashedline] (p7.south) -- node [above] {} (p9) ;
+					\path [dashedline] (p9.east) -- node [left] {} (p12.west);
+					
+					\visible<3->{\draw [funtool] (p8.east) -- (ur1);}
+					\visible<4->{\draw [funtool] (p7.north) -- (ur2);}
+					\visible<5->{\draw [funtool] (p9.west) -- (ur3);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Allele-Fractions}
+\begin{frame}
+	\frametitle{Laufzeit - Allele-Fractions}
+	text
+\end{frame}
+
+
+%%Folie 12
+\section{Model und Implementierung}
+\subsection{Model - Likelihood der Allele-Fractions}
+\begin{frame}
+	\frametitle{Model - Likelihood der Allele-Fractions}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<1->{
 		\setbeamercolor{block title}{bg=teal!60, fg=white}
 		\setbeamercolor{block body}{bg=teal!25, fg=black}
 		}
-		\only<10-11>{
+		\only<1-2>{
 			Für \textbf{jeden Read} mit der Sequenz $s_{r}$ wird die Wahrscheinlichkeit errechnet, dass er aus einem bestimmten Allel $a_{i}$ allein durch Sequenzierfehler $\epsilon$ hervorgegangen ist:
-			\only<11>{
+			\only<2>{
 			\begin{center}
 				\begin{minipage}{10cm}
 					\begin{varblock}{Allel-Likelihood gegeben ein Read}
@@ -870,9 +1170,9 @@ minimum height=3em, rounded corners, drop shadow]
 				\end{minipage}
 			\end{center}}
 			}
-		\only<12-13>{
+		\only<3-4>{
 			Berechnung der Wahrscheinlichkeit, einen bestimmten Read $s_{r}$ anhand einer gegebenen \textbf{Allele-Fraction} $\Theta_{i} = (\theta_{1},\dots,\theta_{n}) \in [0,1]^{n}$ zu beobachten:
-			\only<13>{
+			\only<4>{
 			\begin{center}
 				\begin{minipage}{11cm}
 					\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
@@ -884,9 +1184,9 @@ minimum height=3em, rounded corners, drop shadow]
 			\hspace*{9.7cm}{\tiny (es gilt $n=n_{cand}$)}
 			}
 		}		
-		\only<14-17>{		
+		\only<5-8>{		
 			Bestimmung der resultierende Likelihood einer Allele-Fraction in Zusammenschau mit \textbf{allen Reads} $D = (s_{1}, \dots, s_{m}) \in \{A,C, G, T\}^{k^m}$:
-			\only<15-17>{
+			\only<6-8>{
 				\begin{center}
 					\begin{minipage}{12cm}
 						\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
@@ -895,11 +1195,11 @@ minimum height=3em, rounded corners, drop shadow]
 						\end{varblock}
 					\end{minipage}
 				\end{center}
-			\only<16-17>{$\Rightarrow$ $L$ ist eine mögliche Loci-Verteilung, die durch die gegebene Allele-\\\hspace*{0.5cm}Fraction abgebildet wird\\}
-			\only<17>{$\Rightarrow$ die Unsicherheit bei der Zuordnung der Reads wird durch die \\\hspace*{0.5cm}relativen Häufigkeiten in der Allele-Fraction abgebildet und an die\\\hspace*{0.5cm}spätere Loci-Zuordnung  weitergereicht\\}			
+			\only<7-8>{$\Rightarrow$ $L$ ist eine mögliche Loci-Verteilung, die durch die gegebene Allele-\\\hspace*{0.5cm}Fraction abgebildet wird\\}
+			\only<8>{$\Rightarrow$ die Unsicherheit bei der Zuordnung der Reads wird durch die \\\hspace*{0.5cm}relativen Häufigkeiten in der Allele-Fraction abgebildet und an die\\\hspace*{0.5cm}spätere Loci-Zuordnung  weitergereicht\\}			
 			}
 		}
-		\only<18>{
+		\only<9>{
 			\vspace*{-0.5cm}
 			\begin{center}
 				\begin{minipage}{10cm}
@@ -932,11 +1232,155 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}		
 
+%%Folie ###4
+%%Likelihood der Allele-Fractions
+\section{Model und Implementierung}
+\subsection{Implementierung - Allele likelihood}
+\begin{frame}
+	\frametitle{Implementierung - Likelihood der Allele-Fractions}
+	\only<2-3,6-7,9->{
+	\begin{minipage}[t][2.8cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}
+		\vspace*{-1.5cm}	
+		\only<2-3,6-7,9->{
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.42,transform shape]	
+					\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
+					\path (p6.south)+(-5.5,-1.4) \ioitem{7}{7. Allele \\combinations};
+					\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};			
+					\path (p7.south)+(0.0,-3.75) \ioitem{9}{8. Allele fractions};
+					\path (p8.south)+(0.0,-1.5)	\blockitem{10}{9. Likelihood of alleles given one read};
+					\path (p10.south)+(0.0,-1.5) \blockitem{12}{10. Likelihood of allele fractions given one read};
+					\path (p12.south)+(0.0,-1.5) \blockitem{14}{11. Likelihood of allele fractions given all reads};
+					\path (p14.south)+(0.0,-1.5) \blockitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-1.5) \ioitem{16}{15. Likelihood \\of an allele given another allele};
+					\visible<3,6->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
+					\visible<7->{\path (ur1.east)+(-3.0,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
+					\visible<9->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
+					\visible<10->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
+					
+					% Pfeile
+					\path [line] (p6.south) -- node [above] {} (p8);
+					\path [line] (p8.south) -- node [above] {} (p10) ;	
+					\path [line] (p10.south) -- node [above] {} (p12) ;	
+					\path [line] (p12.south) -- node [above] {} (p14) ;		
+					\path [line] (p14.south) -- node [above, midway] {} (p15);
+					\path [line] (p15.south) -- node [above] {} (p16) ;   
+					
+					\path [dashedline] (p8.west) -- node [left] {} (p7);
+					\path [dashedline] (p7.south) -- node [above] {} (p9) ;
+					\path [dashedline] (p9.east) -- node [left] {} (p12.west);
+					
+					\visible<3,6->{\draw [funtool] (p10.east) -- (ur1);}
+					\visible<7->{\draw [dashedline] (ur2.south) -- (ur1.north);}
+					\visible<9->{\draw [funtool] (p12.east) -- (ur3);}
+					\visible<10->{\draw [funtool] (p14.east) -- (ur4);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	 	\only<4-5>{		 
+	 		\vspace*{0.6cm}   
+		    \begin{algorithm}[H]
+		    	\footnotesize
+		    	\begin{algorithmic}[]	
+		    		\Function{get\_allele\_likelihood\_read}{$ C_{k} $, $ r_{i} $, $ s_{a_{j}} $, $ dict $}
+		    		\State $ idx_{r_{i}} \gets r_{i}[name]$
+		    		\State $ qual \gets r_{i}[q\_values] $
+		    		\State $ \epsilon \gets C_{k}[\epsilon_{ins}] \cup C_{k}[\epsilon_{del}] $
+		    		\If{$\exists (idx_{r_{i}}, s_{a_{i}}): ((idx_{r_{i}}, s_{a_{i}}), L_{r_{i}, a_{i}}) \in dict$}
+		    		\State \Return $ L_{r_{i}, a_{i}} $
+		    		\EndIf		
+		    		\only<4>{\State $ out\_neighbors \gets get\_out\_neighbors(r_{i})$
+		    		\For {$out\_neighbor \in out\_neighbors $}
+		    		\If{$ s_{a_{j}} = out\_neighbor[sequence] $}
+		    		\State $ cig \gets edge(r_{i}, out\_neighbor)[cigar\_tuples]$		
+		    		\State $ rev \gets False $
+		    		\State $ L_{r_{i}, a_{i}} \gets get\_alignment\_likelihood(\epsilon,\, cig,\, qual,\, rev)$		    		
+		    		\State $ dict \gets dict \, \cup ((r_{i}, out\_neighbor[sequence]), L_{r_{i}, a_{i}})  $
+		    		\State \Return $L_{r_{i}, a_{i}}$   
+		    		\EndIf
+		    		\EndFor
+	    		    \State \textbf{\color{blue}$\Rightarrow$ check in\_neighbors}}
+	    			\only<5>{
+	    			\State \textbf{\color{blue}$\Rightarrow$ check out\_neighbors}		
+		    		\State $ in\_neighbors \gets get\_in\_neighbors(r_{i})$		
+		    		\For {$in\_neighbor \in in\_neighbors $}
+		    		\If{$ s_{a_{j}} =  in\_neighbor[sequence] $}		
+		    		\State $ cig \gets edge(in\_neighbor, r_{i})[cigar\_tuples]$		
+		    		\State $ rev \gets True $
+		    		\State $ L_{r_{i}, a_{i}} \gets get\_alignment\_likelihood(\epsilon,\, cig,\, qual,\, rev)$
+		    		\State $ dict \gets dict \, \cup ((r_{i}, in\_neighbor[sequence]), L_{r_{i}, a_{i}})  $
+		    		\State \Return $L_{r_{i}, a_{i}}$  
+		    		\EndIf		
+		    		\EndFor}		
+		    		\State \Return 0
+		    		\EndFunction
+		    	\end{algorithmic}
+		    \end{algorithm}
+ 		}
+ 		\only<8>{		 
+ 			\vspace*{1.1cm}  
+ 			\begin{algorithm}[H]
+ 				\tiny
+ 				\begin{algorithmic}[]	
+ 					\Function{get\_alignment\_likelihood}{$ \epsilon_{ins} $, $ \epsilon_{del} $, $ cigar\_tuples $, $ q_{query} $, reverse}
+ 					\State $ likelihood \gets 1.0 $, $ index \gets 0 $, $ p_{query} \gets [\;] $
+ 					\For{$ q_{i} \in q_{query} $}
+ 					\State $p_{query} \gets p_{query}\, \cup \, (10^{\frac{-q_{i}}{10}}) $
+ 					\EndFor			
+ 					\If {$reverse$}
+ 					\State swap values of $ \epsilon_{ins} $ and $ \epsilon_{del} $
+ 					\EndIf
+ 					\ForAll {$ (operation, length) \in cigar\_tuples $}
+ 					\While{$ index < (index + length) $}		
+ 					\If {$operation \in match $}		
+ 					\State $ likelihood\, \gets likelihood \,\cdotp (1-p_{query}[index]) $
+ 					\EndIf
+ 					\If {$operation \in substitution $}
+ 					\State $ likelihood\, \gets likelihood \,\cdotp \frac{1}{3} \,\cdotp p_{query}[index] $
+ 					\EndIf
+ 					\If {$operation \in insertion $}
+ 					\State $ likelihood\, \gets likelihood \,\cdotp \epsilon_{ins}$
+ 					\EndIf
+ 					\If {$operation \in deletion $}
+ 					\State $ likelihood\, \gets likelihood \,\cdotp \epsilon_{del} $
+ 					\EndIf
+ 					\State $index \gets index + 1 $
+ 					\EndWhile
+ 					\EndFor
+ 					\State \Return $likelihood$
+ 					\EndFunction		
+ 				\end{algorithmic}
+ 			\end{algorithm}
+ 		}
+	\end{minipage}
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Likelihood der Allele-Fractions}
+\begin{frame}
+	\frametitle{Laufzeit - Likelihood der Allele-Fractions}
+	text
+\end{frame}
+
 %%Folie 12###################
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - Loci-Kombinationen}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Loci-Kombinationen}
 	\only<1->{
 		\begin{minipage}[t][2cm][t]{\textwidth}	
 			\centering
@@ -958,146 +1402,330 @@ minimum height=3em, rounded corners, drop shadow]
 			\end{itemize}
 		}
 
-		\only<5-10>{
-			$\Rightarrow$ Beispiel: \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4 $: \\
+		\only<5-14>{
+			\textbf{$\Rightarrow$ Beispiel:} \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4 $: \\
+			\\
 			\only<6>{		
 				\hspace*{0.5cm}\color{black}\textbf{Kombinationen der Allele}:
 				\begin{itemize}
-					\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}\\
+					\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), \\$ \; $(0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), \\$ \; $(1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}\\
 				\end{itemize}												
 			}
 			\only<7>{
 				\hspace*{0.5cm}\color{black}\textbf{Permutationen der Allele}:
 					\begin{itemize}
-						\item[] \color{black}(1, 2, 1, 1), (2, 1, 0, 0), (2, 1, 1, 1), (0, 1, 2, 1), (0, 1, 1, 2), (0, 1, 0, 0), (2, 2, 1, 0), (0, 2, 2, 1), (2, 2, 0, 1), (1, 0, 2, 2), (0, 2, 0, 1), (2, 0, 0, 1), (1, 0, 1, 0), (0, 2, 1, 2), (0, 0, 2, 0), (2, 2, 2, 1), (1, 1, 0, 1), (2, 0, 1, 1), (2, 0, 2, 0), (0, 0, 2, 2), (1, 1, 2, 0), (1, 2, 1, 0), (2, 0, 2, 2), (2, 1, 1, 0), (2, 1, 0, 2), (1, 2, 0, 1), (0, 1, 2, 0), (1, 2, 1, 2), (1, 2, 2, 1), (0, 1, 1, 1), (1, 1, 1, 0), (0, 0, 0, 0), (2, 1, 1, 2), (2, 1, 2, 1), (1, 0, 0, 1), (0, 1, 0, 2), (2, 2, 1, 2), (0, 2, 2, 0), (1, 0, 2, 1), (2, 0, 0, 0), (0, 2, 1, 1), (1, 1, 1, 2), (0, 0, 0, 2), (0, 0, 1, 1), (1, 0, 1, 2), (2, 0, 0, 2), (0, 0, 2, 1), (1, 1, 2, 2), (2, 1, 0, 1), (1, 2, 0, 0), (0, 1, 2, 2), (1, 2, 2, 0), (0, 1, 1, 0), (2, 2, 0, 0), (0, 2, 0, 0), (2, 1, 2, 0),...\\	
+						\item[] {\footnotesize \color{black}(1, 2, 1, 1), (2, 1, 0, 0), (2, 1, 1, 1), (0, 1, 2, 1), (0, 1, 1, 2), (0, 1, 0, 0),\\ (2, 2, 1, 0), (0, 2, 2, 1), (2, 2, 0, 1), (1, 0, 2, 2), (0, 2, 0, 1), (2, 0, 0, 1), \\(1, 0, 1, 0), (0, 2, 1, 2), (0, 0, 2, 0), (2, 2, 2, 1), (1, 1, 0, 1), (2, 0, 1, 1), \\(2, 0, 2, 0), (0, 0, 2, 2), (1, 1, 2, 0), (1, 2, 1, 0), (2, 0, 2, 2), (2, 1, 1, 0), \\(2, 1, 0, 2), (1, 2, 0, 1), (0, 1, 2, 0), (1, 2, 1, 2), (1, 2, 2, 1), (0, 1, 1, 1), \\(1, 1, 1, 0), (0, 0, 0, 0), (2, 1, 1, 2), (2, 1, 2, 1), (1, 0, 0, 1), (0, 1, 0, 2), \\(2, 2, 1, 2), (0, 2, 2, 0), (1, 0, 2, 1), (2, 0, 0, 0), (0, 2, 1, 1), (1, 1, 1, 2), \\(0, 0, 0, 2), (0, 0, 1, 1), (1, 0, 1, 2), (2, 0, 0, 2), (0, 0, 2, 1), (1, 1, 2, 2), \\(2, 1, 0, 1), (1, 2, 0, 0), (0, 1, 2, 2), (1, 2, 2, 0), (0, 1, 1, 0), (2, 2, 0, 0), \\(0, 2, 0, 0), (2, 1, 2, 0), (1, 0, 0, 0), (1, 2, 0, 2), (0, 1, 0, 1), (2, 2, 1, 1), \\(2, 2, 2, 0), (1, 1, 0, 0), (1, 0, 2, 0), (0, 2, 2, 2), (1, 2, 2, 2), (2, 2, 0, 2),...\\}
 					\end{itemize}	}
 			\only<8>{
 				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
 					\begin{itemize}
 						\item[] \color{black}
-						((0, 0), (0, 2)), ((1, 1), (1, 1)), ((0, 2), (0, 2)), ((1, 1), (2, 2)), ((0, 1), (0, 2)), ((1, 1), (1, 2)), ((1, 2), (2, 2)), ((1, 2), (1, 2)), ((0, 0), (1, 1)), ((0, 0), (2, 2)), ((0, 2), (1, 1)), ((0, 1), (1, 1)), ((0, 0), (0, 0)), ((0, 2), (2, 2)), ((0, 0), (1, 2)), ((0, 1), (2, 2)), ((2, 2), (2, 2)), ((0, 0), (0, 1)), ((0, 2), (1, 2)), ((0, 1), (1, 2)), ((0, 1), (0, 1)) \\
+						((0, 0), (0, 2)), ((1, 1), (1, 1)), ((0, 2), (0, 2)), ((1, 1), (2, 2)), \\
+						((0, 1), (0, 2)), ((1, 1), (1, 2)), ((1, 2), (2, 2)), ((1, 2), (1, 2)),
+						\\ 
+						((0, 0), (1, 1)), ((0, 0), (2, 2)), ((0, 2), (1, 1)), ((0, 1), (1, 1)), 
+						\\
+						((0, 0), (0, 0)), ((0, 2), (2, 2)), ((0, 0), (1, 2)), ((0, 1), (2, 2)), 
+						\\
+						((2, 2), (2, 2)), ((0, 0), (0, 1)), ((0, 2), (1, 2)), ((0, 1), (1, 2)), 
+						\\
+						((0, 1), (0, 1)) \\
 					\end{itemize}}
-			\only<9-10>{		
+			\only<9-14>{		
 				\hspace*{0.5cm}\color{black}\textbf{Kombinationen der Allele}:
 				\begin{itemize}
-					\item[] \color{black}{[..., (0, 1, 1, 2), (0, 1, 0, 0),...]}\\
+					\item[] \color{black}{\footnotesize {[... (0, 1, 1, 2), ...]}\\}
 				\end{itemize}
 			\hspace*{0.5cm}\color{black}\textbf{Permutationen der Allele}:
 				\begin{itemize}
-					\item[] \color{black}(0, 1, 1, 2), (0, 1, 2, 1), (1, 0, 2, 1), (1, 1, 2, 0), (1, 1, 0, 2), (2, 1, 1, 0),...\\	
+					\item[] \color{black}{\footnotesize(1, 0, 1, 2), (0, 1, 1, 2), (0, 1, 2, 1), (1, 0, 2, 1), (2, 1, 1, 0), (1, 2, 0, 1), \\(2, 1, 0, 1), (2, 1, 0, 1), (2, 1, 0, 1), (1, 2, 1, 0), (1, 1, 2, 0), (1, 1, 0, 2), \\(2, 0, 1, 1), (0, 2, 1, 1), ... \\}	
 				\end{itemize}	
+			\only<9>{
 			\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
 				\begin{itemize}
 					\item[] \color{black}
-					((0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)), ((1, 1), (2, 0)), ((1, 1), (0, 2)), ((2, 1), (1, 0)),... \\
-				\end{itemize}	
+					{\footnotesize((1, 0), (1, 2)), ((0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)), ((2, 1), (1, 0)), ((1, 2), (0, 1)), ((2, 1), (0, 1)), ((2, 1), (0, 1)), ((2, 1), (0, 1)), ((1, 2), (1, 0)), ((1, 1), (2, 0)), ((1, 1), (0, 2)), ((2, 0), (1, 1)), ((0, 2), (1, 1)), ... \\}
+				\end{itemize}}	
 			\only<10>{
 				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
 				\begin{itemize}
 					\item[] \color{black}
-					(\color{blue}(0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)),\color{green} ((1, 1), (2, 0)), ((1, 1), (0, 2)), \color{red}((2, 1), (1, 0))\color{black},... \\
+					{\footnotesize  \color{blue}((1, 0), (1, 2)), ((0, 1), (1, 2)), ((0, 1), (2, 1)), ((1, 0), (2, 1)), \color{darkgreen}((2, 1), (1, 0)), ((1, 2), (0, 1)), ((2, 1), (0, 1)), ((2, 1), (0, 1)), ((2, 1), (0, 1)), ((1, 2), (1, 0)),  \color{lila}((1, 1), (2, 0)), ((1, 1), (0, 2)), \color{red}((2, 0), (1, 1)), ((0, 2), (1, 1))\color{black}, ... \\}
 				\end{itemize}	
-			}										
-			}
-		}				
-		
-		\only<11>{				
-			\vspace*{-0.1cm}
-			\textbf{Allelkombinationen:}	
-			\begin{itemize}
-				\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4 $: \\
-				\item[] \color{black}{[(0, 0, 0, 0), (0, 0, 0, 1), (0, 0, 0, 2), (0, 0, 1, 1), (0, 0, 1, 2), (0, 0, 2, 2), (0, 1, 1, 1), (0, 1, 1, 2), (0, 1, 2, 2), (0, 2, 2, 2), (1, 1, 1, 1), (1, 1, 1, 2), (1, 1, 2, 2), (1, 2, 2, 2), (2, 2, 2, 2)]}
-			\end{itemize}	
-			\only<9>{
-				\vspace*{0.3cm}
-				\textbf{Allele-Fractions:}	
+			}		
+			\only<11>{
+				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
 				\begin{itemize}
-					\item[] \color{blue}$ ploidy = 2, n_{cand} = 3, n_{alleles} = 4$: \\
-					\item[] \color{black}{[1.0, 0.0, 0.0]}, {[0.75, 0.25, 0.0]}, {[0.75, 0.0, 0.25]}, {[0.5, 0.5, 0.0]}, {[0.5, 0.25, 0.25]}, {[0.5, 0.0, 0.5]}, {[0.25, 0.75, 0.0]}, {[0.25, 0.5, 0.25]}, {[0.25, 0.25, 0.5]}, {[0.25, 0.0, 0.75]}, {[0.0, 1.0, 0.0]}, {[0.0, 0.75, 0.25]}, {[0.0, 0.5, 0.5]}, {[0.0, 0.25, 0.75]}, {[0.0, 0.0, 1.0]}
-				\end{itemize}
-		}}
-		\only<10->{
+					\item[] \color{black}
+					{\footnotesize  \color{blue}((0, 1), (1, 2)), \color{darkgreen}((1, 2), (0, 1)), \color{lila}((1, 1), (0, 2)), \color{red}((0, 2), (1, 1))\color{black}, ... \\}
+				\end{itemize}	
+			}					
+			\only<12>{
+			\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+				\begin{itemize}
+					\item[] \color{black}
+					{\footnotesize  ((0, 1), (1, 2)), ((1, 2), (0, 1)), ((1, 1), (0, 2)), ((0, 2), (1, 1)), ... \\}
+				\end{itemize}	
+			}		
+			\only<13>{
+				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+				\begin{itemize}
+					\item[] \color{black}
+					{\footnotesize  \color{blue}((0, 1), (1, 2)), ((1, 2), (0, 1)), \color{red}((1, 1), (0, 2)), ((0, 2), (1, 1))\color{black}, ... \\}
+				\end{itemize}	
+			}	
+			\only<14>{
+				\hspace*{0.5cm}\color{black}\textbf{Mögliche Loci-Kombinationen}:
+				\begin{itemize}
+					\item[] \color{black}
+					{\footnotesize  \color{blue}((0, 1), (1, 2)), \color{red}((1, 1), (0, 2))\color{black}, ... \\}
+				\end{itemize}	
+			}		
+			}
+		}	
+	\end{minipage}}
+\end{frame}				
+
+%%Folie ###5
+%%Loci-Kombinationen
+\section{Model und Implementierung}
+\subsection{Implementierung - Loci-Kombinationen}
+\begin{frame}
+	\frametitle{Implementierung - Loci-Kombinationen}
+	\begin{minipage}[t][2.5cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<2->{
+			\vspace*{-2.0cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.50,transform shape]
+					\path (p9.south)+(-1.0,-6.35) \ioitem{11}{14. Indicator constraint};
+					\path (p11.south)+(0.0,-1.5) \blockitem{13}{13. Loci \\combinations};
+					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
+					\path (p16.south)+(0.0,-1.8) \ioitem{17}{16. Likelihood of loci given alleles and fractions}; 
+					\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
+					\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+					\visible<3->{\path (p13.west)+(-4.5, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_loci()|};}
+					% Pfeile
+					\path [line] (p15.south) -- node [above] {} (p16) ;     
+					\path [line] (p16.south) -- node [above] {} (p17) ;
+					\path [line] (p17.south) -- node [above] {} (p18) ;
+					\path [line] (p18.south) -- node [above] {} (p19) ;		
+					
+					\path [dashedline] (p11.east) -- node [left] {} (p16.west);
+					\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
+					
+					\visible<3->{\draw [funtool] (p13.west) -- (ur1.east);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Loci-Kombinationen}
+\begin{frame}
+	\frametitle{Laufzeit - Loci-Kombinationen}
+	text
+\end{frame}
+
+
+%%Folie 12###################
+\section{Model und Implementierung}
+\subsection{Model - Zuordnung der Loci}
+\begin{frame}
+	\frametitle{Model - Zuordnung der Loci}
+	\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}
+		\only<1->{
 			\setbeamercolor{block title}{bg=teal!60, fg=white}
 			\setbeamercolor{block body}{bg=teal!25, fg=black}
 		}
-		\only<10-11>{
-			Für \textbf{jeden Read} mit der Sequenz $s_{r}$ wird die Wahrscheinlichkeit errechnet, dass er aus einem bestimmten Allel $a_{i}$ allein durch Sequenzierfehler $\epsilon$ hervorgegangen ist:
-			\only<11>{
+		\only<2-4>{
+			Prüfung jeder Loci-Kombination $L \in \{l_{j} \in \mathds{N}_{\leq n}^\phi \, | \, j=1, \dots, g\}$, ob sie die ermittelte wahrscheinlichste Häufigkeitsverteilung der Kandidatenallele erfüllen kann:
+			\only<3-4>{
 				\begin{center}
-					\begin{minipage}{10cm}
-						\begin{varblock}{Allel-Likelihood gegeben ein Read}
+					\begin{minipage}{8cm}
+						\begin{varblock}{Indikatorfunktion $z_{L} \in [0,1]$}
 							\centering
-							$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+							$z_{L}=\prod_{i=1}^{n}1_{\sum_{j=1}^{g}\sum_{k=1}^{\phi}1_{l_{j,k}=i} = \theta_{i} \, \cdotp g \, \cdotp \phi}$
 						\end{varblock}	
 					\end{minipage}
-			\end{center}}
+				\end{center}}
+		\only<4>{\vspace*{0.2cm}
+		$\Rightarrow$ $z_{L}=1$, wenn die absolute Häufigkeit der einzelnen Kandidatenallele in einer Loci-Kombination, der Anzahl dieser Allele in der Allele-Fraction mit maximaler Likelihood entspricht}
 		}
-		\only<12-13>{
-			Berechnung der Wahrscheinlichkeit, einen bestimmten Read $s_{r}$ anhand einer gegebenen \textbf{Allele-Fraction} $\Theta_{i} = (\theta_{1},\dots,\theta_{n}) \in [0,1]^{n}$ zu beobachten:
-			\only<13>{
+		\only<5-7>{
+			Bestimmung der Wahrscheinlichkeit wie die einzelnen Allele der Maximum-Likelihood-Allele-Fraction hinsichtlich der Heterozygotiewahrscheinlichkeiten $\eta$ miteinander in Beziehung stehen:
+			\only<6-7>{
 				\begin{center}
-					\begin{minipage}{11cm}
-						\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+					\begin{minipage}{10.5cm}
+						\begin{varblock}{Likelihood des paarweisen Vergleichs zweier Allele}
 							\centering
-							$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+							$Pr(T=a_{l_{j,2}} \, , \, S=a_{l_{j,1}}, \eta) = pairHMM_{\eta}(a_{l_{j,1}}, a_{l_{j,2}})$
 						\end{varblock}						
 					\end{minipage}
 				\end{center}
-				\hspace*{9.7cm}{\tiny (es gilt $n=n_{cand}$)}
 			}
+		\only<7>{\vspace*{0.2cm}
+			$\Rightarrow$ Wahrscheinlichkeit, dass zwei Allele $a_{l_{j,1}}$ und $a_{l_{j,2}}$ vom gleichen Locus $l_{j}$ stammen}
 		}		
-		\only<14-17>{		
-			Bestimmung der resultierende Likelihood einer Allele-Fraction in Zusammenschau mit \textbf{allen Reads} $D = (s_{1}, \dots, s_{m}) \in \{A,C, G, T\}^{k^m}$:
-			\only<15-17>{
+		\only<8-10>{		
+			Bestimmung der Gesamtlikelihood einer Loci-Kombination, dass die enthaltenen Allele $A$ bei gegebenen Heterozygotiewahrscheinlichkeiten in dieser Konstellation der Loci vorliegen:
+			\only<9-10>{
 				\begin{center}
-					\begin{minipage}{12cm}
-						\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+					\begin{minipage}{13cm}
+						\begin{varblock}{Likelihood einer Loci-Kombination}
 							\centering
-							$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+							$Pr(\Theta,A \, | \, L=\{l_{j}\, |\, j=1,\dots,g\})=z_{L} \, \cdotp \prod_{j=1}^{g}Pr(T=a_{l_{j,2}} \, , \, S=a_{l_{j,1}})$
 						\end{varblock}
 					\end{minipage}
 				\end{center}
-				\only<16-17>{$\Rightarrow$ $L$ ist eine mögliche Loci-Verteilung, die durch die gegebene Allele-Fraction abgebildet wird\\
-					\\}
-				\only<17>{$\Rightarrow$ die Unsicherheit bei der Zuordnung der Reads wird durch die relativen Häufigkeiten in der Allele-Fraction abgebildet und an die spätere Loci-Zuordnung  weitergereicht\\}			
+			}
+			\only<10>{$\Rightarrow$ $L$ wird für jede Loci-Kombination durchgeführt, welche die Allele-Fraction mit maximaler Likelihood erklären kann\\	
 			}
 		}
-		\only<18>{
+		\only<11>{
+			\vspace*{-0.5cm}
 			\begin{center}
-				\begin{minipage}{10cm}
-					\begin{varblock}{Allel-Likelihood gegeben ein Read}
+				\begin{minipage}{8cm}
+					\begin{varblock}{Indikatorfunktion $z_{L} \in [0,1]$}
 						\centering
-						$Pr(T=s_{r} \, | \, S=a_{i}, \epsilon) = pairHMM_{\epsilon,q_{r}}(a_{i}, s_{r})$
+						$z_{L}=\prod_{i=1}^{n}1_{\sum_{j=1}^{g}\sum_{k=1}^{\phi}1_{l_{j,k}=i} = \theta_{i} \, \cdotp g \, \cdotp \phi}$
 					\end{varblock}	
 				\end{minipage}
 			\end{center}
-			
+		
 			\begin{center}
-				\begin{minipage}{11cm}
-					\begin{varblock}{Likelihood einer Allele-Fraction gegeben ein Read}
+				\vspace*{-0.25cm}
+				\begin{minipage}{10.5cm}
+					\begin{varblock}{Likelihood des paarweisen Vergleichs zweier Allele}
 						\centering
-						$Pr(s_{r} \, | \, \Theta=\theta_{1},\dots,\theta_{n}) = \sum_{i=1}^{n}\theta_{i} \, \cdotp Pr(T=s_{r} \, | \, S=a_{i}, \epsilon)$
+						$Pr(T=a_{l_{j,2}} \, , \, S=a_{l_{j,1}}, \eta) = pairHMM_{\eta}(a_{l_{j,1}}, a_{l_{j,2}})$
 					\end{varblock}						
 				\end{minipage}
 			\end{center}
 			
 			\begin{center}
-				\begin{minipage}{12cm}
-					\begin{varblock}{Likelihood einer Allele-Fraction gegeben alle Reads}
+				\vspace*{-0.25cm}
+				\begin{minipage}{13cm}
+					\begin{varblock}{Likelihood einer Loci-Kombination}
 						\centering
-						$L(\Theta=\theta_{1},\dots,\theta_{n} \, | \, D= s_{1}, \dots, s_{m}) = Pr(D \, | \, \Theta) = \prod_{r=1}^{m}Pr (s_{r} \, | \, \Theta)$
+						$Pr(\Theta,A \, | \, L=\{l_{j}\, |\, j=1,\dots,g\})=z_{L} \, \cdotp \prod_{j=1}^{g}Pr(T=a_{l_{j,2}} \, , \, S=a_{l_{j,1}})$
 					\end{varblock}
 				\end{minipage}
 			\end{center}
+		$\Rightarrow$ die Loci-Kombination mit maximaler Likelihood ist die wahrscheinlichste Loci-Zuordnung der Reads einer Zusammenhangskomponente
 		}
-\end{minipage}}
+	\end{minipage}}
 \end{frame}	
+
+%%Folie ###6
+%%Likelihood der Loci-Zuordnung
+\section{Model und Implementierung}
+\subsection{Implementerierung - Zuordnung der Loci}
+\begin{frame}
+	\frametitle{Implementerierung - Zuordnung der Loci}
+	\begin{minipage}[t][2.5cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=blue!20 for 5 items}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}
+	
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\only<2->{
+			\vspace*{-2.0cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.50,transform shape]
+					\path (p9.south)+(-1.0,-6.35) \blockitem{11}{14. Indicator constraint};
+					\path (p11.south)+(0.0,-1.5) \ioitem{13}{13. Loci \\combinations};
+					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
+					\path (p15.south)+(0.0,-2.0) \blockitem{16}{15. Likelihood \\of an allele given another allele};
+					\path (p16.south)+(0.0,-1.8) \blockitem{17}{16. Likelihood of loci given alleles and fractions}; 
+					\path (p17.south)+(0.0,-1.3) \blockitem{18}{17. Maximum likelihood loci};
+					\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+					
+					% Pfeile
+					\path [line] (p15.south) -- node [above] {} (p16) ;     
+					\path [line] (p16.south) -- node [above] {} (p17) ;
+					\path [line] (p17.south) -- node [above] {} (p18) ;
+					\path [line] (p18.south) -- node [above] {} (p19) ;		
+					
+					\path [dashedline] (p11.east) -- node [left] {} (p16.west);
+					\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
+					
+					\visible<4->{\path (p11.north)+(0.0, 1.0) node (ur1)[ur] {\color{black}\lstinline|indicator_constraint()|};}
+					\visible<3->{\path (p11.north)+(-0.0, 2.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
+					\visible<5->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
+					\visible<6->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
+					\visible<7->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
+					
+					\visible<4->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
+					\visible<6->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
+					
+					% Pfeile%
+					\visible<4->{\draw [funtool] (p11.north) -- (ur1.south);}		
+					\visible<5->{\draw [funtool] (p16.east) -- (ur3.west);}	
+					\visible<7->{\draw [funtool] (p17.east) -- (ur5.west);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
+		}
+	\end{minipage}
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Zuordnung der Loci}
+\begin{frame}
+	\frametitle{Laufzeit - Zuordnung der Loci}
+	text
+\end{frame}
+
+%%Folie 14
+\section{Model und Implementierung}
+\subsection{Laufzeit - Gesamtlaufzeit}
+\begin{frame}
+	\frametitle{Laufzeit - Gesamtlaufzeit}
+	text
+\end{frame}
+
 
 %%Folie 12
 \section{Model und Implementierung}
-\subsection{Model}
+\subsection{Model - VCF-Output}
 \begin{frame}
-	\frametitle{Model}
+	\frametitle{Model - Ausgabe im Variant Call Format}
 	\only<1->{
 		\begin{minipage}[t][2cm][t]{\textwidth}	
 			\centering
@@ -1111,428 +1739,63 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 	\only<1->{
 		\begin{minipage}[t][10cm][t]{\textwidth}	
-			\only<2>{
-				\begin{itemize}
-					\item vcf
-				\end{itemize}
+			\only<2->{
+				enthält die Loci mit den Sequenzen ihrer Allele und ihrem Genotyp\\
+				\\}
+			\only<3>{
+				\includegraphics[width =0.95\textwidth] {pictures/vcf.png}
 			}
 	\end{minipage}}
-\end{frame}
-
-%%Folie ###1
-%%Preprocessing
-\section{Model und Implementierung}
-\subsection{Preprocessing}
-\begin{frame}
-	\frametitle{}
-		\begin{minipage}[t][3cm][t]{\textwidth}	
-			\centering
-			\scalebox{0.6}{
-				\smartdiagramset{sequence item height=2.5cm,
-					uniform color list=gray!60 for 5 items}
-				\only<1>{\smartdiagramset{set color
-						list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-				\only<2->{\smartdiagramset{set color
-						list={red!60,blue!20,blue!20,blue!20,blue!20}}}
-				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-			}
-		\end{minipage}
-
-		\begin{minipage}[t][10cm][t]{\textwidth}	
-			\only<3-6>{
-			\begin{figure}
-				\begin{center}
-					\begin{tikzpicture}[scale=0.5,transform shape]
-						% https://github.com/PetarV-/TikZ/tree/master/DNA
-						\path \ioitem {1}{Reads\\
-							\begin{tikzpicture}[scale=0.6,transform shape]
-							\bond{red}{blue}{0.1}
-							\bond{red}{blue}{0.25}
-							\bond{red}{blue}{0.4}
-							\bond{blue}{red}{1.1}
-							\bond{blue}{red}{1.25}
-							\bond{blue}{red}{1.4}
-							\bond{red}{blue}{2.1}
-							\bond{red}{blue}{2.25}
-							\bond{red}{blue}{2.4}
-							\bond{blue}{red}{3.1}	
-							\bond{blue}{red}{3.25}
-							\bond{blue}{red}{3.4}
-							\bond{red}{blue}{4.1}
-							\bond{red}{blue}{4.25}
-							\bond{red}{blue}{4.4}
-							\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
-					\end{tikzpicture}
-					};
-					\path (p1.south)+(0.0,-2.0) \blockitem{2}{1. Adapter trimming};
-					\path (p2.south)+(2.5,-1.2) \blockitem{3}{2. Quality \\control};
-					\path (p3.south)+(-2.5,-1.2) \blockitem{5}{3. Sequence alignment};
-					\visible<4-6>{\path (p3.east)+(+4.4, 1.801) node (ur1)[ur] {\color{black}Cutadapt};}
-					\visible<5-6>{\path (p1.east)+(+7.5,-4.42) node (ur2)[ur] {\color{black}FastQ, MultiQC};}
-					\visible<6>{\path (p2.east)+(+7.0,-3.59) node (ur3)[ur] {\color{black}Minimap2};}
-																
-					% Pfeile
-					\path [line] (p1.south) -- node [above, midway] {} (p2);
-					\path [line] (p2.south) -- node [above] {} (p3) ;
-					\path [line] (p3.south) -- node [above] {} (p5) ;
-											
-					\visible<4-6>{\draw [funtool] (p2) -- (ur1);}
-					\visible<5-6>{\draw [funtool] (p3) -- (ur2);}
-					\visible<6>{\draw [funtool] (p5) -- (ur3);}							
-					\end{tikzpicture}
-				\end{center}
-			\end{figure}
-			}
-		\end{minipage}
-\end{frame}
-
-%%Folie ###2
-%%Konstruktion des Graphen
-\section{Model und Implementierung}
-\subsection{Graph und Zusammenhangskomponenten}
-\begin{frame}
-	\frametitle{}
-	\begin{minipage}[t][3cm][t]{\textwidth}	
-		\centering
-		\scalebox{0.6}{
-			\smartdiagramset{sequence item height=2.5cm,
-				uniform color list=blue!20 for 5 items}
-			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
-					list={blue!20,red!60,blue!20,blue!20,blue!20}}}
-			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-		}
-	\end{minipage}
-	
-	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<3->{
-			\vspace*{-1.0cm}
-			\begin{figure}[h]
-				\begin{center}
-					\begin{tikzpicture}[scale=0.64,transform shape]
-					% https://github.com/PetarV-/TikZ/tree/master/DNA
-					\path +(3.695,-5.1) \ioitem {1}{Reads\\
-						\begin{tikzpicture}[scale=0.6,transform shape]
-						\bond{red}{blue}{0.1}
-						\bond{red}{blue}{0.25}
-						\bond{red}{blue}{0.4}
-						\bond{blue}{red}{1.1}
-						\bond{blue}{red}{1.25}
-						\bond{blue}{red}{1.4}
-						\bond{red}{blue}{2.1}
-						\bond{red}{blue}{2.25}
-						\bond{red}{blue}{2.4}
-						\bond{blue}{red}{3.1}	
-						\bond{blue}{red}{3.25}
-						\bond{blue}{red}{3.4}
-						\bond{red}{blue}{4.1}
-						\bond{red}{blue}{4.25}
-						\bond{red}{blue}{4.4}
-						\braid[rotate=90,style strands={1}{red, very thick},style strands={2}{blue, very thick}] (tst) at (0, 0) s_1 s_1 s_1 s_1 ;
-						\end{tikzpicture}
-					};
-					\path (p3.south)+(-3.0,-1.2) \ioitem{5}{3. Sequence alignment};
-					\path (p3.west)+(3.25,-3.66) \blockitem{4}{4. Build graph};
-					\path (p4.south)+(0.0,-1.5) \blockitem{6}{5. Connected components};
-					
-					\visible<4>{\path (p4.east)+(+3.5,0) node (ur2)[ur] {\color{black}graph-tool};}
-					\only<4>{\path (p6.east)+(+3.5,0) node (ur3)[ur] {\color{black}graph-tool};}
-					\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};
-					
-					% Pfeile		
-					\path [line] (p1.south) -- node [above, midway] {} (p4);	
-					\path [line] (p5.south) -- +(0.0,-1.415) -- node [above, midway] {} (p4.west);		
-					\path [line] (p4.south) --node [above] {} (p6);
-					\path [line] (p6.south) -- node [above, midway] {} (p8);
-					
-					\visible<4>{\draw [funtool] (p4) -- (ur2);}
-					\visible<4>{\draw [funtool] (p6) -- (ur3);}
-				\end{tikzpicture}
-			\end{center}
-		\end{figure}
-	}
-\end{minipage}
-\end{frame}
-
-%%Folie ###3
-%%Kandidatenallele und Allele-Fractions
-\section{Model und Implementierung}
-\subsection{Kandidatenallele und Allele-Fractions}
-\begin{frame}
-	\frametitle{}
-	\begin{minipage}[t][3cm][t]{\textwidth}	
-		\centering
-		\scalebox{0.6}{
-			\smartdiagramset{sequence item height=2.5cm,
-				uniform color list=blue!20 for 5 items}
-			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
-					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
-			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-		}
-	\end{minipage}
-	
-	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<3->{
-			\vspace*{-1.5cm}
-			\begin{figure}[h]
-				\begin{center}
-					\begin{tikzpicture}[scale=0.45,transform shape]	
-					\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
-					\path (p6.south)+(-5.5,-1.4) \blockitem{7}{7. Allele \\combinations};
-					\path (p6.south)+(0.0,-1.4) \blockitem{8}{6. Candidate \\alleles};			
-					\path (p7.south)+(0.0,-3.75) \blockitem{9}{8. Allele fractions};
-					\path (p8.south)+(0.0,-1.5)	\ioitem{10}{9. Likelihood of alleles given one read};
-					\path (p10.south)+(0.0,-1.5) \ioitem{12}{10. Likelihood of allele fractions given one read};
-					\path (p12.south)+(0.0,-1.5) \ioitem{14}{11. Likelihood of allele fractions given all reads};
-					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
-					\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};			
-					% Pfeile
-					\path [line] (p6.south) -- node [above] {} (p8);
-					\path [line] (p8.south) -- node [above] {} (p10) ;	
-					\path [line] (p10.south) -- node [above] {} (p12) ;	
-					\path [line] (p12.south) -- node [above] {} (p14) ;		
-					\path [line] (p14.south) -- node [above, midway] {} (p15);
-					\path [line] (p15.south) -- node [above] {} (p16) ;   
-					
-					\visible<4->{\path (p8.east)+(+4.4, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_alleles()|};}
-					\visible<5->{\path (p7.east)+(-1.92,2.2) node (ur2)[ur] {\color{black}\lstinline|get_max_parsimony_n_alleles()|};}
-					\visible<6->{\path (p9.east)+(-8.2,0.0) node (ur3)[ur] {\color{black}\lstinline|get_candidate_vafs()|};}
-					
-					\path [dashedline] (p8.west) -- node [left] {} (p7);
-					\path [dashedline] (p7.south) -- node [above] {} (p9) ;
-					\path [dashedline] (p9.east) -- node [left] {} (p12.west);
-					
-					\visible<4->{\draw [funtool] (p8.east) -- (ur1);}
-					\visible<5->{\draw [funtool] (p7.north) -- (ur2);}
-					\visible<6->{\draw [funtool] (p9.west) -- (ur3);}
-					\end{tikzpicture}
-				\end{center}
-			\end{figure}
-		}
-	\end{minipage}
-\end{frame}
-
-%%Folie ###4
-%%Likelihood der Allele-Fractions
-\section{Model und Implementierung}
-\subsection{Likelihood der Allele-Fractions}
-\begin{frame}
-	\frametitle{}
-	\begin{minipage}[t][3cm][t]{\textwidth}	
-		\centering
-		\scalebox{0.6}{
-			\smartdiagramset{sequence item height=2.5cm,
-				uniform color list=blue!20 for 5 items}
-			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,red!60,blue!20,blue!20}}}
-			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-		}
-	\end{minipage}
-	
-	\begin{minipage}[t][10cm][t]{\textwidth}
-		\vspace*{-1.5cm}	
-		\only<2->{
-		\begin{figure}[h]
-			\begin{center}
-				\begin{tikzpicture}[scale=0.45,transform shape]	
-				\path (p4.south)+(0.0,-1.5) \ioitem{6}{5. Connected components};
-				\path (p6.south)+(-5.5,-1.4) \ioitem{7}{7. Allele \\combinations};
-				\path (p6.south)+(0.0,-1.4) \ioitem{8}{6. Candidate \\alleles};			
-				\path (p7.south)+(0.0,-3.75) \ioitem{9}{8. Allele fractions};
-				\path (p8.south)+(0.0,-1.5)	\blockitem{10}{9. Likelihood of alleles given one read};
-				\path (p10.south)+(0.0,-1.5) \blockitem{12}{10. Likelihood of allele fractions given one read};
-				\path (p12.south)+(0.0,-1.5) \blockitem{14}{11. Likelihood of allele fractions given all reads};
-				\path (p14.south)+(0.0,-1.5) \blockitem{15}{12. Maximum likelihood allele fractions};
-				\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
-				\visible<3->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
-				\visible<4->{\path (ur1.east)+(-2.57,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
-				\visible<5->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
-				\visible<6->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
-				
-				% Pfeile
-				\path [line] (p6.south) -- node [above] {} (p8);
-				\path [line] (p8.south) -- node [above] {} (p10) ;	
-				\path [line] (p10.south) -- node [above] {} (p12) ;	
-				\path [line] (p12.south) -- node [above] {} (p14) ;		
-				\path [line] (p14.south) -- node [above, midway] {} (p15);
-				\path [line] (p15.south) -- node [above] {} (p16) ;   
-				
-				\path [dashedline] (p8.west) -- node [left] {} (p7);
-				\path [dashedline] (p7.south) -- node [above] {} (p9) ;
-				\path [dashedline] (p9.east) -- node [left] {} (p12.west);
-				
-				\visible<3->{\draw [funtool] (p10.east) -- (ur1);}
-				\visible<4->{\draw [dashedline] (ur2.south) -- (ur1.north);}
-				\visible<5->{\draw [funtool] (p12.east) -- (ur3);}
-				\visible<6->{\draw [funtool] (p14.east) -- (ur4);}
-				\end{tikzpicture}
-			\end{center}
-		\end{figure}
-		}
-	\end{minipage}
-\end{frame}
-
-%%Folie ###5
-%%Loci-Kombinationen
-\section{Model und Implementierung}
-\subsection{Loci-Kombinationen}
-\begin{frame}
-	\frametitle{}
-	\begin{minipage}[t][3cm][t]{\textwidth}	
-		\centering
-		\scalebox{0.6}{
-			\smartdiagramset{sequence item height=2.5cm,
-				uniform color list=blue!20 for 5 items}
-			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
-			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-		}
-	\end{minipage}
-	
-	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<3->{
-		\vspace*{-2.0cm}
-		\begin{figure}[h]
-			\begin{center}
-				\begin{tikzpicture}[scale=0.50,transform shape]
-					\path (p9.south)+(0.0,-6.5) \ioitem{11}{14. Indicator constraint};
-					\path (p11.south)+(0.0,-1.5) \blockitem{13}{13. Loci \\combinations};
-					\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
-					\path (p15.south)+(0.0,-2.0) \ioitem{16}{15. Likelihood \\of an allele given another allele};
-					\path (p16.south)+(0.0,-1.8) \ioitem{17}{16. Likelihood of loci given alleles and fractions}; 
-					\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
-					\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
-					\visible<4->{\path (p13.west)+(-4.5, 0.0) node (ur1)[ur] {\color{black}\lstinline|get_candidate_loci()|};}
-					% Pfeile
-					\path [line] (p15.south) -- node [above] {} (p16) ;     
-					\path [line] (p16.south) -- node [above] {} (p17) ;
-					\path [line] (p17.south) -- node [above] {} (p18) ;
-					\path [line] (p18.south) -- node [above] {} (p19) ;		
-					
-					\path [dashedline] (p11.east) -- node [left] {} (p16.west);
-					\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
-					
-					\visible<4->{\draw [funtool] (p13.west) -- (ur1.east);}
-					\end{tikzpicture}
-				\end{center}
-			\end{figure}
-		}
-	\end{minipage}
-\end{frame}
-
-%%Folie ###6
-%%Likelihood der Loci-Zuordnung
-\section{Model und Implementierung}
-\subsection{Likelihood der Loci-Zuordnung}
-\begin{frame}
-	\frametitle{}
-	\begin{minipage}[t][3cm][t]{\textwidth}	
-		\centering
-		\scalebox{0.6}{
-			\smartdiagramset{sequence item height=2.5cm,
-				uniform color list=blue!20 for 5 items}
-			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
-			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
-		}
-	\end{minipage}
-	
-	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<2->{
-		\vspace*{-2.0cm}
-		\begin{figure}[h]
-			\begin{center}
-				\begin{tikzpicture}[scale=0.50,transform shape]
-				\path (p9.south)+(0.0,-6.5) \blockitem{11}{14. Indicator constraint};
-				\path (p11.south)+(0.0,-1.5) \ioitem{13}{13. Loci \\combinations};
-				\path (p14.south)+(0.0,-1.5) \ioitem{15}{12. Maximum likelihood allele fractions};
-				\path (p15.south)+(0.0,-2.0) \blockitem{16}{15. Likelihood \\of an allele given another allele};
-				\path (p16.south)+(0.0,-1.8) \blockitem{17}{16. Likelihood of loci given alleles and fractions}; 
-				\path (p17.south)+(0.0,-1.3) \blockitem{18}{17. Maximum likelihood loci};
-				\path (p18.south)+(0.0,-1.7) \ioitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
-				
-				% Pfeile
-				\path [line] (p15.south) -- node [above] {} (p16) ;     
-				\path [line] (p16.south) -- node [above] {} (p17) ;
-				\path [line] (p17.south) -- node [above] {} (p18) ;
-				\path [line] (p18.south) -- node [above] {} (p19) ;		
-				
-				\path [dashedline] (p11.east) -- node [left] {} (p16.west);
-				\path [dashedline] (p13.north) -- node [left] {} (p11.south); 
-				
-				\visible<4->{\path (p11.north)+(0.0, 2.0) node (ur1)[ur] {\color{black}\lstinline|indicator_constraint()|};}
-				\visible<3->{\path (p11.north)+(-0.0, 3.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
-				\visible<5->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
-				\visible<6->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
-				\visible<7->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
-				
-				\visible<4->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
-				\visible<6->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
-				
-				% Pfeile%
-				\visible<4->{\draw [funtool] (p11.north) -- (ur1.south);}		
-				\visible<5->{\draw [funtool] (p16.east) -- (ur3.west);}	
-				\visible<7->{\draw [funtool] (p17.east) -- (ur5.west);}
-				\end{tikzpicture}
-			\end{center}
-		\end{figure}
-		}
-	\end{minipage}
 \end{frame}
 
 %%Folie ###7
 %%Ausgabe als VCF-File
 \section{Model und Implementierung}
-\subsection{Ausgabe als VCF-File}
+\subsection{Implementierung - VCF-Output}
 \begin{frame}
-	\frametitle{}
+	\frametitle{Implementierung - Ausgabe im Variant Call Format}
 	\begin{minipage}[t][3cm][t]{\textwidth}	
 		\centering
 		\scalebox{0.6}{
 			\smartdiagramset{sequence item height=2.5cm,
 				uniform color list=blue!20 for 5 items}
 			\only<1->{\smartdiagramset{set color
-					list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
-			\only<2->{\smartdiagramset{set color
 					list={blue!20,blue!20,blue!20,blue!20,red!60}}}
 			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 		}
 	\end{minipage}
 	
 	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<3->{
-		\vspace*{-0.5cm}
-		\begin{figure}[h]
-			\begin{center}
-				\begin{tikzpicture}[scale=0.64,transform shape]
-				\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
-				\path (p18.south)+(0.0,-1.7) \blockitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
-				\visible<4->{\path (p19.west)+(-4.1, 1.0) node (ur1)[ur] {\color{black}\lstinline|get_sorted_loci_alleles()|};}
-				\visible<5->{\path (p19.west)+(-4.5, 0.0) node (ur2)[ur] {\color{black}\lstinline|get_alleles_matched_to_loci()|};}
-				\visible<6->{\path (p19.west)+(-3.21, -1.0) node (ur3)[ur] {\color{black}\lstinline|get_gt_indices()|};}
-				\visible<7->{\path (p19.west)+(-3.03, -2.0) node (ur4)[ur] {\color{black}\lstinline|get_genotype()|};}
-				
-				% Pfeile
-				\path [line] (p18.south) -- node [above] {} (p19) ;		
-				
-				\visible<4->{\draw [funtool] (p19.west) -- (ur1.east);}
-				\visible<5->{\draw [funtool] (p19.west) -- (ur2.east);}
-				\visible<6->{\draw [funtool] (p19.west) -- (ur3.east);}
-				\visible<7->{\draw [funtool] (p19.west) -- (ur4.east);}
-				\end{tikzpicture}
-			\end{center}
-		\end{figure}
+		\only<2->{
+			\vspace*{-0.5cm}
+			\begin{figure}[h]
+				\begin{center}
+					\begin{tikzpicture}[scale=0.64,transform shape]
+					\path (p17.south)+(0.0,-1.3) \ioitem{18}{17. Maximum likelihood loci};
+					\path (p18.south)+(0.0,-1.7) \blockitem{19}{18. VCF \\ \includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}\hspace{0.1cm}\includegraphics[width=0.9cm]{pictures/list_icon_2.png}};
+					\visible<3->{\path (p19.west)+(-4.1, 1.0) node (ur1)[ur] {\color{black}\lstinline|get_sorted_loci_alleles()|};}
+					\visible<4->{\path (p19.west)+(-4.5, 0.0) node (ur2)[ur] {\color{black}\lstinline|get_alleles_matched_to_loci()|};}
+					\visible<5->{\path (p19.west)+(-3.21, -1.0) node (ur3)[ur] {\color{black}\lstinline|get_gt_indices()|};}
+					\visible<6->{\path (p19.west)+(-3.03, -2.0) node (ur4)[ur] {\color{black}\lstinline|get_genotype()|};}
+					
+					% Pfeile
+					\path [line] (p18.south) -- node [above] {} (p19) ;		
+					
+					\visible<3->{\draw [funtool] (p19.west) -- (ur1.east);}
+					\visible<4->{\draw [funtool] (p19.west) -- (ur2.east);}
+					\visible<5->{\draw [funtool] (p19.west) -- (ur3.east);}
+					\visible<6->{\draw [funtool] (p19.west) -- (ur4.east);}
+					\end{tikzpicture}
+				\end{center}
+			\end{figure}
 		}
 	\end{minipage}
 \end{frame}
 
+
+
 %%Folie 14
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1541,7 +1804,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 15
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1550,7 +1813,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 16
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1559,7 +1822,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 17
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1568,7 +1831,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 18
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1577,7 +1840,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 19
-\section{Model und Implementierung}
+\section{Analyse an simulierten Daten}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1586,7 +1849,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 20
-\section{Model und Implementierung}
+\section{Ausblick}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1595,7 +1858,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 21
-\section{Model und Implementierung}
+\section{Ausblick}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1604,7 +1867,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 22
-\section{Model und Implementierung}
+\section{Ausblick}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1613,7 +1876,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 23
-\section{Model und Implementierung}
+\section{Ausblick}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1622,7 +1885,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %%Folie 24
-\section{}
+\section{Ausblick}
 \subsection{}
 \begin{frame}
 	\frametitle{}
@@ -1630,238 +1893,6 @@ minimum height=3em, rounded corners, drop shadow]
 \end{frame}
 
 
-%%Folie 25
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 26
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 27
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 28
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 29
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 30
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 31
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 32
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 33
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 34
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 35
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 36
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 37
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 38
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 39
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 40
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 41
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 42
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 43
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 44
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 45
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 46
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 47
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 48
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 49
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 50
-\section{}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
 
 
 %Literaturverzeichnis

@@ -17,49 +17,68 @@
 \beamer@subsectionintoc {8}{1}{PCR}{31}{0}{8}
 \beamer@sectionintoc {9}{Biologischer Hintergrund}{42}{0}{9}
 \beamer@subsectionintoc {9}{1}{Sequenzierung}{42}{0}{9}
-\beamer@sectionintoc {10}{Biologischer Hintergrund}{51}{0}{10}
-\beamer@subsectionintoc {10}{1}{RAD-Sequencing}{51}{0}{10}
-\beamer@sectionintoc {11}{Biologischer Hintergrund}{62}{0}{11}
-\beamer@subsectionintoc {11}{1}{RAD-Sequencing}{62}{0}{11}
-\beamer@sectionintoc {12}{Analyse von RAD-Seq-Daten}{66}{0}{12}
-\beamer@subsectionintoc {12}{1}{Problemstellung und L\"osungsansatz}{66}{0}{12}
-\beamer@sectionintoc {13}{Model und Implementierung}{69}{0}{13}
-\beamer@subsectionintoc {13}{1}{Model}{69}{0}{13}
-\beamer@sectionintoc {14}{Model und Implementierung}{74}{0}{14}
-\beamer@subsectionintoc {14}{1}{Model}{74}{0}{14}
-\beamer@sectionintoc {15}{Model und Implementierung}{77}{0}{15}
-\beamer@subsectionintoc {15}{1}{Model}{77}{0}{15}
-\beamer@sectionintoc {16}{Model und Implementierung}{79}{0}{16}
-\beamer@sectionintoc {17}{Model und Implementierung}{80}{0}{17}
-\beamer@sectionintoc {18}{Model und Implementierung}{81}{0}{18}
-\beamer@subsectionintoc {18}{1}{Model}{81}{0}{18}
-\beamer@sectionintoc {19}{Model und Implementierung}{83}{0}{19}
-\beamer@subsectionintoc {19}{1}{Model}{83}{0}{19}
-\beamer@sectionintoc {20}{Model und Implementierung}{101}{0}{20}
-\beamer@subsectionintoc {20}{1}{Model}{101}{0}{20}
-\beamer@sectionintoc {21}{Model und Implementierung}{119}{0}{21}
-\beamer@subsectionintoc {21}{1}{Model}{119}{0}{21}
-\beamer@sectionintoc {22}{Model und Implementierung}{121}{0}{22}
-\beamer@subsectionintoc {22}{1}{Preprocessing}{121}{0}{22}
-\beamer@sectionintoc {23}{Model und Implementierung}{127}{0}{23}
-\beamer@subsectionintoc {23}{1}{Graph und Zusammenhangskomponenten}{127}{0}{23}
-\beamer@sectionintoc {24}{Model und Implementierung}{131}{0}{24}
-\beamer@subsectionintoc {24}{1}{Kandidatenallele und Allele-Fractions}{131}{0}{24}
-\beamer@sectionintoc {25}{Model und Implementierung}{137}{0}{25}
-\beamer@subsectionintoc {25}{1}{Likelihood der Allele-Fractions}{137}{0}{25}
-\beamer@sectionintoc {26}{Model und Implementierung}{143}{0}{26}
-\beamer@subsectionintoc {26}{1}{Loci-Kombinationen}{143}{0}{26}
-\beamer@sectionintoc {27}{Model und Implementierung}{147}{0}{27}
-\beamer@subsectionintoc {27}{1}{Likelihood der Loci-Zuordnung}{147}{0}{27}
-\beamer@sectionintoc {28}{Model und Implementierung}{154}{0}{28}
-\beamer@subsectionintoc {28}{1}{Ausgabe als VCF-File}{154}{0}{28}
-\beamer@sectionintoc {29}{Model und Implementierung}{161}{0}{29}
-\beamer@sectionintoc {30}{Model und Implementierung}{162}{0}{30}
-\beamer@sectionintoc {31}{Model und Implementierung}{163}{0}{31}
-\beamer@sectionintoc {32}{Model und Implementierung}{164}{0}{32}
-\beamer@sectionintoc {33}{Model und Implementierung}{165}{0}{33}
-\beamer@sectionintoc {34}{Model und Implementierung}{166}{0}{34}
-\beamer@sectionintoc {35}{Model und Implementierung}{167}{0}{35}
-\beamer@sectionintoc {36}{Model und Implementierung}{168}{0}{36}
-\beamer@sectionintoc {37}{Model und Implementierung}{169}{0}{37}
-\beamer@sectionintoc {38}{Model und Implementierung}{170}{0}{38}
+\beamer@sectionintoc {10}{Biologischer Hintergrund}{47}{0}{10}
+\beamer@subsectionintoc {10}{1}{RAD-Sequencing}{47}{0}{10}
+\beamer@sectionintoc {11}{Biologischer Hintergrund}{54}{0}{11}
+\beamer@subsectionintoc {11}{1}{RAD-Sequencing}{54}{0}{11}
+\beamer@sectionintoc {12}{Analyse von RAD-Seq-Daten}{55}{0}{12}
+\beamer@subsectionintoc {12}{1}{Problemstellung und L\"osungsansatz}{55}{0}{12}
+\beamer@sectionintoc {13}{Model und Implementierung}{58}{0}{13}
+\beamer@subsectionintoc {13}{1}{Model}{58}{0}{13}
+\beamer@sectionintoc {14}{Model und Implementierung}{63}{0}{14}
+\beamer@subsectionintoc {14}{1}{Model - Preprocessing}{63}{0}{14}
+\beamer@sectionintoc {15}{Model und Implementierung}{66}{0}{15}
+\beamer@subsectionintoc {15}{1}{Implementierung - Preprocessing}{66}{0}{15}
+\beamer@sectionintoc {16}{Model und Implementierung}{71}{0}{16}
+\beamer@subsectionintoc {16}{1}{Model - Graphkonstruktion}{71}{0}{16}
+\beamer@sectionintoc {17}{Model und Implementierung}{73}{0}{17}
+\beamer@subsectionintoc {17}{1}{Approximation des pairHMM}{73}{0}{17}
+\beamer@sectionintoc {18}{Model und Implementierung}{74}{0}{18}
+\beamer@subsectionintoc {18}{1}{Approximation des pairHMM}{74}{0}{18}
+\beamer@sectionintoc {19}{Model und Implementierung}{75}{0}{19}
+\beamer@subsectionintoc {19}{1}{Model - Graphkonstruktion}{75}{0}{19}
+\beamer@sectionintoc {20}{Model und Implementierung}{77}{0}{20}
+\beamer@subsectionintoc {20}{1}{Implementierung - Graphkonstruktion}{77}{0}{20}
+\beamer@sectionintoc {21}{Model und Implementierung}{80}{0}{21}
+\beamer@subsectionintoc {21}{1}{Laufzeit - Graphkonstruktion}{80}{0}{21}
+\beamer@sectionintoc {22}{Model und Implementierung}{81}{0}{22}
+\beamer@subsectionintoc {22}{1}{Model - Allele-Fractions}{81}{0}{22}
+\beamer@sectionintoc {23}{Model und Implementierung}{90}{0}{23}
+\beamer@subsectionintoc {23}{1}{Implementierung - Allele-Fractions}{90}{0}{23}
+\beamer@sectionintoc {24}{Model und Implementierung}{95}{0}{24}
+\beamer@subsectionintoc {24}{1}{Laufzeit - Allele-Fractions}{95}{0}{24}
+\beamer@sectionintoc {25}{Model und Implementierung}{96}{0}{25}
+\beamer@subsectionintoc {25}{1}{Model - Likelihood der Allele-Fractions}{96}{0}{25}
+\beamer@sectionintoc {26}{Model und Implementierung}{105}{0}{26}
+\beamer@subsectionintoc {26}{1}{Implementierung - Allele likelihood}{105}{0}{26}
+\beamer@sectionintoc {27}{Model und Implementierung}{115}{0}{27}
+\beamer@subsectionintoc {27}{1}{Laufzeit - Likelihood der Allele-Fractions}{115}{0}{27}
+\beamer@sectionintoc {28}{Model und Implementierung}{116}{0}{28}
+\beamer@subsectionintoc {28}{1}{Model - Loci-Kombinationen}{116}{0}{28}
+\beamer@sectionintoc {29}{Model und Implementierung}{130}{0}{29}
+\beamer@subsectionintoc {29}{1}{Implementierung - Loci-Kombinationen}{130}{0}{29}
+\beamer@sectionintoc {30}{Model und Implementierung}{133}{0}{30}
+\beamer@subsectionintoc {30}{1}{Laufzeit - Loci-Kombinationen}{133}{0}{30}
+\beamer@sectionintoc {31}{Model und Implementierung}{134}{0}{31}
+\beamer@subsectionintoc {31}{1}{Model - Zuordnung der Loci}{134}{0}{31}
+\beamer@sectionintoc {32}{Model und Implementierung}{145}{0}{32}
+\beamer@subsectionintoc {32}{1}{Implementerierung - Zuordnung der Loci}{145}{0}{32}
+\beamer@sectionintoc {33}{Model und Implementierung}{152}{0}{33}
+\beamer@subsectionintoc {33}{1}{Laufzeit - Zuordnung der Loci}{152}{0}{33}
+\beamer@sectionintoc {34}{Model und Implementierung}{153}{0}{34}
+\beamer@subsectionintoc {34}{1}{Laufzeit - Gesamtlaufzeit}{153}{0}{34}
+\beamer@sectionintoc {35}{Model und Implementierung}{154}{0}{35}
+\beamer@subsectionintoc {35}{1}{Model - VCF-Output}{154}{0}{35}
+\beamer@sectionintoc {36}{Model und Implementierung}{157}{0}{36}
+\beamer@subsectionintoc {36}{1}{Implementierung - VCF-Output}{157}{0}{36}
+\beamer@sectionintoc {37}{Analyse an simulierten Daten}{163}{0}{37}
+\beamer@sectionintoc {38}{Analyse an simulierten Daten}{164}{0}{38}
+\beamer@sectionintoc {39}{Analyse an simulierten Daten}{165}{0}{39}
+\beamer@sectionintoc {40}{Analyse an simulierten Daten}{166}{0}{40}
+\beamer@sectionintoc {41}{Analyse an simulierten Daten}{167}{0}{41}
+\beamer@sectionintoc {42}{Analyse an simulierten Daten}{168}{0}{42}
+\beamer@sectionintoc {43}{Ausblick}{169}{0}{43}
+\beamer@sectionintoc {44}{Ausblick}{170}{0}{44}
+\beamer@sectionintoc {45}{Ausblick}{171}{0}{45}
+\beamer@sectionintoc {46}{Ausblick}{172}{0}{46}
+\beamer@sectionintoc {47}{Ausblick}{173}{0}{47}
