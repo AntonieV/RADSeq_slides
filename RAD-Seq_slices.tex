@@ -206,7 +206,7 @@ minimum height=3em, rounded corners, drop shadow]
 %Titlefolie	
 	\author{Antonie Vietor}
 	\title[Analyse von RAD-Seq-Daten]{Analyse von RAD-Seq-Daten unter Berücksichtigung von Sequenzierfehlerraten und Heterozygotiewahrscheinlichkeiten}
-	\date{\today}
+	\date{4. März 2021}
 	\setbeamercovered{transparent}		
 	%Ausschalten der Navigationssymbole
 	\setbeamertemplate{navigation symbols}{} 	
@@ -886,7 +886,7 @@ minimum height=3em, rounded corners, drop shadow]
 
 	\only<1->{
 		\begin{minipage}[t][10cm][t]{\textwidth}	
-			\only<1>{
+			\only<1-2>{
 				\begin{itemize}
 					\item das Problem wird als gerichteter Graph $G=(V, \, E)$ betrachtet
 					\item die Knoten werden durch die Reads repräsentiert
@@ -896,7 +896,7 @@ minimum height=3em, rounded corners, drop shadow]
 					\item Partitionierung des Graphen in mehrere Zusammenhangskomponenten $\Rightarrow$ das Gesamtproblem wird in mehrere Teilprobleme aufgeteilt}
 				\end{itemize}
 			}
-			\only<2>{
+			\only<3>{
 				\begin{itemize}
 					\item \textbf{Grapheigenschaften}:
 					\begin{itemize}
@@ -993,7 +993,27 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Graphkonstruktion}
 \begin{frame}
 	\frametitle{Laufzeit - Graphkonstruktion}
-	text
+	\only<1->{
+	\begin{minipage}[t][2cm][t]{\textwidth}	
+		\centering
+		\scalebox{0.6}{
+			\smartdiagramset{sequence item height=2.5cm,
+				uniform color list=gray!60 for 5 items, border color=black}
+			\only<1->{\smartdiagramset{set color
+					list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+		}
+	\end{minipage}}
+	\only<1->{
+	\begin{minipage}[t][10cm][t]{\textwidth}	
+		\begin{itemize}
+			\item Erzeugung der Knoten: $ O(|V|) $
+			\item Hinzufügen der Kanten: $ O(|E|\, \cdotp |V|) $
+			\item Zusammenhangskomponenten: $ O(|V|^2 + |E|) $			
+		\end{itemize}
+	\vspace*{0.3cm}
+		$\Rightarrow$ \textbf{Gesamtlaufzeit}: $ O(|V| \, \cdotp (|V| + |E|)) $
+	\end{minipage}}		
 \end{frame}
 
 %%Folie 12
@@ -1132,7 +1152,32 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Allele-Fractions}
 \begin{frame}
 	\frametitle{Laufzeit - Allele-Fractions}
-	text
+		\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\begin{itemize}
+				\item \textbf{\lstinline|get_candidate_alleles()|}: $ O(|V_{C_{i}}|) $
+				\vspace*{0.3cm}				
+				\item \textbf{\lstinline|get_max_parsimony_n_alleles()|}: $ O(1) $
+				\vspace*{0.3cm}
+				\item \textbf{\lstinline|get_candidate_vafs()|}: 
+					\begin{itemize}
+						\item[] Kombinationen mit Wiederholung: $ O(\binom{n + k - 1}{k}) \in  O(e^n) $
+						\item[] Allele-Fractions bilden: $O(n)$
+					\end{itemize}
+				\item[] $\Rightarrow$ gesamt: $ O(n\, \cdotp e^n)$
+			\end{itemize}
+	\end{minipage}}	
 \end{frame}
 
 
@@ -1238,7 +1283,7 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Implementierung - Allele likelihood}
 \begin{frame}
 	\frametitle{Implementierung - Likelihood der Allele-Fractions}
-	\only<2-3,6-7,9->{
+	\only<1-3,6-7,9->{
 	\begin{minipage}[t][2.8cm][t]{\textwidth}	
 		\centering
 		\scalebox{0.6}{
@@ -1265,10 +1310,10 @@ minimum height=3em, rounded corners, drop shadow]
 					\path (p12.south)+(0.0,-1.5) \blockitem{14}{11. Likelihood of allele fractions given all reads};
 					\path (p14.south)+(0.0,-1.5) \blockitem{15}{12. Maximum likelihood allele fractions};
 					\path (p15.south)+(0.0,-1.5) \ioitem{16}{15. Likelihood \\of an allele given another allele};
-					\visible<3,6->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
+					\visible<3->{\path (p10.east)+(+4.1,0.0) node (ur1)[ur] {\color{black}\lstinline|get_allele_likelihood_read()|};}
 					\visible<7->{\path (ur1.east)+(-3.0,2.1) node (ur2)[ur] {\color{black}\lstinline|get_alignment_likelihood()|};}
-					\visible<9->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
-					\visible<10->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
+					\visible<10->{\path (p12.east)+(8.0-4,0) node (ur3)[ur] {\color{black}\lstinline|calc_vafs_likelihood_read()|};}
+					\visible<11->{\path (p14.east)+(9.5-6,0) node (ur4)[ur] {\color{black}\lstinline|calc_vafs_likelihood()|};}
 					
 					% Pfeile
 					\path [line] (p6.south) -- node [above] {} (p8);
@@ -1282,10 +1327,10 @@ minimum height=3em, rounded corners, drop shadow]
 					\path [dashedline] (p7.south) -- node [above] {} (p9) ;
 					\path [dashedline] (p9.east) -- node [left] {} (p12.west);
 					
-					\visible<3,6->{\draw [funtool] (p10.east) -- (ur1);}
+					\visible<3->{\draw [funtool] (p10.east) -- (ur1);}
 					\visible<7->{\draw [dashedline] (ur2.south) -- (ur1.north);}
-					\visible<9->{\draw [funtool] (p12.east) -- (ur3);}
-					\visible<10->{\draw [funtool] (p14.east) -- (ur4);}
+					\visible<10->{\draw [funtool] (p12.east) -- (ur3);}
+					\visible<11->{\draw [funtool] (p14.east) -- (ur4);}
 					\end{tikzpicture}
 				\end{center}
 			\end{figure}
@@ -1373,7 +1418,35 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Likelihood der Allele-Fractions}
 \begin{frame}
 	\frametitle{Laufzeit - Likelihood der Allele-Fractions}
-	text
+		\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,red!60,blue!20,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\begin{itemize}
+				\item \textbf{\lstinline|get_allele_likelihood_read()|}:
+					\begin{itemize}
+						\item[] Eintrag existiert im Dictionary: $ O(n \,\cdotp |V_{C_{i}}|) $
+						\item[] Likelihood muss berechnet werden: $ O(n \,\cdotp l \,\cdotp |V_{C_{i}}|^2)$
+					\end{itemize}
+				\vspace*{0.3cm}	
+				\item \textbf{\lstinline|get_alignment_likelihood()|}: $O(l)$
+				\vspace*{0.3cm}	
+				\item \textbf{\lstinline|calc_vafs_likelihood()|}: $ O(|V_{C_{i}}|) $
+				\vspace*{0.3cm}	
+				\item \textbf{\lstinline|calc_vafs_likelihood_read()|}: $ O(n) $ 
+				\vspace*{0.3cm}	
+				\item Maximumsbestimmung: $ O(e^n) $ 
+			\end{itemize}
+	\end{minipage}}	
 \end{frame}
 
 %%Folie 12###################
@@ -1539,9 +1612,28 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Loci-Kombinationen}
 \begin{frame}
 	\frametitle{Laufzeit - Loci-Kombinationen}
-	text
+		\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\begin{itemize}
+				\item eigentlich müssen alle Permutationen über allen Allelkombinationen gebildet werden
+				\vspace*{0.3cm}	
+				\item wegen Indikatorfunktion genügt es die Permutationen nur über der Allele-Fraction mit maximaler Likelihood zu bilden
+				\vspace*{0.3cm}	
+				\item Laufzeit von \textbf{\lstinline|get_candidate_loci()|} beträgt dann $O(n!\, \cdotp \log n) $ 			
+			\end{itemize}
+	\end{minipage}}	
 \end{frame}
-
 
 %%Folie 12###################
 \section{Model und Implementierung}
@@ -1650,6 +1742,7 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Implementerierung - Zuordnung der Loci}
 \begin{frame}
 	\frametitle{Implementerierung - Zuordnung der Loci}
+	\only<1-5,7-8,10-11>{
 	\begin{minipage}[t][2.5cm][t]{\textwidth}	
 		\centering
 		\scalebox{0.6}{
@@ -1659,10 +1752,10 @@ minimum height=3em, rounded corners, drop shadow]
 					list={blue!20,blue!20,blue!20,red!60,blue!20}}}
 			\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 		}
-	\end{minipage}
+	\end{minipage}}
 	
 	\begin{minipage}[t][10cm][t]{\textwidth}	
-		\only<2->{
+		\only<2-5,7-8,10-11>{
 			\vspace*{-2.0cm}
 			\begin{figure}[h]
 				\begin{center}
@@ -1687,20 +1780,99 @@ minimum height=3em, rounded corners, drop shadow]
 					\visible<4->{\path (p11.north)+(0.0, 1.0) node (ur1)[ur] {\color{black}\lstinline|indicator_constraint()|};}
 					\visible<3->{\path (p11.north)+(-0.0, 2.5) node (ur2)[ur] {\color{black}\lstinline|calc_loci_likelihoods()|};}
 					\visible<5->{\path (p16.east)+(4.0, 0.0) node (ur3)[ur] {\color{black}\lstinline|get_heterozygosity()|};}
-					\visible<6->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
-					\visible<7->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
+					\visible<8->{\path (ur3.north)+(0.0, 1.5) node (ur4)[ur] {\color{black}\lstinline|get_cigar_tuples()|};}
+					\visible<11->{\path (p17.east)+(5.1, 0.0) node (ur5)[ur] {\color{black}\lstinline|get_allele_likelihood_alleles()|};}
 					
 					\visible<4->{\path [dashedline] (ur2.south) -- node [left] {} (ur1.north);}
-					\visible<6->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
+					\visible<8->{\path [dashedline] (ur4.south) -- node [left] {} (ur3.north);}
 					
 					% Pfeile%
 					\visible<4->{\draw [funtool] (p11.north) -- (ur1.south);}		
 					\visible<5->{\draw [funtool] (p16.east) -- (ur3.west);}	
-					\visible<7->{\draw [funtool] (p17.east) -- (ur5.west);}
+					\visible<11->{\draw [funtool] (p17.east) -- (ur5.west);}
 					\end{tikzpicture}
 				\end{center}
 			\end{figure}
 		}
+	\only<6>{		 
+		\vspace*{-0.6cm}   
+		\begin{algorithm}[H]
+			\scriptsize
+			\begin{algorithmic}[]	
+				\Function{get\_heterozygosity}{$\eta_{sub}$, $\eta_{ins}$, $\eta_{del}$, $ cigar\_tuples $, $ reverse $}
+				\State $likelihood \gets 1.0$
+				\If{reverse}
+				\State swap values of $\eta_{ins}$ and $\eta_{del}$
+				\EndIf
+				\ForAll{$(operation, length) \in cigar\_tuples$}
+				\If{$operation \in match$}
+				\State $ likelihood \gets likelihood \, \cdotp (1 - (\eta_{sub}+\eta_{ins}+\eta_{del}))^{\;length} $
+				\EndIf		    		    	
+				\If{$operation \in substitution$}
+				\State $likelihood \gets likelihood \, \cdotp (\eta_{sub})^{length}$
+				\EndIf	
+				\If{$operation \in insertion$}
+				\State $likelihood \gets likelihood \, \cdotp (\eta_{ins})^{length}$
+				\EndIf
+				\If{$operation \in deletion$}
+				\State $likelihood \gets likelihood \, \cdotp (\eta_{del})^{length}$
+				\EndIf
+				\EndFor
+				\State \Return $ likelihood $
+				\EndFunction
+			\end{algorithmic}
+		\end{algorithm}
+	}
+	\only<9>{		 
+		\vspace*{-0.1cm}  
+		\begin{algorithm}[H]
+			\footnotesize
+			\begin{algorithmic}[]	
+				\Function{get\_cigar\_tuples}{$ C_{k} $, $ s_{query} $, $ s_{ref} $}
+				\State $ R_{source} \gets \{v_{i} \in C_{k} \wedge i,k \in \mathds{N} \; |\; v_{i}[sequence]= s_{query} \}$
+				\State $ R_{target} \gets \{w_{j} \in C_{k} \wedge j,k \in \mathds{N} \; |\; w_{j}[sequence]= s_{ref} \}$
+				\For{$ v_{i} \in R_{source} $}
+				\For{$ w_{j} \in R_{target} $}
+				\If{$ (v_{i}, w_{j}) \in E_{k}$}
+				\State \Return $ (\;E_{k}[(v_{i}, w_{j})][cigar\_tuples],\, False\;) $		    
+				\EndIf
+				\If{$ (w_{j}, v_{i}) \in E_{k}$}
+				\State \Return $ (\;E_{k}[(w_{j}, v_{i})][cigar\_tuples],\, True\;) $		
+				\EndIf
+				\EndFor
+				\EndFor
+				\State \Return $ None $
+				\EndFunction
+			\end{algorithmic}
+		\end{algorithm}
+	}
+    \only<12>{		 
+    	\vspace*{-0.6cm}  
+    	\begin{algorithm}[H]
+    		\footnotesize
+    		\begin{algorithmic}[]	
+    				\Function{get\_allele\_likelihood\_alleles}{$ C_{k} $, $ S_{\,loc} $, $ dict_{\,loc} $}
+    			\State $ likelihood \gets 1.0 $		
+    			\For{$ (s_{a_{i}}, s_{a_{j}}) \in S_{\,loc} $}
+    			\If{$\exists (s_{a_{i}}, s_{a_{j}}): ((s_{a_{i}}, s_{a_{j}}), L_{a_{i}, a_{j}}) \in dict_{\,loc}$}
+    			\State $likelihood \gets likelihood + L_{a_{i}, a_{j}} $
+    			\Else		    
+    			\State $cigar \gets get\_cigar\_tuples(C_{k}, s_{a_{i}}, s_{a_{j}})$ 
+    			\If{$cigar$ exists}
+    			\State $cig \gets cigar\,[\,0\,]$
+    			\State $rev \gets cigar\,[\,1\,]$
+    			\State $ \eta_{rates} \gets C_{k}[\eta_{sub}] \cup C_{k}[\eta_{ins}] \cup C_{k}[\eta_{del}]$
+    			\State $L_{a_{i}, a_{j}} \gets log(get\_heterozygosity(\eta_{rates}, cig, rev))$  
+    			\State $ dict_{\,loc} \gets dict_{\,loc} \, \cup ((s_{a_{i}}, s_{a_{j}}),  L_{a_{i}, a_{j}})  $
+    			\State $ likelihood \gets likelihood + L_{a_{i}, a_{j}}$    
+    			\EndIf
+    			\EndIf
+    			\EndFor
+    			\State \Return $ e^{\;likelihood} $
+    			\EndFunction
+    		\end{algorithmic}
+    	\end{algorithm}
+    }
 	\end{minipage}
 \end{frame}
 
@@ -1709,7 +1881,38 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Zuordnung der Loci}
 \begin{frame}
 	\frametitle{Laufzeit - Zuordnung der Loci}
-	text
+		\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,red!60,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}
+	\only<1->{
+		\begin{minipage}[t][10cm][t]{\textwidth}	
+			\begin{itemize}
+				\item \textbf{\lstinline|calc_loci_likelihoods()|}: $O(n!)$
+				\vspace*{0.1cm}	
+				\item \textbf{\lstinline|indicator_constraint()|}: $ O(n) $
+				\vspace*{0.1cm}	
+				\item \textbf{\lstinline|get_cigar_tuples()|}: $O(|V_{C_{i}}|^3)$
+				\vspace*{0.1cm}	
+				\item \textbf{\lstinline|get_heterozygosity()|}: $O(l)$
+				\vspace*{0.1cm}	
+				\item \textbf{\lstinline|get_allele_likelihoods_allele()|}:
+					\begin{itemize}
+						\item[] Likelihood und CIGAR-Tuples müssen für $\binom{n}{2}$ Elemente ermittelt werden, Laufzeitfaktor: $O(\binom{n}{2}) \in O(n^2)$
+						\vspace*{0.1cm}	
+						\item[] Eintrag existiert im Dictionary für $n! - \binom{n}{2}$ Elemente, Laufzeitfaktor $O(n! - \binom{n}{2}) \in O(n! - n^2)$					
+					\end{itemize}
+				\vspace*{0.1cm}	
+				\item Maximumsbestimmung: $O(n!)$
+			\end{itemize}
+	\end{minipage}}	
 \end{frame}
 
 %%Folie 14
@@ -1717,7 +1920,26 @@ minimum height=3em, rounded corners, drop shadow]
 \subsection{Laufzeit - Gesamtlaufzeit}
 \begin{frame}
 	\frametitle{Laufzeit - Gesamtlaufzeit}
-	text
+		\only<1->{
+		\begin{minipage}[t][2cm][t]{\textwidth}	
+			\centering
+			\scalebox{0.6}{
+				\smartdiagramset{sequence item height=2.5cm,
+					uniform color list=gray!60 for 5 items, border color=black}
+				\only<1->{\smartdiagramset{set color
+						list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
+				\only<2->{\smartdiagramset{set color
+						list={blue!20,red!60,red!60,red!60,blue!20}}}
+				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
+			}
+	\end{minipage}}	
+		\begin{minipage}[t][10cm][t]{\textwidth}
+			\only<3->{	
+			\begin{itemize}
+				\item ddddddd
+			\end{itemize}
+		}
+	\end{minipage}
 \end{frame}
 
 
@@ -1896,11 +2118,26 @@ minimum height=3em, rounded corners, drop shadow]
 
 
 %Literaturverzeichnis
+\section{Bildquellen}
 \begin{frame}[allowframebreaks]
 	\frametitle{Bildquellen}
 	\bibliographystyle{unsrtdin}
 	\bibliography{bibliography/RAD-Seq_slices}
 %	\addcontentsline{toc}{section}{\bibname}
+\end{frame}
+
+%weiteres Bildmaterial 
+\section{Bildquellen}
+\begin{frame}
+	\frametitle{Weiteres Bildmaterial für die Erstellung des Workflowdiagramms}
+	\textbf{Diagramm}: Alanis, Cristo J.: Schema of Labs on a class. source: \url{https://texample.net/
+	tikz/examples/labs-schema/}.\\ 
+	\vspace*{0.3cm}
+	\textbf{Abbildung der DNA}: Velickovic, Petar: Deoxyribonucleic acid (DNA). source: \url{https://github.com/
+	PetarV-/TikZ/tree/master/DNA}.\\ 
+	\vspace*{0.3cm}
+	\textbf{Icon für VCF-Datei}: Twitter, Inc., Mark Otto, and the Bootstrap authors: Bootstrap icons -
+	receipt. source: \url{https://github.com/twbs/icons/blob/main/icons/receipt.svg}.
 \end{frame}
 
 \end{document}

@@ -37,59 +37,61 @@
 \BOOKMARK [2][]{Outline0.19}{Model und Implementierung}{}% 37
 \BOOKMARK [3][]{Outline0.19.1.75}{Model - Graphkonstruktion}{Outline0.19}% 38
 \BOOKMARK [2][]{Outline0.20}{Model und Implementierung}{}% 39
-\BOOKMARK [3][]{Outline0.20.1.77}{Implementierung - Graphkonstruktion}{Outline0.20}% 40
+\BOOKMARK [3][]{Outline0.20.1.78}{Implementierung - Graphkonstruktion}{Outline0.20}% 40
 \BOOKMARK [2][]{Outline0.21}{Model und Implementierung}{}% 41
-\BOOKMARK [3][]{Outline0.21.1.80}{Laufzeit - Graphkonstruktion}{Outline0.21}% 42
+\BOOKMARK [3][]{Outline0.21.1.81}{Laufzeit - Graphkonstruktion}{Outline0.21}% 42
 \BOOKMARK [2][]{Outline0.22}{Model und Implementierung}{}% 43
-\BOOKMARK [3][]{Outline0.22.1.81}{Model - Allele-Fractions}{Outline0.22}% 44
+\BOOKMARK [3][]{Outline0.22.1.82}{Model - Allele-Fractions}{Outline0.22}% 44
 \BOOKMARK [2][]{Outline0.23}{Model und Implementierung}{}% 45
-\BOOKMARK [3][]{Outline0.23.1.90}{Implementierung - Allele-Fractions}{Outline0.23}% 46
+\BOOKMARK [3][]{Outline0.23.1.91}{Implementierung - Allele-Fractions}{Outline0.23}% 46
 \BOOKMARK [2][]{Outline0.24}{Model und Implementierung}{}% 47
-\BOOKMARK [3][]{Outline0.24.1.95}{Laufzeit - Allele-Fractions}{Outline0.24}% 48
+\BOOKMARK [3][]{Outline0.24.1.96}{Laufzeit - Allele-Fractions}{Outline0.24}% 48
 \BOOKMARK [2][]{Outline0.25}{Model und Implementierung}{}% 49
-\BOOKMARK [3][]{Outline0.25.1.96}{Model - Likelihood der Allele-Fractions}{Outline0.25}% 50
+\BOOKMARK [3][]{Outline0.25.1.97}{Model - Likelihood der Allele-Fractions}{Outline0.25}% 50
 \BOOKMARK [2][]{Outline0.26}{Model und Implementierung}{}% 51
-\BOOKMARK [3][]{Outline0.26.1.105}{Implementierung - Allele likelihood}{Outline0.26}% 52
+\BOOKMARK [3][]{Outline0.26.1.106}{Implementierung - Allele likelihood}{Outline0.26}% 52
 \BOOKMARK [2][]{Outline0.27}{Model und Implementierung}{}% 53
-\BOOKMARK [3][]{Outline0.27.1.115}{Laufzeit - Likelihood der Allele-Fractions}{Outline0.27}% 54
+\BOOKMARK [3][]{Outline0.27.1.117}{Laufzeit - Likelihood der Allele-Fractions}{Outline0.27}% 54
 \BOOKMARK [2][]{Outline0.28}{Model und Implementierung}{}% 55
-\BOOKMARK [3][]{Outline0.28.1.116}{Model - Loci-Kombinationen}{Outline0.28}% 56
+\BOOKMARK [3][]{Outline0.28.1.118}{Model - Loci-Kombinationen}{Outline0.28}% 56
 \BOOKMARK [2][]{Outline0.29}{Model und Implementierung}{}% 57
-\BOOKMARK [3][]{Outline0.29.1.130}{Implementierung - Loci-Kombinationen}{Outline0.29}% 58
+\BOOKMARK [3][]{Outline0.29.1.132}{Implementierung - Loci-Kombinationen}{Outline0.29}% 58
 \BOOKMARK [2][]{Outline0.30}{Model und Implementierung}{}% 59
-\BOOKMARK [3][]{Outline0.30.1.133}{Laufzeit - Loci-Kombinationen}{Outline0.30}% 60
+\BOOKMARK [3][]{Outline0.30.1.135}{Laufzeit - Loci-Kombinationen}{Outline0.30}% 60
 \BOOKMARK [2][]{Outline0.31}{Model und Implementierung}{}% 61
-\BOOKMARK [3][]{Outline0.31.1.134}{Model - Zuordnung der Loci}{Outline0.31}% 62
+\BOOKMARK [3][]{Outline0.31.1.136}{Model - Zuordnung der Loci}{Outline0.31}% 62
 \BOOKMARK [2][]{Outline0.32}{Model und Implementierung}{}% 63
-\BOOKMARK [3][]{Outline0.32.1.145}{Implementerierung - Zuordnung der Loci}{Outline0.32}% 64
+\BOOKMARK [3][]{Outline0.32.1.147}{Implementerierung - Zuordnung der Loci}{Outline0.32}% 64
 \BOOKMARK [2][]{Outline0.33}{Model und Implementierung}{}% 65
-\BOOKMARK [3][]{Outline0.33.1.152}{Laufzeit - Zuordnung der Loci}{Outline0.33}% 66
+\BOOKMARK [3][]{Outline0.33.1.159}{Laufzeit - Zuordnung der Loci}{Outline0.33}% 66
 \BOOKMARK [2][]{Outline0.34}{Model und Implementierung}{}% 67
-\BOOKMARK [3][]{Outline0.34.1.153}{Laufzeit - Gesamtlaufzeit}{Outline0.34}% 68
+\BOOKMARK [3][]{Outline0.34.1.160}{Laufzeit - Gesamtlaufzeit}{Outline0.34}% 68
 \BOOKMARK [2][]{Outline0.35}{Model und Implementierung}{}% 69
-\BOOKMARK [3][]{Outline0.35.1.154}{Model - VCF-Output}{Outline0.35}% 70
+\BOOKMARK [3][]{Outline0.35.1.163}{Model - VCF-Output}{Outline0.35}% 70
 \BOOKMARK [2][]{Outline0.36}{Model und Implementierung}{}% 71
-\BOOKMARK [3][]{Outline0.36.1.157}{Implementierung - VCF-Output}{Outline0.36}% 72
+\BOOKMARK [3][]{Outline0.36.1.166}{Implementierung - VCF-Output}{Outline0.36}% 72
 \BOOKMARK [2][]{Outline0.37}{Analyse an simulierten Daten}{}% 73
-\BOOKMARK [3][]{Outline0.37.1.163}{}{Outline0.37}% 74
+\BOOKMARK [3][]{Outline0.37.1.172}{}{Outline0.37}% 74
 \BOOKMARK [2][]{Outline0.38}{Analyse an simulierten Daten}{}% 75
-\BOOKMARK [3][]{Outline0.38.1.164}{}{Outline0.38}% 76
+\BOOKMARK [3][]{Outline0.38.1.173}{}{Outline0.38}% 76
 \BOOKMARK [2][]{Outline0.39}{Analyse an simulierten Daten}{}% 77
-\BOOKMARK [3][]{Outline0.39.1.165}{}{Outline0.39}% 78
+\BOOKMARK [3][]{Outline0.39.1.174}{}{Outline0.39}% 78
 \BOOKMARK [2][]{Outline0.40}{Analyse an simulierten Daten}{}% 79
-\BOOKMARK [3][]{Outline0.40.1.166}{}{Outline0.40}% 80
+\BOOKMARK [3][]{Outline0.40.1.175}{}{Outline0.40}% 80
 \BOOKMARK [2][]{Outline0.41}{Analyse an simulierten Daten}{}% 81
-\BOOKMARK [3][]{Outline0.41.1.167}{}{Outline0.41}% 82
+\BOOKMARK [3][]{Outline0.41.1.176}{}{Outline0.41}% 82
 \BOOKMARK [2][]{Outline0.42}{Analyse an simulierten Daten}{}% 83
-\BOOKMARK [3][]{Outline0.42.1.168}{}{Outline0.42}% 84
+\BOOKMARK [3][]{Outline0.42.1.177}{}{Outline0.42}% 84
 \BOOKMARK [2][]{Outline0.43}{Ausblick}{}% 85
-\BOOKMARK [3][]{Outline0.43.1.169}{}{Outline0.43}% 86
+\BOOKMARK [3][]{Outline0.43.1.178}{}{Outline0.43}% 86
 \BOOKMARK [2][]{Outline0.44}{Ausblick}{}% 87
-\BOOKMARK [3][]{Outline0.44.1.170}{}{Outline0.44}% 88
+\BOOKMARK [3][]{Outline0.44.1.179}{}{Outline0.44}% 88
 \BOOKMARK [2][]{Outline0.45}{Ausblick}{}% 89
-\BOOKMARK [3][]{Outline0.45.1.171}{}{Outline0.45}% 90
+\BOOKMARK [3][]{Outline0.45.1.180}{}{Outline0.45}% 90
 \BOOKMARK [2][]{Outline0.46}{Ausblick}{}% 91
-\BOOKMARK [3][]{Outline0.46.1.172}{}{Outline0.46}% 92
+\BOOKMARK [3][]{Outline0.46.1.181}{}{Outline0.46}% 92
 \BOOKMARK [2][]{Outline0.47}{Ausblick}{}% 93
-\BOOKMARK [3][]{Outline0.47.1.173}{}{Outline0.47}% 94
-\BOOKMARK [2][]{Outline0.48}{Literatur}{}% 95
+\BOOKMARK [3][]{Outline0.47.1.182}{}{Outline0.47}% 94
+\BOOKMARK [2][]{Outline0.48}{Bildquellen}{}% 95
+\BOOKMARK [2][]{Outline0.49}{Literatur}{}% 96
+\BOOKMARK [2][]{Outline0.50}{Bildquellen}{}% 97
