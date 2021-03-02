@@ -38,9 +38,12 @@
 %\hypersetup{pdfpagemode=FullScreen}
 
 \usepackage{multirow}
+\usepackage{colortbl}
+
 \definecolor{tugreen}{HTML}{7CFF00}
 \definecolor{darkgreen}{HTML}{037501}
 \definecolor{lila}{HTML}{C984FE}
+\definecolor{light-gray}{gray}{0.93}
 %
 %\setbeamercolor{block title}{use=structure,fg=black,bg=LimeGreen!50!white}
 \setbeamercolor{block body}{use=structure,fg=black,bg=tugreen!10!white}
@@ -288,7 +291,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{block}
 \end{frame}
 
-
+%%Folie 4
 \section{Biologischer Hintergrund}
 \subsection{Proteinbiosyntese}
 \begin{frame}
@@ -315,6 +318,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{columns}
 \end{frame}
 
+%%Folie 5
 \section{Biologischer Hintergrund}
 \subsection{Proteinbiosyntese}
 \begin{frame}
@@ -373,7 +377,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{onlyenv}
 \end{frame}
 
-%%Folie 4
+%%Folie 6
 \section{Biologischer Hintergrund}
 \subsection{DNA-Replikation}
 \begin{frame}
@@ -410,7 +414,7 @@ minimum height=3em, rounded corners, drop shadow]
 \definecolor{lila}{HTML}{5100d7}
 \definecolor{dunkelrot}{HTML}{fa0004}
 
-%%Folie 5
+%%Folie 7
 \section{Biologischer Hintergrund}
 \subsection{Mutationen und Varianten}
 \begin{frame}
@@ -467,7 +471,7 @@ minimum height=3em, rounded corners, drop shadow]
 		\end{onlyenv}
 \end{frame}
 
-%%Folie 6
+%%Folie 8
 \section{Biologischer Hintergrund}
 \subsection{Mutationen und Varianten}
 \begin{frame}
@@ -499,7 +503,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{block}}
 \end{frame}
 
-%%Folie 7
+%%Folie 9
 \section{Biologischer Hintergrund}
 \subsection{PCR}
 \begin{frame}
@@ -568,7 +572,7 @@ minimum height=3em, rounded corners, drop shadow]
 \end{frame}
 
 
-%%Folie 8
+%%Folie 10
 \section{Biologischer Hintergrund}
 \subsection{Sequenzierung}
 \begin{frame}
@@ -600,7 +604,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{onlyenv}
 \end{frame}
 
-%%Folie 9
+%%Folie 11
 \section{Biologischer Hintergrund}
 \subsection{RAD-Sequencing}
 \begin{frame}
@@ -654,7 +658,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{overlayarea}
 \end{frame}
 
-%%Folie 10
+%%Folie 12
 \section{Biologischer Hintergrund}
 \subsection{RAD-Sequencing}
 \begin{frame}
@@ -670,7 +674,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{itemize}
 \end{frame}
 
-%%Folie 11
+%%Folie 13
 \section{Analyse von RAD-Seq-Daten}
 \subsection{Problemstellung und Lösungsansatz}
 \begin{frame}
@@ -701,7 +705,7 @@ minimum height=3em, rounded corners, drop shadow]
 	$\Rightarrow$ die Loci können anschließend für Diversitätsanalysen genutzt werden}	
 \end{frame}
 
-%%Folie 12
+%%Folie 14
 \section{Model und Implementierung}
 \subsection{Model}
 \begin{frame}
@@ -726,7 +730,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie 12
+%%Folie 15
 \section{Model und Implementierung}
 \subsection{Model - Preprocessing}
 \begin{frame}
@@ -757,7 +761,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}	
 
-%%Folie ###1
+%%Folie 16
 %%Preprocessing
 \section{Model und Implementierung}
 \subsection{Implementierung - Preprocessing}
@@ -822,7 +826,7 @@ minimum height=3em, rounded corners, drop shadow]
 \end{minipage}
 \end{frame}	
 	
-%%Folie 12
+%%Folie 17
 \section{Model und Implementierung}
 \subsection{Model - Graphkonstruktion}
 \begin{frame}
@@ -851,7 +855,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}		
 	
-%%Folie 14
+%%Folie 18
 \section{Model und Implementierung}
 \subsection{Approximation des pairHMM}
 \begin{frame}
@@ -859,15 +863,39 @@ minimum height=3em, rounded corners, drop shadow]
 	tabelle
 \end{frame}
 
-%%Folie 14
+%%Folie 19
 \section{Model und Implementierung}
 \subsection{Approximation des pairHMM}
 \begin{frame}
 	\frametitle{Likelihoodberechnung beim approximierten pairHMM}
-	Tabelle
+	\begin{columns}[T]
+		\begin{column}{0.52\textwidth}
+			\begin{center}
+				\textbf{Likelihood der Allele bei einem gegebenen Read}
+			\end{center}
+				\color{blue}\[L_{match} = 1 - p_{i}\]
+%				\vspace*{0.2cm}
+				\color{blue}\[L_{indel} \in \{\epsilon_{ins}, \epsilon_{del}\}\]
+%				\vspace*{0.2cm}
+				\color{blue}\[L_{sub} = \frac{1}{3} \; \cdotp \; p_{i}\]
+%				\vspace*{0.7cm}
+				\color{red} \[pHMM_{\epsilon, q_{query}} \;(s_{query}\;|\; s_{ref}) \approx \prod_{i=1}^{k}L_{i}\]
+		\end{column}
+		\begin{column}{0.47\textwidth}
+			\begin{center}
+				\textbf{Likelihood bei der Zuordnung der Allele zu möglichen Loci}
+			\end{center}
+				\color{blue} \[L_{match} = 1 - (\eta_{sub} + \eta_{ins} + \eta_{del})\] 
+				\vspace*{0.5cm}
+				\color{blue} \[L_{mismatch} \in  \{\,\eta_{sub},\, \eta_{ins},\, \eta_{del}\,\}\]
+				\vspace*{0.75cm}		
+%				\hline
+				\color{red} \[pHMM_{\eta}(a_{l_{j,query}} \, | \, a_{l_{j,ref}}) \approx \prod_{i=1}^{k}L_{i}\]
+		\end{column}
+	\end{columns}
 \end{frame}
 
-%%Folie 12
+%%Folie 20
 \section{Model und Implementierung}
 \subsection{Model - Graphkonstruktion}
 \begin{frame}
@@ -921,7 +949,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}	
 
-%%Folie ###2
+%%Folie 21
 %%Konstruktion des Graphen
 \section{Model und Implementierung}
 \subsection{Implementierung - Graphkonstruktion}
@@ -988,7 +1016,7 @@ minimum height=3em, rounded corners, drop shadow]
 \end{minipage}
 \end{frame}
 
-%%Folie 14
+%%Folie 22
 \section{Model und Implementierung}
 \subsection{Laufzeit - Graphkonstruktion}
 \begin{frame}
@@ -1016,7 +1044,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}		
 \end{frame}
 
-%%Folie 12
+%%Folie 23
 \section{Model und Implementierung}
 \subsection{Model - Allele-Fractions}
 \begin{frame}
@@ -1089,7 +1117,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie ###3
+%%Folie 24
 %%Kandidatenallele und Allele-Fractions
 \section{Model und Implementierung}
 \subsection{Implementierung - Allele-Fractions}
@@ -1147,7 +1175,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie 14
+%%Folie 25
 \section{Model und Implementierung}
 \subsection{Laufzeit - Allele-Fractions}
 \begin{frame}
@@ -1181,7 +1209,7 @@ minimum height=3em, rounded corners, drop shadow]
 \end{frame}
 
 
-%%Folie 12
+%%Folie 26
 \section{Model und Implementierung}
 \subsection{Model - Likelihood der Allele-Fractions}
 \begin{frame}
@@ -1277,7 +1305,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}		
 
-%%Folie ###4
+%%Folie 27
 %%Likelihood der Allele-Fractions
 \section{Model und Implementierung}
 \subsection{Implementierung - Allele likelihood}
@@ -1413,7 +1441,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie 14
+%%Folie 28
 \section{Model und Implementierung}
 \subsection{Laufzeit - Likelihood der Allele-Fractions}
 \begin{frame}
@@ -1449,7 +1477,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}	
 \end{frame}
 
-%%Folie 12###################
+%%Folie 29
 \section{Model und Implementierung}
 \subsection{Model - Loci-Kombinationen}
 \begin{frame}
@@ -1559,7 +1587,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}				
 
-%%Folie ###5
+%%Folie 30
 %%Loci-Kombinationen
 \section{Model und Implementierung}
 \subsection{Implementierung - Loci-Kombinationen}
@@ -1607,7 +1635,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie 14
+%%Folie 31
 \section{Model und Implementierung}
 \subsection{Laufzeit - Loci-Kombinationen}
 \begin{frame}
@@ -1635,7 +1663,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}	
 \end{frame}
 
-%%Folie 12###################
+%%Folie 32
 \section{Model und Implementierung}
 \subsection{Model - Zuordnung der Loci}
 \begin{frame}
@@ -1736,7 +1764,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}	
 
-%%Folie ###6
+%%Folie 33
 %%Likelihood der Loci-Zuordnung
 \section{Model und Implementierung}
 \subsection{Implementerierung - Zuordnung der Loci}
@@ -1876,7 +1904,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-%%Folie 14
+%%Folie 34
 \section{Model und Implementierung}
 \subsection{Laufzeit - Zuordnung der Loci}
 \begin{frame}
@@ -1915,7 +1943,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}	
 \end{frame}
 
-%%Folie 14
+%%Folie 35
 \section{Model und Implementierung}
 \subsection{Laufzeit - Gesamtlaufzeit}
 \begin{frame}
@@ -1929,21 +1957,31 @@ minimum height=3em, rounded corners, drop shadow]
 				\only<1->{\smartdiagramset{set color
 						list={blue!20,blue!20,blue!20,blue!20,blue!20}}}
 				\only<2->{\smartdiagramset{set color
-						list={blue!20,red!60,red!60,red!60,blue!20}}}
+						list={blue!20,red!60,blue!20,blue!20,blue!20}}}
+				\only<3->{\smartdiagramset{set color
+							list={blue!20,red!60,red!60,blue!20,blue!20}}}
+				\only<4->{\smartdiagramset{set color
+							list={blue!20,red!60,red!60,red!60,blue!20}}}
 				\smartdiagram[sequence diagram]{Preprocessing, Graph, Allele likelihood, Loci likelihood, Output VCF File}
 			}
 	\end{minipage}}	
+\vspace*{-0.2cm}
 		\begin{minipage}[t][10cm][t]{\textwidth}
-			\only<3->{	
+			\only<2->{	
 			\begin{itemize}
-				\item ddddddd
+				\item Graphkonstruktion: $O(|V| \, \cdotp (|V| + |E|))$
+				\only<3->{\item Bestimmung der Allele-Fraction mit maximaler Likelihood: \[
+					O( e^n\, \cdotp n\, \cdotp |V_{C_{i}}| + l\, \cdotp n^2\, \cdotp |V_{C_{i}}|^3)\]  }
+				\only<4->{\item Bestimmung der wahrscheinlichsten Loci-Zuordnung:
+				\[ O( l\, \cdotp n^5  \, \cdotp |V_{C_{i}}|^3 + n^3  \, \cdotp n!) \]}
 			\end{itemize}
+		\only<4->{$\Rightarrow$ \textbf{Gesamtlaufzeit}: \[O\left(\sum_{i=1}^{|C|} n  \, \cdotp n! \right)\]}
 		}
 	\end{minipage}
 \end{frame}
 
 
-%%Folie 12
+%%Folie 36
 \section{Model und Implementierung}
 \subsection{Model - VCF-Output}
 \begin{frame}
@@ -1970,7 +2008,7 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}}
 \end{frame}
 
-%%Folie ###7
+%%Folie 37
 %%Ausgabe als VCF-File
 \section{Model und Implementierung}
 \subsection{Implementierung - VCF-Output}
@@ -2014,107 +2052,134 @@ minimum height=3em, rounded corners, drop shadow]
 	\end{minipage}
 \end{frame}
 
-
-
-%%Folie 14
-\section{Analyse an simulierten Daten}
-\subsection{}
+%%Folie 38
+\section{Evaluation an simulierten Daten}
+\subsection{Konfiguration}
 \begin{frame}
-	\frametitle{}
-	text
+	\frametitle{Evaluation an simulierten Daten}
+	\vspace*{0.5cm}
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{lccc}
+				\hline
+				\multicolumn{4}{|c|}{\cellcolor{light-gray}\textbf{Konfigurierte Schwellenwerte}} \\ \hline \hline
+				\multicolumn{1}{|c|}{\textbf{\begin{tabular}[c]{@{}c@{}}threshold max \\ edit distance\end{tabular}}} & \multicolumn{2}{c|}{\textbf{treshold-seq-noise}} & \multicolumn{1}{c|}{\textbf{treshold-cluster-size}} \\ \hline \hline
+				\multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{small-clusters} & \multicolumn{1}{c|}{large-clusters} & \multicolumn{1}{l|}{} \\ \hline
+				\multicolumn{1}{|c|}{9} & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{300} \\ \hline
+				\multicolumn{4}{l}{} \\ \hline
+				\multicolumn{4}{|c|}{\cellcolor{light-gray}\textbf{Konfigurierte Konstanten}} \\ \hline \hline
+				\multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{insertion}} & \multicolumn{1}{c|}{\textbf{deletion}} & \multicolumn{1}{c|}{\textbf{substitution}} \\ \hline
+				\multicolumn{1}{|l|}{\textbf{error-per-base}} & \multicolumn{1}{c|}{$ 2.8 \, \cdotp 10^{-6} $} & \multicolumn{1}{c|}{$ 5.1 \, \cdotp 10^{-6} $} & \multicolumn{1}{c|}{$L_{i} = \frac{1}{3} \; \cdotp \; p_{i}$} \\ \hline
+				\multicolumn{1}{|l|}{\textbf{heterozygosity}} & \multicolumn{1}{c|}{0.01} & \multicolumn{1}{c|}{0.01} & \multicolumn{1}{c|}{0.01} \\ \hline
+			\end{tabular}
+			\caption{Schwellenwerte und Konstanten für den NodeRAD-Run mit dem ddRAGE-Testdatensatz.}
+			\label{tbl:config}
+		\end{center}
+	\end{table}
 \end{frame}
 
 
-%%Folie 15
+%%Folie 39
 \section{Analyse an simulierten Daten}
-\subsection{}
+\subsection{BLAST-Analyse: Auffinden der Loci}
 \begin{frame}
-	\frametitle{}
-	text
+	\begin{onlyenv}<1-2,4-5>
+		\only<1-2,4-5>{\frametitle{BLAST-Analyse: Auffinden der Loci}	}
+		\begin{itemize}
+			\item Individuum A: 44/50 Loci
+			\item Individuum B: 48/50 Loci
+			\item Individuum C: 47/50 Loci
+		\end{itemize}
+		\hspace*{0.4cm}$\Rightarrow$ insgesamt $ 92\% $ der Loci identifiziert
+		\vspace*{0.4cm}
+		\begin{itemize}
+			\visible<2->{
+			\item die meisten der gefundenen Loci sind identisch zu den tatsächlich simulierten Loci
+			\item die Allele mit geringerem Identity-Wert sind meist zusätzliche Allele, die durch NodeRAD zu dem Locus gefunden wurden}
+			\visible<5->{
+			\item Individuum A: 62 Allele durch NodeRAD identifiziert, davon stimmen 49 Allele exakt mit den simulierten Allelen aus ddRAGE überein
+			}
+		\end{itemize}
+	\end{onlyenv}
+	\begin{onlyenv}<3,6>
+		\only<3>{
+		\vspace*{0.05cm}
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[height=9.0cm]{pictures/A.plot_loci.pdf}
+				\end{center}
+			\end{figure}}
+		\only<6>{
+			\begin{figure}[H]
+				\begin{center}
+					\includegraphics[height=9.0cm]{pictures/A.plot_hist.pdf}
+				\end{center}
+			\end{figure}}
+	\end{onlyenv}
 \end{frame}
 
 
-%%Folie 16
+%%Folie 40
 \section{Analyse an simulierten Daten}
-\subsection{}
+\subsection{BLAST-Analyse: Auffinden der Loci}
 \begin{frame}
-	\frametitle{}
-	text
+	\frametitle{Loci-Zuordnung durch NodeRAD im Vergleich zum tatsächlichen Genotyp}
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{ccccc}
+				\hline
+				\multicolumn{2}{|c|}{\cellcolor{light-gray}} & \multicolumn{3}{c|}{\cellcolor{light-gray}\textbf{simulierte Loci $n = 150$}} \\ \cline{3-5} 
+				\multicolumn{2}{|c|}{\multirow{-2}{*}{\cellcolor{light-gray}\textbf{Individuum A, B und C}}} & \multicolumn{1}{l|}{\textbf{homozygot}} & \multicolumn{1}{l|}{\textbf{heterozygot}} & \multicolumn{1}{l|}{\textbf{$\sum$}} \\ \hline
+				\multicolumn{1}{|c|}{\cellcolor{light-gray}} & \multicolumn{1}{c|}{\textbf{homozygot}} & \multicolumn{1}{c|}{124} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{124} \\ \cline{2-5} 
+				\multicolumn{1}{|c|}{\cellcolor{light-gray}} & \multicolumn{1}{c|}{\textbf{heterozygot}} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{15} \\ \cline{2-5} 
+				\multicolumn{1}{|c|}{\multirow{-3}{*}{\cellcolor{light-gray}\textbf{\begin{tabular}[c]{@{}c@{}}mit NodeRAD\\ identifizierte\\ Loci\end{tabular}}}} & \multicolumn{1}{c|}{\textbf{$\sum$}} & \multicolumn{1}{c|}{134} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{\textbf{139}} \\ \hline
+				\multicolumn{5}{l}{}			
+			\end{tabular}
+		\end{center}
+	\end{table}
+	\visible<2>{
+	\begin{itemize}
+		\item Rate \textbf{falsch-homozygoter} Loci: $0\%$
+		\item Rate \textbf{falsch-heterozygoter} Loci: $\approx 7.5\%$
+		\item \textbf{prädiktiv homozygot} (NodeRAD findet homozygoten Locus):\\ 
+		$\Rightarrow$ Wahrscheinlichkeit, dass tatsächlich homozygot: $100\%$
+		\item \textbf{prädiktiv heterozygot} (NodeRAD findet heterozygoten Locus):\\ $\Rightarrow$ Wahrscheinlichkeit, dass tatsächlich homozygot: $ \approx 33.\overline{3}\, \% $
+	\end{itemize}
+	}
 \end{frame}
 
-
-%%Folie 17
-\section{Analyse an simulierten Daten}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 18
-\section{Analyse an simulierten Daten}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 19
-\section{Analyse an simulierten Daten}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 20
+%%Folie 41
 \section{Ausblick}
 \subsection{}
 \begin{frame}
-	\frametitle{}
-	text
+	\frametitle{Ausblick}
+	\begin{itemize}
+		\item effizientere Implementierung in Rust
+		\vspace*{0.1cm}
+		\item  dominierender Schritte (Laufzeit, Arbeitsspeicher) sind die Bestimmung der Allelkombinationen und die über ihre Allele-Fractions ausgeführten Berechnungen, dieser Schritt kann weiter optimiert werden, z.B.:
+		\vspace*{0.05cm}
+			\begin{itemize}
+				\item Funktion(Clustergröße, Anzahl der Kandidatenallele)
+				\item greedy Auswahl der Allele: absteigende Sortierung nach Häufigkeit und Knotengrad
+				\item nur rechenintensive Cluster (große Cluster oder Cluster mit vielen Kandidatenallelen) optimieren
+			\end{itemize}
+		\vspace*{0.05cm}
+		\item single-end Reads: Heterozygotie bleibt auch bei Mutationen im Bereich der Restriktionsstelle erhalten
+		\vspace*{0.1cm}
+		\item polyploide Organismen: multiple Sequenzalignments notwendig
+		\vspace*{0.1cm}
+		\item interindividuelle Vergleiche für Diversitätsanalysen können als zweite Iteration des Workflows adaptiert werden
+	\end{itemize}
 \end{frame}
 
 
-%%Folie 21
-\section{Ausblick}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 22
-\section{Ausblick}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 23
-\section{Ausblick}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
-%%Folie 24
-\section{Ausblick}
-\subsection{}
-\begin{frame}
-	\frametitle{}
-	text
-\end{frame}
-
-
+%%%Folie 42
+%\section{Ausblick}
+%\subsection{}
+%\begin{frame}
+%	\frametitle{}
+%	text
+%\end{frame}
 
 
 %Literaturverzeichnis

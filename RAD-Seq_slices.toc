@@ -67,20 +67,16 @@
 \beamer@subsectionintoc {33}{1}{Laufzeit - Zuordnung der Loci}{159}{0}{33}
 \beamer@sectionintoc {34}{Model und Implementierung}{160}{0}{34}
 \beamer@subsectionintoc {34}{1}{Laufzeit - Gesamtlaufzeit}{160}{0}{34}
-\beamer@sectionintoc {35}{Model und Implementierung}{163}{0}{35}
-\beamer@subsectionintoc {35}{1}{Model - VCF-Output}{163}{0}{35}
-\beamer@sectionintoc {36}{Model und Implementierung}{166}{0}{36}
-\beamer@subsectionintoc {36}{1}{Implementierung - VCF-Output}{166}{0}{36}
-\beamer@sectionintoc {37}{Analyse an simulierten Daten}{172}{0}{37}
-\beamer@sectionintoc {38}{Analyse an simulierten Daten}{173}{0}{38}
-\beamer@sectionintoc {39}{Analyse an simulierten Daten}{174}{0}{39}
-\beamer@sectionintoc {40}{Analyse an simulierten Daten}{175}{0}{40}
-\beamer@sectionintoc {41}{Analyse an simulierten Daten}{176}{0}{41}
-\beamer@sectionintoc {42}{Analyse an simulierten Daten}{177}{0}{42}
-\beamer@sectionintoc {43}{Ausblick}{178}{0}{43}
-\beamer@sectionintoc {44}{Ausblick}{179}{0}{44}
-\beamer@sectionintoc {45}{Ausblick}{180}{0}{45}
-\beamer@sectionintoc {46}{Ausblick}{181}{0}{46}
-\beamer@sectionintoc {47}{Ausblick}{182}{0}{47}
-\beamer@sectionintoc {48}{Bildquellen}{183}{0}{48}
-\beamer@sectionintoc {50}{Bildquellen}{185}{0}{49}
+\beamer@sectionintoc {35}{Model und Implementierung}{164}{0}{35}
+\beamer@subsectionintoc {35}{1}{Model - VCF-Output}{164}{0}{35}
+\beamer@sectionintoc {36}{Model und Implementierung}{167}{0}{36}
+\beamer@subsectionintoc {36}{1}{Implementierung - VCF-Output}{167}{0}{36}
+\beamer@sectionintoc {37}{Evaluation an simulierten Daten}{173}{0}{37}
+\beamer@subsectionintoc {37}{1}{Konfiguration}{173}{0}{37}
+\beamer@sectionintoc {38}{Analyse an simulierten Daten}{174}{0}{38}
+\beamer@subsectionintoc {38}{1}{BLAST-Analyse: Auffinden der Loci}{174}{0}{38}
+\beamer@sectionintoc {39}{Analyse an simulierten Daten}{180}{0}{39}
+\beamer@subsectionintoc {39}{1}{BLAST-Analyse: Auffinden der Loci}{180}{0}{39}
+\beamer@sectionintoc {40}{Ausblick}{182}{0}{40}
+\beamer@sectionintoc {41}{Bildquellen}{183}{0}{41}
+\beamer@sectionintoc {43}{Bildquellen}{185}{0}{42}
