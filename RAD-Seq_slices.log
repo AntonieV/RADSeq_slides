@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  2 MAR 2021 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  2 MAR 2021 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2179,648 +2179,614 @@ Overfull \vbox (118.35579pt too high) detected at line 856
 
 ] [74
 
-]
-Overfull \vbox (118.35579pt too high) detected at line 950
- []
+] [75
 
-[75
+] [76
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 950
- []
-
-[76
-
-]
-Overfull \vbox (118.35579pt too high) detected at line 950
+Overfull \vbox (118.35579pt too high) detected at line 991
  []
 
 [77
 
 ]
-Overfull \vbox (147.14828pt too high) detected at line 1017
+Overfull \vbox (118.35579pt too high) detected at line 991
  []
 
 [78
 
 ]
-Overfull \vbox (147.14828pt too high) detected at line 1017
+Overfull \vbox (118.35579pt too high) detected at line 991
  []
 
 [79
 
 ]
-Overfull \vbox (147.14828pt too high) detected at line 1017
+Overfull \vbox (147.14828pt too high) detected at line 1058
  []
 
 [80
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1045
+Overfull \vbox (147.14828pt too high) detected at line 1058
  []
 
 [81
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1118
+Overfull \vbox (147.14828pt too high) detected at line 1058
  []
 
 [82
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 1118.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1118
-.
-
-Overfull \vbox (118.35579pt too high) detected at line 1118
+Overfull \vbox (118.35579pt too high) detected at line 1086
  []
 
 [83
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1118
+Overfull \vbox (118.35579pt too high) detected at line 1159
  []
 
 [84
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1118
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 1159.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1159
+.
+
+Overfull \vbox (118.35579pt too high) detected at line 1159
  []
 
 [85
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1118
+Overfull \vbox (118.35579pt too high) detected at line 1159
  []
 
 [86
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1118
+Overfull \vbox (118.69553pt too high) detected at line 1159
  []
 
 [87
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1118
+Overfull \vbox (118.69553pt too high) detected at line 1159
  []
 
 [88
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1118
+Overfull \vbox (118.69553pt too high) detected at line 1159
  []
 
 [89
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1118
+Overfull \vbox (118.69553pt too high) detected at line 1159
  []
 
 [90
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1176
+Overfull \vbox (118.35579pt too high) detected at line 1159
  []
 
 [91
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-1176.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \vbox (141.45782pt too high) detected at line 1176
+Overfull \vbox (118.35579pt too high) detected at line 1159
  []
 
 [92
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1176
+Overfull \vbox (141.45782pt too high) detected at line 1217
  []
 
 [93
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1176
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+1217.
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \vbox (141.45782pt too high) detected at line 1217
  []
 
 [94
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1176
+Overfull \vbox (141.45782pt too high) detected at line 1217
  []
 
 [95
 
 ]
-LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 1209.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1209.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1209.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1209
-.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1209
-.
-
-Overfull \vbox (118.35579pt too high) detected at line 1209
+Overfull \vbox (141.45782pt too high) detected at line 1217
  []
 
 [96
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (141.45782pt too high) detected at line 1217
  []
 
 [97
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 1250.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1250.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1250.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1250
+.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1250
+.
+
+Overfull \vbox (118.35579pt too high) detected at line 1250
  []
 
 [98
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [99
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [100
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [101
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [102
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1306
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [103
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1306
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 1306
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [104
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1306
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1347
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [105
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1347
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1347
  []
 
 [106
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Overfull \vbox (118.35579pt too high) detected at line 1347
  []
 
 [107
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [108
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-442.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <9> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1442.
-
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 1442.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1442
-.
-
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1442--1442
-[][]  
- []
-
-
-Overfull \vbox (73.39003pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [109
 
 ]
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1442--1442
-[][]  
- []
-
-
-Overfull \vbox (73.39003pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [110
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+483.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+
+LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <9> not available
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1483.
+
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 1483.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1483
+.
+
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1483--1483
+[][]  
+ []
+
+
+Overfull \vbox (73.39003pt too high) detected at line 1483
  []
 
 [111
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1483--1483
+[][]  
+ []
+
+
+Overfull \vbox (73.39003pt too high) detected at line 1483
  []
 
 [112
 
 ]
-
-LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <6> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1442.
-
-
-
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1442--1442
-[][]  
- []
-
-
-Overfull \vbox (73.39003pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [113
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [114
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+
+LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <6> not available
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1483.
+
+
+
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1483--1483
+[][]  
+ []
+
+
+Overfull \vbox (73.39003pt too high) detected at line 1483
  []
 
 [115
 
 ]
-Overfull \vbox (141.45782pt too high) detected at line 1442
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [116
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1478
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [117
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1588
+Overfull \vbox (141.45782pt too high) detected at line 1483
  []
 
 [118
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1588
+Overfull \vbox (118.35579pt too high) detected at line 1519
  []
 
 [119
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1588
+Overfull \vbox (118.35579pt too high) detected at line 1629
  []
 
 [120
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1588
+Overfull \vbox (118.35579pt too high) detected at line 1629
  []
 
 [121
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.35579pt too high) detected at line 1629
  []
 
 [122
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.35579pt too high) detected at line 1629
  []
 
 [123
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [124
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [125
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [126
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [127
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [128
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [129
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [130
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
  []
 
 
-Overfull \vbox (118.69553pt too high) detected at line 1588
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [131
 
 ]
-Overfull \vbox (132.9219pt too high) detected at line 1636
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [132
 
 ]
-<pictures/list_icon_2.png, id=1518, 597.73312pt x 845.40843pt>
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1629
 
-Overfull \vbox (132.9219pt too high) detected at line 1636
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1629
  []
 
 [133
 
- <./pictures/list_icon_2.png>]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1636.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (132.9219pt too high) detected at line 1636
+]
+Overfull \vbox (132.9219pt too high) detected at line 1677
  []
 
 [134
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1664
+<pictures/list_icon_2.png, id=1533, 597.73312pt x 845.40843pt>
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (132.9219pt too high) detected at line 1677
  []
 
 [135
 
-]
-Overfull \vbox (118.35579pt too high) detected at line 1765
+ <./pictures/list_icon_2.png>]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1677.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (132.9219pt too high) detected at line 1677
  []
 
 [136
 
 ]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-765.
- (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
-File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-)
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.35579pt too high) detected at line 1705
  []
 
 [137
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1765.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1765
-.
-
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.35579pt too high) detected at line 1806
  []
 
 [138
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
+806.
+ (/usr/share/texlive/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [139
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 1806.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <12> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 1806
+.
+
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [140
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [141
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [142
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [143
 
 ]
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [144
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1765
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [145
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1765
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [146
 
 ]
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Underfull \hbox (badness 10000) in paragraph at lines 1806--1806
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 1806
  []
 
 [147
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (118.35579pt too high) detected at line 1806
  []
 
 [148
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [149
@@ -2828,18 +2794,18 @@ Overfull \vbox (132.9219pt too high) detected at line 1905
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [150
@@ -2847,35 +2813,37 @@ Overfull \vbox (132.9219pt too high) detected at line 1905
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [151
 
 ]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <8> not available
-(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1905.
-
-
-
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1905--1905
-[][]  
- []
-
-
-Overfull \vbox (73.39003pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [152
@@ -2883,48 +2851,54 @@ Overfull \vbox (73.39003pt too high) detected at line 1905
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [153
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <8> not available
+(Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 1946.
+
+
+
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1946--1946
+[][]  
+ []
+
+
+Overfull \vbox (73.39003pt too high) detected at line 1946
  []
 
 [154
 
 ]
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1905--1905
-[][]  
- []
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-
-Overfull \vbox (73.39003pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [155
@@ -2932,161 +2906,153 @@ Overfull \vbox (73.39003pt too high) detected at line 1905
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [156
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1905.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1946--1946
+[][]  
+ []
 
-Overfull \vbox (132.9219pt too high) detected at line 1905
+
+Overfull \vbox (73.39003pt too high) detected at line 1946
  []
 
 [157
 
 ]
-Overfull \hbox (3.40001pt too wide) in paragraph at lines 1905--1905
-[][]  
- []
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-
-Overfull \vbox (73.39003pt too high) detected at line 1905
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [158
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 1944
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 1946.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (132.9219pt too high) detected at line 1946
  []
 
 [159
 
 ]
-Overfull \vbox (112.66533pt too high) detected at line 1981
+Overfull \hbox (3.40001pt too wide) in paragraph at lines 1946--1946
+[][]  
+ []
+
+
+Overfull \vbox (73.39003pt too high) detected at line 1946
  []
 
 [160
 
 ]
-Overfull \vbox (112.66533pt too high) detected at line 1981
+Overfull \vbox (118.35579pt too high) detected at line 1985
  []
 
 [161
 
 ]
-Overfull \vbox (112.66533pt too high) detected at line 1981
+Overfull \vbox (112.66533pt too high) detected at line 2022
  []
 
 [162
 
 ]
-Overfull \vbox (112.66533pt too high) detected at line 1981
+Overfull \vbox (112.66533pt too high) detected at line 2022
  []
 
 [163
 
 ]
-Overfull \vbox (118.35579pt too high) detected at line 2009
+Overfull \vbox (112.66533pt too high) detected at line 2022
  []
 
 [164
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2009--2009
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2009--2009
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 2009
+Overfull \vbox (112.66533pt too high) detected at line 2022
  []
 
 [165
 
 ]
-<pictures/vcf.png, id=1764, 890.5772pt x 355.3275pt>
-File: pictures/vcf.png Graphic file (type png)
-<use pictures/vcf.png>
-Package pdftex.def Info: pictures/vcf.png  used on input line 2009.
-(pdftex.def)             Requested size: 325.17949pt x 129.73953pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2009--2009
-
- []
-
-
-Overfull \vbox (118.69553pt too high) detected at line 2009
+Overfull \vbox (118.35579pt too high) detected at line 2050
  []
 
 [166
 
- <./pictures/vcf.png (PNG copy)>]
-Overfull \vbox (147.14828pt too high) detected at line 2053
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2050
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2050
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 2050
  []
 
 [167
 
 ]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+<pictures/vcf.png, id=1778, 890.5772pt x 355.3275pt>
+File: pictures/vcf.png Graphic file (type png)
+<use pictures/vcf.png>
+Package pdftex.def Info: pictures/vcf.png  used on input line 2050.
+(pdftex.def)             Requested size: 325.17949pt x 129.73953pt.
 
-Overfull \vbox (147.14828pt too high) detected at line 2053
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2050
+
+ []
+
+
+Overfull \vbox (118.69553pt too high) detected at line 2050
  []
 
 [168
 
-]
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-File: pictures/list_icon_2.png Graphic file (type png)
-<use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
-(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
-
-Overfull \vbox (147.14828pt too high) detected at line 2053
+ <./pictures/vcf.png (PNG copy)>]
+Overfull \vbox (147.14828pt too high) detected at line 2094
  []
 
 [169
@@ -3094,18 +3060,18 @@ Overfull \vbox (147.14828pt too high) detected at line 2053
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (147.14828pt too high) detected at line 2053
+Overfull \vbox (147.14828pt too high) detected at line 2094
  []
 
 [170
@@ -3113,18 +3079,18 @@ Overfull \vbox (147.14828pt too high) detected at line 2053
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (147.14828pt too high) detected at line 2053
+Overfull \vbox (147.14828pt too high) detected at line 2094
  []
 
 [171
@@ -3132,73 +3098,111 @@ Overfull \vbox (147.14828pt too high) detected at line 2053
 ]
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 File: pictures/list_icon_2.png Graphic file (type png)
 <use pictures/list_icon_2.png>
-Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2053.
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
 (pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-Overfull \vbox (147.14828pt too high) detected at line 2053
+Overfull \vbox (147.14828pt too high) detected at line 2094
  []
 
 [172
 
-] [173
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
 
-] [174
+Overfull \vbox (147.14828pt too high) detected at line 2094
+ []
+
+[173
+
+]
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+File: pictures/list_icon_2.png Graphic file (type png)
+<use pictures/list_icon_2.png>
+Package pdftex.def Info: pictures/list_icon_2.png  used on input line 2094.
+(pdftex.def)             Requested size: 25.6073pt x 36.20995pt.
+
+Overfull \vbox (147.14828pt too high) detected at line 2094
+ []
+
+[174
 
 ] [175
 
+] [176
+
+] [177
+
 ]
-<pictures/A.plot_loci.pdf, id=1839, 505.89pt x 505.89pt>
+<pictures/A.plot_loci.pdf, id=1853, 505.89pt x 505.89pt>
 File: pictures/A.plot_loci.pdf Graphic file (type pdf)
 <use pictures/A.plot_loci.pdf>
-Package pdftex.def Info: pictures/A.plot_loci.pdf  used on input line 2119.
+Package pdftex.def Info: pictures/A.plot_loci.pdf  used on input line 2160.
 (pdftex.def)             Requested size: 256.07838pt x 256.0748pt.
 
-Overfull \vbox (11.35059pt too high) detected at line 2119
+Overfull \vbox (11.35059pt too high) detected at line 2160
  []
 
-[176
+[178
 
- <./pictures/A.plot_loci.pdf>] [177
+ <./pictures/A.plot_loci.pdf>] [179
 
-] [178
+] [180
 
 ]
-<pictures/A.plot_hist.pdf, id=1867, 505.89pt x 505.89pt>
+<pictures/A.plot_hist.pdf, id=1881, 505.89pt x 505.89pt>
 File: pictures/A.plot_hist.pdf Graphic file (type pdf)
 <use pictures/A.plot_hist.pdf>
-Package pdftex.def Info: pictures/A.plot_hist.pdf  used on input line 2119.
+Package pdftex.def Info: pictures/A.plot_hist.pdf  used on input line 2160.
 (pdftex.def)             Requested size: 256.07838pt x 256.0748pt.
 
-Overfull \vbox (9.92787pt too high) detected at line 2119
+Overfull \vbox (9.92787pt too high) detected at line 2160
  []
 
-[179
+[181
 
- <./pictures/A.plot_hist.pdf>] [180
+ <./pictures/A.plot_hist.pdf>] [182
 
-] [181
+] [183
 
-] [182
+] [184
 
 ] (./RAD-Seq_slices.bbl
 
 LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
 (Font)              Font shape `OT1/lmr/m/sc' tried instead on input line 11.
 
-) [183
+) [185
 
-] [184
+] [186
 
 
-] [185
+] [187
 
 ]
 \tf@nav=\write6
@@ -3210,21 +3214,21 @@ LaTeX Font Warning: Font shape `OT1/lmss/m/sc' in size <10.95> not available
 \tf@snm=\write8
 \openout8 = `RAD-Seq_slices.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2249.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2249.
  (./RAD-Seq_slices.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2249.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2249.
 
 Package rerunfilecheck Info: File `RAD-Seq_slices.out' has not changed.
-(rerunfilecheck)             Checksum: 2B53A12F85A38336790E3AB1DDC81252;5671.
+(rerunfilecheck)             Checksum: 96750573C04D687F7438FE95959A712F;5671.
  ) 
 Here is how much of TeX's memory you used:
- 32797 strings out of 481239
- 648287 string characters out of 5920378
- 1009556 words of memory out of 5000000
- 46787 multiletter control sequences out of 15000+600000
- 620763 words of font info for 100 fonts, out of 8000000 for 9000
+ 32803 strings out of 481239
+ 648365 string characters out of 5920378
+ 1008556 words of memory out of 5000000
+ 46789 multiletter control sequences out of 15000+600000
+ 621133 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,20n,83p,1012b,1929s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
@@ -3250,10 +3254,10 @@ ic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/t
 exmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
 sy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmtt10.pfb>
-Output written on RAD-Seq_slices.pdf (185 pages, 2997179 bytes).
+Output written on RAD-Seq_slices.pdf (187 pages, 3002975 bytes).
 PDF statistics:
- 2141 PDF objects out of 2487 (max. 8388607)
- 1746 compressed objects within 18 object streams
- 466 named destinations out of 1000 (max. 500000)
+ 2158 PDF objects out of 2487 (max. 8388607)
+ 1761 compressed objects within 18 object streams
+ 470 named destinations out of 1000 (max. 500000)
  986 words of extra memory for PDF output out of 10000 (max. 10000000)
 

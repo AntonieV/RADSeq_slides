@@ -859,8 +859,49 @@ minimum height=3em, rounded corners, drop shadow]
 \section{Model und Implementierung}
 \subsection{Approximation des pairHMM}
 \begin{frame}
-	\frametitle{pairHMM vs. Minimap}
-	tabelle
+	\frametitle{Paarweiser Sequenzvergleich - pairHMM vs. Minimap2}	
+		\only<1-2>{
+		\vspace*{-0.2cm}
+		\begin{block}{pair Hidden Markov Model (pairHMM)}
+			\begin{itemize}
+				\only<1>{
+					\item das beobachtete Ergebnis der Referenzsequenz wird durch Abfolgen von \textbf{Mismatch-, Insertions- und Deletions-Operationen} der Querysequenz erklärt 
+					\vspace*{0.1cm}
+					\item jede Operation ist ein Zustand, die \textbf{Zustände sind nicht direkt beobachtbar}
+					\vspace*{0.1cm}
+					\item \textbf{Zustandsübergangswahrscheinlichkeiten}
+					\vspace*{0.1cm}
+					\item \textbf{Emissionswahrscheinlichkeiten}: Wahrscheinlichkeit, dass eine
+					Base aus einem bestimmten Zustand heraus tatsächlich emittiert wird, d.h. in der Readsequenz zu beobachten ist}
+					\only<2>{
+					\item mögliche Kombinationen von Zustandsübergängen, die zum beobachteten Ergebnis der Referenzsequenz führen, können aber errechnet und als \textbf{Matrix} dargestellt werden
+					\vspace*{0.1cm}
+					\item in der Matrix werden alle \textbf{Pfade} ermittelt, deren Zustandssequenzen geeignet sind, die Querysequenz in die Referenzsequenz zu transformieren
+					\vspace*{0.1cm}
+					\item Aus den Zustandsübergangs- und Emissionswahrscheinichkeiten dieser
+					Pfade kann dann die \textbf{Gesamtlikelihood} bestimmt werden, dass die Querysequenz aus der Referenzsequenz entstanden ist}								
+			\end{itemize}
+		\only<2>{\vspace*{0.1cm}
+		$\Rightarrow$ Kantengewichtung des Graphen: \textbf{Gesamtlikelihood aus allen Pfaden} des pairHMM}
+		\end{block}}
+	
+		\only<3>{
+		\vspace*{-0.2cm}
+		\begin{block}{Sequenzalignment von Minimap2}
+			\begin{itemize}
+				\item ebenfalls paarweiser Vergleich der Readsequenzen
+				\vspace*{0.1cm}
+				\item Reads mit hoher Ähnlichkeit zueinander werden in das Alignment aufgenommen
+				\vspace*{0.1cm}
+				\item Mapping der Reads, die eine hohe Wahrscheinlichkeit besitzen, durch Sequenzierfehler, Variationen oder Mutationen aus einem gemeinsamen Allel hervorgegangen zu sein		
+				\vspace*{0.1cm}
+				\item das Mapping entspricht dem \textbf{wahrscheinlichsten Pfad der pairHMM-Matrix}
+				\vspace*{0.1cm}
+				\item  dieser Pfad würde auch das Ergebnis des pairHMM dominieren \textrightarrow Approximation				
+			\end{itemize}
+		\vspace*{0.1cm}
+		$\Rightarrow$ Kantengewichtung des Graphen: \textbf{Likelihood des wahrscheinlichsten Pfades} des pairHMM
+		\end{block}}
 \end{frame}
 
 %%Folie 19
