@@ -2014,9 +2014,9 @@ minimum height=3em, rounded corners, drop shadow]
 				\only<3->{\item Bestimmung der Allele-Fraction mit maximaler Likelihood: \[
 					O( e^n\, \cdotp n\, \cdotp |V_{C_{i}}| + l\, \cdotp n^2\, \cdotp |V_{C_{i}}|^3)\]  }
 				\only<4->{\item Bestimmung der wahrscheinlichsten Loci-Zuordnung:
-				\[ O( l\, \cdotp n^5  \, \cdotp |V_{C_{i}}|^3 + n^3  \, \cdotp n!) \]}
+				\[ O( l\, \cdotp n^3  \, \cdotp |V_{C_{i}}|^3 + n  \, \cdotp n!) \]}
 			\end{itemize}
-		\only<4->{$\Rightarrow$ \textbf{Gesamtlaufzeit}: \[O\left(\sum_{i=1}^{|C|} n  \, \cdotp n! \right)\]}
+		\only<4->{$\Rightarrow$ \textbf{Gesamtlaufzeit}: \[O\left(\sum_{i=1}^{|C|} n_{C_{i}}  \, \cdotp n_{C_{i}} ! \right)\]}
 		}
 	\end{minipage}
 \end{frame}
@@ -2184,7 +2184,7 @@ minimum height=3em, rounded corners, drop shadow]
 		\item Rate \textbf{falsch-heterozygoter} Loci: $\approx 7.5\%$
 		\item \textbf{prädiktiv homozygot} (NodeRAD findet homozygoten Locus):\\ 
 		$\Rightarrow$ Wahrscheinlichkeit, dass tatsächlich homozygot: $100\%$
-		\item \textbf{prädiktiv heterozygot} (NodeRAD findet heterozygoten Locus):\\ $\Rightarrow$ Wahrscheinlichkeit, dass tatsächlich homozygot: $ \approx 33.\overline{3}\, \% $
+		\item \textbf{prädiktiv heterozygot} (NodeRAD findet heterozygoten Locus):\\ $\Rightarrow$ Wahrscheinlichkeit, dass tatsächlich heterozygot: $ \approx 33.\overline{3}\, \% $
 	\end{itemize}
 	}
 \end{frame}
